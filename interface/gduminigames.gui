@@ -1,0 +1,22 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "gdu_minigames_container"  
+		orientation = UPPER_RIGHT
+		position = { x = -135 y = 60 }
+		clipping = no
+		
+		
+		buttonType ={
+			name ="gdu_minigames_open_button"
+			spriteType = "GFX_gdu_minigames_open_button"
+			position = { x=0 y=0 }
+			clicksound = click_close
+			oversound = ui_menu_over
+			pdx_tooltip = "GDUTOOLS_TOOLTIP"
+		}
+		
+		
+		
+	}
+	

@@ -1,0 +1,38 @@
+﻿l_english:
+    JAP_cg_defense_state:0 "National Defense State"
+	
+    generic_neutral_country:0 "Neutral Country"
+    generic_neutral_country_desc:0 "This country is not supposed to be played OR conquered and thus is neutral."
+    shattered_retreat:0 "Shattered retreat"
+    shattered_retreat_desc:0 "The surprise attack of Germany has left our army in a bad state."
+    GER_blitzkrieg_romania:0 "Blitzkrieg"
+    USSR_MEME_project:0 "A Weapon To Surpass Metal Gear"
+    special_forces_0:0 "Special Forces Tech"
+    special_forces_0_desc:0 ""
+    special_forces_1a:0 "Mass Training"
+    special_forces_1a_desc:0 ""
+    special_forces_1b:0 "New Uniforms"
+    special_forces_1b_desc:0 ""
+    special_forces_2a:0 "Special Forces Training"
+    special_forces_2a_desc:0 ""
+    special_forces_2b:0 "Specialist Training"
+    special_forces_2b_desc:0 ""
+    special_forces_3a:0 "Massive Effort"
+    special_forces_3a_desc:0 ""
+    special_forces_3b:0 "Expert Training"
+    special_forces_3b_desc:0 ""
+    special_forces_1c:0 "Call To Arms"
+    special_forces_1c_desc:0 ""
+	
+    cat_antiair:0 "Anti-Air Technology"
+    cat_tiger:0 "Panzerkampfwagen VI Tiger"
+    cat_mechanized_1:0 "Mechanized Equipment I"
+    cat_mechanized_2:0 "Mechanized Equipment II"
+
+    etat_folder:0 "Special Forces"
+    etat_folder_desc:0 "Special Forces Training"
+	
+    GDU_defense_in_depth_tt:0 "All infantry & Mot/Mech:\n Organization: §G+5§!\n HP: §G+5§!\n Entrenchment Speed: §G+30%§!\n Max Entrenchment: §G+5§!" 
+    antiair3_5:0 "Improved Anti-Air Upgrade II" 
+    antitank3_5:0 "Improved Anti-Tank Upgrade II" 
+	

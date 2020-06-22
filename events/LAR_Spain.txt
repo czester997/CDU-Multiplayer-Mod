@@ -1,0 +1,61 @@
+﻿add_namespace = lar_spain 
+
+# Election of 1936 - La Resistance Edition
+country_event = {
+	id = lar_spain.90
+	title = lar_spain.90.t
+	desc = lar_spain.90.desc
+	picture = GFX_report_event_generic_parliament
+
+	trigger = {
+		tag = SPR
+		date > 1946.4.20
+		NOT = { has_global_flag = spanish_civil_war }
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+
+	fire_only_once = yes
+
+	option = { # Ok
+		name = lar_spain.90.a
+		if = {
+			limit = {
+				has_dlc = "La Resistance"
+			}
+			if = {
+				limit = {
+					has_completed_focus = SPR_the_popular_front
+				}
+				remove_ideas = SPR_government_power_struggle
+				add_political_power = 10
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Manuel Azaña"
+				desc = "POLITICS_MANUEL_AZANA_DESC"
+				picture = "Portrait_Spain_Manuel_Azana.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+					figurehead_president
+				}
+			}
+		}
+		else = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Manuel Azaña"
+				desc = "POLITICS_MANUEL_AZANA_DESC"
+				picture = "Portrait_Spain_Manuel_Azana.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+		
+				}
+			}
+		}
+	}
+}

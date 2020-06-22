@@ -1,0 +1,264 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = dfu_news
+
+news_event = {
+	id = dfu_news.1
+	title = dfu_news.1.t
+	desc = dfu_news.1.desc
+	picture = GFX_news_event_barbarossa
+	
+	major = yes
+		
+	trigger = {
+	GER =  { has_war_with = SOV }
+	NOT = { has_global_flag = barbarossa_music }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	set_global_flag = barbarossa_music
+	hidden_effect = {
+		sound_effect = germanwar
+		}
+	}
+	
+	option = {
+		name = dfu_news.1.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = dfu_news.1.b
+		trigger = { 
+			NOT = { original_tag = GER }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = dfu_news.1.c
+		trigger = { 
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = dfu_news.1.d
+		trigger = { 
+			NOT = { original_tag = SOV }
+			Or = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = dfu_news.2
+	title = dfu_news.2.t
+	desc = dfu_news.2.desc
+	picture = GFX_news_event_mobilization
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	major = yes
+	
+	trigger = {
+	SOV =  { has_completed_focus = SOV_move_industry_to_urals }
+	NOT = { has_global_flag = sov_mobilize }
+	}
+	
+	immediate = {
+	set_global_flag = sov_mobilize
+	hidden_effect = {
+		sound_effect = sovietwar
+		}
+	}
+	
+	option = {
+		name = dfu_news.2.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = dfu_news.2.b
+		trigger = { 
+			NOT = { original_tag = GER }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = dfu_news.2.c
+		trigger = { 
+			original_tag = SOV
+		}
+	}
+	option = {
+		name = dfu_news.2.d
+		trigger = { 
+			NOT = { original_tag = SOV }
+			Or = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+	}
+}
+news_event = {
+	id = dfu_news.3
+	title = dfu_news.3.t
+	desc = dfu_news.3.desc
+	picture = GFX_news_event_italy
+	
+	major = yes	
+
+	trigger = {
+	ITA =  { has_war_with = ENG }
+	NOT = { has_global_flag = italy_war }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	set_global_flag = italy_war
+	hidden_effect = {
+		sound_effect = italywar
+		}
+	}
+	
+	option = {
+		name = dfu_news.3.a
+		trigger = {
+			original_tag = ITA
+		}
+	}
+	option = {
+		name = dfu_news.3.b
+		trigger = { 
+			NOT = { original_tag = ITA }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = dfu_news.3.c
+		trigger = { 
+			NOT = { original_tag = ITA }
+			Or = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+	}
+}
+news_event = {
+	id = dfu_news.4
+	title = dfu_news.4.t
+	desc = dfu_news.4.desc
+	picture = GFX_news_event_japan
+	
+	major = yes	
+
+	trigger = {
+	JAP =  { has_war_with = USA }
+	NOT = { has_global_flag = japan_war_music }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	set_global_flag = japan_war_music
+	hidden_effect = {
+		sound_effect = nanjing
+		}
+	}
+	
+	option = {
+		name = dfu_news.4.a
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = dfu_news.4.b
+		trigger = { 
+			NOT = { original_tag = JAP }
+			has_government = fascism
+		}
+	}
+	option = {
+		name = dfu_news.4.c
+		trigger = { 
+			NOT = { original_tag = JAP }
+			Or = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+	}
+}
+
+news_event = {
+	id = dfu_news.7
+	title = dfu_news.7.t
+	desc = dfu_news.7.desc
+	picture = GFX_news_event_sovietfall
+	
+	major = yes	
+
+	trigger = {
+	SOV = {surrender_progress > 0.50}
+	NOT = { has_global_flag = soviet_fall }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+	set_global_flag = soviet_fall 
+	hidden_effect = {
+		sound_effect = sovietfall
+		}
+	}
+	
+	option = {
+		name = dfu_news.7.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = dfu_news.7.b
+		trigger = { 
+		 original_tag = SOV 
+		}
+	}
+	option = {
+		name = dfu_news.7.c
+		trigger = { 
+			NOT = { original_tag = SOV }
+			Or = {
+				has_government = democratic
+				has_government = neutrality
+				has_government = communism
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+ENG_boost_french_resistance = {
+	
+}
+
+
+ENG_boost_french_resistance_make_contant = {
+	
+}
+
+ENG_heavy_water_raids = {
+	
+}
+

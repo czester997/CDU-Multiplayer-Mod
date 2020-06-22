@@ -1,0 +1,22 @@
+
+#guiTypes = {
+#	containerWindowType = {
+#		name = "gdu_changelog_container"
+#		orientation = UPPER_RIGHT
+#		position = { x = -580 y = 7 }
+#		clipping = no
+#		
+#		
+#		buttonType ={
+#			name ="gdu_changelog_open_button"
+#			spriteType = "GFX_gdu_changelog_open_button"
+#			position = { x=0 y=0 }
+#			clicksound = click_close
+#			oversound = ui_menu_over
+#			pdx_tooltip = "GDUGUIDES_TOOLTIP"
+#		}
+#		
+#		
+#		
+#	}
+	

@@ -1,0 +1,44 @@
+scripted_gui = {
+
+	sealion_score = {
+		context_type = player_context
+		
+		window_name = "sealion_score_container"
+		
+		visible = {
+			tag = ENG
+		}
+		
+
+	}
+    
+}
+
+scripted_gui = {
+
+	ernieking_score = {
+		context_type = player_context
+		
+		window_name = "ernieking_score_container"
+		
+		visible = {
+			tag = USA
+			has_idea = ernest_king_1
+		}
+		
+		effects = {
+			ernieking_score_bg_click = {
+				add_ideas = ernest_king_2
+			}
+			ernieking_score_icon_right_click = {
+				add_to_variable = { ernieking_score = 100 }
+			}
+		}
+		triggers = {
+            ernieking_score_bg_click_enabled = { 
+				check_variable = { ernieking_score > 2499 }
+			}
+		}
+    }
+}
+

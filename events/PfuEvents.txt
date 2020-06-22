@@ -1,0 +1,226 @@
+﻿add_namespace = pfu
+
+
+country_event = {
+	id = pfu.18
+	title = pfu.18.t
+	desc = pfu.18.d
+	picture = GFX_report_event_shortwar
+
+	is_triggered_only = yes #Trigger is Danzig or War, hidden. 
+
+	option = {
+		name = pfu.18.a
+		custom_effect_tooltip = pfu.18.a.tt
+		add_timed_idea = { idea = GER_short_war days = 1400 }
+		add_ideas = war_economy
+		add_popularity  = { 
+			ideology = fascism
+			popularity = 0.10
+		}
+		hidden_effect = { 
+			add_stability = 0.1
+			add_war_support = 0.20
+		}
+	}
+
+}
+
+country_event = {
+	id = pfu.20
+	title = pfu.20.t
+	desc = pfu.20.d
+	picture = GFX_report_event_finesthour
+
+	trigger = {
+		tag = ENG 
+		FRA = { 
+			has_capitulated = yes 
+		}
+		NOT = { has_country_flag = ENG_finesthour }
+	}
+
+	immediate = {
+		set_country_flag = ENG_finesthour
+	}
+
+	option = {
+		name = pfu.20.a
+		add_timed_idea = { idea = finest_hour days = 400 }
+	}
+	mean_time_to_happen = { days = 0 }
+}
+
+country_event = {
+	id = pfu.22
+	title = pfu.20.t
+	desc = pfu.20.d
+	picture = GFX_report_event_finesthour
+
+	trigger = {
+		OR = { 
+			tag = SAF 
+			tag = RAJ
+			tag = NZL 
+			tag = AST 
+			tag = CAN 
+		}
+		FRA = { 
+			has_capitulated = yes 
+		}
+		NOT = { has_country_flag = ENG_finesthour }
+	}
+
+	immediate = {
+		set_country_flag = ENG_finesthour
+	}
+
+	option = {
+		name = pfu.20.a
+		add_ideas = finest_hour_com
+	}
+	mean_time_to_happen = { days = 0 }
+}
+
+country_event = {
+	id = pfu.21
+	title = pfu.21.t
+	desc = pfu.21.d
+	picture = GFX_report_event_totalwar
+
+	trigger = {
+		OR = {
+			date > 1943.1.1
+			has_global_flag = GDU_dday_started
+			has_global_flag = GDU_gothic_line_breached
+			has_global_flag = GDU_eastern_front_Axis_danger
+		}
+		tag = GER
+		NOT = { has_global_flag = total_war }
+	}
+
+	immediate = {
+		set_global_flag = total_war
+	}
+
+	option = {
+		name = pfu.21.a
+		custom_effect_tooltip = pfu.21.a.tt
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = speer 
+		hidden_effect = { 
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+		swap_ideas = { 
+			remove_idea = GER_short_war
+			add_idea = GER_total_war
+		}
+		add_ideas = tot_economic_mobilisation
+		add_popularity  = { 
+			ideology = fascism
+			popularity = 0.20
+		}
+	}
+	mean_time_to_happen = { days = 10 }
+}
+
+country_event = {
+	id = pfu.28
+	title = pfu.28.t
+	desc = pfu.28.d
+	picture = GFX_report_event_JAP_warning
+
+	is_triggered_only = yes 
+	
+	fire_only_once = yes 
+
+	option = {
+		name = pfu.10.a
+	}
+
+}
+
+news_event = {
+	id = pfu.30
+	title = pfu.30.t
+	desc = pfu.30.desc
+	picture = GFX_news_event_vichy_neutral
+	
+	major = yes 
+
+    is_triggered_only = yes
+
+	option = {
+		name = pfu.30.a
+	}
+}
+
+# Plan Vert
+country_event = {
+	id = pfu.32
+	title = pfu.32.t
+	desc = pfu.32.desc
+	picture = GFX_report_event_plan_vert
+
+	is_triggered_only = yes
+
+	option = {
+		name = pfu.32.a
+		14 = {
+			damage_building = { type = air_base damage = 3 }
+			damage_building = { type = infrastructure damage = 2 }
+		}
+		15 = {
+			damage_building = { type = infrastructure damage = 2 }
+			damage_building = { type = air_base damage = 3 }
+		}
+		29 = {
+			damage_building = { type = infrastructure damage = 2 }
+			damage_building = { type = air_base damage = 3 }
+		}
+
+		remove_building = {
+			type = bunker
+			level = 2
+			province = 6449
+		}
+		remove_building = {
+			type = bunker
+			level = 2
+			province = 3552
+		}
+
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+# This event forces Italy into the war if they haven't already joined and fires 10 days after the Fall of France. Please see: GDU_vichy in on actions. 
+
+country_event = {
+	id = pfu.35
+	title = pfu.35.t
+	desc = pfu.35.d
+	picture = GFX_report_event_plan_vert
+
+	fire_only_once = yes
+
+	is_triggered_only = yes 
+
+	option = {
+		name = pfu.35.a
+		ITA = {
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+		}
+	}
+	
+}

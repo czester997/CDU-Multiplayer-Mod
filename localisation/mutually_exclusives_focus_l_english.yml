@@ -1,0 +1,122 @@
+﻿l_english:
+
+SOV_flavour_one:0 "Real Socialism"
+SOV_flavour_two:0 "Fight to the Death in Pockets"
+SOV_flavour_three:0 "Escape From Pockets"
+SOV_flavour_four:0 "Vykhodila na bereg Katyusha"
+SOV_flavour_five:0 "Anti-Tank Dogs"
+SOV_flavour_six:0 "Convert Old LTs to Assault Guns"
+SOV_flavour_seven:0 "Use Old LTs as Tractors"
+sov_flavour_six_tooltip:0 "§Y6.00K§! units of Soviet §YSU-45§! is added to the national stockpile."
+dogs_equipment:0 "Dogs Company"
+improved_light_tank:0 "Light TD2"
+dogs_equipment_desc:0 "Well trained dogs can really ruin your opponent's plans."
+
+GER_flavour_one:0 "Graf Zeppelin Experiments"
+GER_flavour_two:0 "Dense Stimulants for Panzer Korps"
+GER_flavour_three:0 "Light Stimulants for Whole Army"
+GER_flavour_four:0 "Improved Grille"
+GER_flavour_five:0 "Improved Stug"
+GER_flavour_six:0 "Prisoner Rehabilitation System"
+GER_flavour_seven:0 "Prisoner Exploitation System"
+GER_flavour_five_tt:0 "Add technology: §YImproved Stug§! §Y(§!TD§Y)§! §Y(§!8§Y/§!8§Y/§!5§Y/§!5§Y)§!."
+GER_flavour_four_tt:0 "Add technology: §YImproved Grille§! §Y(§!SPG§Y)§! §Y(§!12§Y/§!5§Y/§!1§Y/§!1§Y)§!."
+
+JAP_flavour_onehalf:0 "Expand Trade with Australia"
+JAP_flavour_one:0 "Expand Trade with the Raj"
+JAP_flavour_two:0  "Pacific Order"
+JAP_flavour_three:0 "Schiessbecher and 37mm AT gun License"
+JAP_flavour_four:0 "Convert Cruise Liners to Carriers"
+JAP_flavour_five:0 "Scrap Cruise Liners"
+JAP_flavour_six:0 "Ration and Exploit Occupied Resources"
+JAP_flavour_seven:0 "Use Alternative Resources"
+jap_flavour_four_tt:0 "Adds 2 carrier 3s to production line, 80% complete auto researches tech."
+#jap_flavour_three_tt:0 " This enables the Medium Tank Designer "
+
+AST_flavour_one:0 "Talent Tree"
+AST_flavour_two:0 "Use Extra Fertilizer to Raise Crops"
+AST_flavour_three:0 "More Fertilizer, More Explosives"
+AST_flavour_four:0 "Offensive Strategy"
+AST_flavour_five:0 "Defensive Strategy"
+AST_flavour_six:0 "Purify Sheep genes"
+AST_flavour_seven:0 "Diversify Sheep genes"
+
+ENG_flavour_one:0 "Talent Tree"
+ENG_flavour_two:0 "Scavenger Dogs"
+ENG_flavour_three:0 "Rescue Dogs"
+ENG_flavour_four:0 "Agile Fighters"
+ENG_flavour_five:0 "Fast Fighters"
+ENG_flavour_six:0 "Infantry Tanks"
+ENG_flavour_seven:0 "Cruiser Tanks"
+
+RAJ_flavour_one:0 "Talent Tree"
+RAJ_flavour_two:0 "Bright Men as Farmers"
+RAJ_flavour_three:0 "Bright men as Factory Workers"
+RAJ_flavour_four:0 "Accept being Cannon Fodder"
+RAJ_flavour_five:0 "Refuse being Cannon Fodder"
+RAJ_flavour_six:0 "Move Ceylon Rubber"
+RAJ_flavour_seven:0 "Move Ceylon Tea"
+  
+ITA_flavour_one:0 "Talent Tree"
+ITA_flavour_two:0 "Convince Hitler To share AT Guns"
+ITA_flavour_three:0 "Convince Hitler To share Small Arms"
+ITA_flavour_four:0 "Catholic Superiority "
+ITA_flavour_five:0 "Guarantee Religious Liberties"
+ITA_flavour_six:0 "Gas Powered"
+ITA_flavour_seven:0 "Wood Powered"
+ITA_flavour_two_tt:0 "This gives 1940 anti-tank."
+ITA_flavour_three_tt:0 "This gives 1940 rifles."
+
+USA_flavour_one:0 "Finance Capitalism"
+USA_flavour_two:0 "Women in the workforce"
+USA_flavour_three:0 "Women in the airforce"
+USA_flavour_four:0 "Intern Citizens of Japanese, Italian, and German Ancestry"
+USA_flavour_five:0 "Equal Protection Under the Law"
+USA_flavour_six:0 "Tank Destroyers"
+USA_flavour_seven:0 "Sherman Tanks"
+
+SPR_flavour_one:0 "Talent Tree"
+SPR_flavour_two:0 "Academia General Militar"
+SPR_flavour_three:0 "Franco's Friends"
+SPR_flavour_four:0 "Detach Blue Division to Eastern Front"
+SPR_flavour_five:0 "Unwritten Pact with the Soviet Union"
+SPR_flavour_six:0 "Repair Barcelona"
+SPR_flavour_seven:0 "Repair Zaragoza"
+
+ROM_flavour_one:0 "Talent Tree"
+ROM_flavour_two:0 "Trade for Turkish Chromium"
+ROM_flavour_three:0 "Trade for Turkish Hazelnuts"
+ROM_flavour_four:0 "Satistify Hitler, Go Frontline"
+ROM_flavour_five:0 "Commit To Garrison Duty"
+ROM_flavour_six:0 "Fight in Stalingrad"
+ROM_flavour_seven:0 "Fight on Flanks of Stalingrad"
+ROM_flavour_seven_tt:0 "Gives 2% Jaeger Attack and Defence in Forests."
+ROM_flavour_six_tt:0 "Gives 4% Shock Troop Attack and Defence in Urban."
+
+CAN_flavour_one:0 "Talent Tree"
+CAN_flavour_two:0 "Ronnie The Bren Gun Girl"
+CAN_flavour_three:0 "Ronnie The Tank Girl"
+CAN_flavour_four:0 "Tactical Two Way Radio"
+CAN_flavour_five:0 "Strategical Two Way Radio"
+CAN_flavour_six:0 "Forward To Glory"
+CAN_flavour_seven:0 "Forward To Next Village"
+CAN_flavour_four_tt:0 "Gives Medium Tank 1 with Main Gun 5"   
+basic_medium_tank:0 "Medium Tank I"
+
+HUN_flavour_one:0 "Purchase Swedish Blueprints"
+HUN_flavour_two:0 "Improved Turan I"
+HUN_flavour_three:0 "Improved  Zrinyi II"
+HUN_flavour_four:0 "Tanks that can cross every bridge"
+HUN_flavour_five:0 "Tanks that chop trees"
+HUN_flavour_six:0 "Mine for Tungsten"
+HUN_flavour_seven:0 "Mine for Steel"
+
+####################################################################### 
+
+
+
+
+
+
+
+  

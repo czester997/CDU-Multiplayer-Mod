@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gdu_changelog_open_button"
+		texturefile = "gfx/gduchangelog_gui/gdu_changelog_open_button.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_gdu_changelog_idea_button_available"
+		texturefile = "gfx/gduchangelog_gui/gdu_changelog_idea_button_available.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+}

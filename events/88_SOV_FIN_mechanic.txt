@@ -1,0 +1,76 @@
+﻿
+add_namespace = sovfin_events
+### 
+### these two events will constantly trigger eachother every 3 days till either finland lose 100k men, or soviets lose 300k men if sov lose 300k men, they just get karjala, if fin lose 100k men first soviets get both salla and karjala
+
+	country_event = {
+		id = sovfin_events.1
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			hidden_effect = {
+				if = {
+					limit = { 
+						casualties_k > 150 
+						date < 1941.5.5
+					}    
+					SOV = { set_country_flag = SOV_war_since_purge}
+					SOV = {
+						country_event = { id = finland.8 days = 7 }
+						white_peace = FIN
+					}
+					GER = { add_to_faction = FIN }
+				}
+				else = { 
+					FIN = { 
+						country_event = { id = sovfin_events.2 days = 3 } 
+					} 
+				}
+			}
+		}	
+	}
+###
+	country_event = {
+		id = sovfin_events.2
+		hidden = yes
+
+		is_triggered_only = yes
+		
+		immediate = { 
+			hidden_effect = { 
+				if = {
+					limit = {
+						OR = {
+							casualties_k > 50 
+							has_global_flag = finland_started_ai
+						}
+						SOV = { has_war_with = FIN }
+						date < 1941.5.5
+					}
+					SOV = { set_country_flag = SOV_war_since_purge}					
+					SOV = {
+						country_event = { id = finland.8 days = 7 }
+						white_peace = FIN
+						transfer_state = 146
+						transfer_state = 147
+					}
+					GER = { add_to_faction = FIN }
+					remove_state_core = 146
+					
+					if = {
+						limit = { has_global_flag = finland_started_ai }
+						SOV = { army_experience = 50 }
+						SOV = { air_experience = 15 }
+					}
+				}
+				else = {
+					SOV = { 
+						country_event = { id = sovfin_events.1 days = 3 } 
+					} 
+				}				
+			}
+		}	
+	}
+

@@ -1,0 +1,235 @@
+#################
+#DFU SOUNDS     # 
+#################
+soundeffect = {
+	name = "spainwar"
+	sounds = {
+		sound = 
+			spainwar
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "spaincommunist"
+	sounds = {
+		sound = 
+			spaincommunist
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "iron"
+	sounds = {
+		sound = 
+			iron
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "greater"
+	sounds = {
+		sound = 
+			greater
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "mussolini"
+	sounds = {
+		sound = 
+			mussolini
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "superevent"
+	sounds = {
+		sound = 
+			superevent
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "hess"
+	sounds = {
+		sound = 
+			hess
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "goring"
+	sounds = {
+		sound = 
+			goring
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "valkyrie"
+	sounds = {
+		sound = 
+			valkyrie
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "sealion"
+	sounds = {
+		sound = 
+			sealion
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "japan"
+	sounds = {
+		sound = 
+			japan
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "usa"
+	sounds = {
+		sound = 
+			usa
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "nanjing"
+	sounds = {
+		sound = 
+			nanjing
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "berlin"
+	sounds = {
+		sound = 
+			berlin
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "sovietfallen"
+	sounds = {
+		sound = 
+			sovietfallen
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "france"
+	sounds = {
+		sound = 
+			france
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "germanwar"
+	sounds = {
+		sound = 
+			germanwar
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "uprising"
+	sounds = {
+		sound = 
+			uprising
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "sovietwar"
+	sounds = {
+		sound = 
+			sovietwar
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "italywar"
+	sounds = {
+		sound = 
+			italywar
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "rhein"
+	sounds = {
+		sound = 
+			rhein
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "japanwar"
+	sounds = {
+		sound = 
+			japanwar
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "sovietfall"
+	sounds = {
+		sound = 
+			sovietfall
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "spain"
+	sounds = {
+		sound = 
+			spain
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "romanian"
+	sounds = {
+		sound = 
+			romanian
+	}
+	volume = 0.7
+}
+soundeffect = {
+	name = "citadel"
+	sounds = {
+		sound = 
+			citadel
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "fallblau"
+	sounds = {
+		sound = 
+			fallblau
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "czechoslovak"
+	sounds = {
+		sound = 
+			czechoslovak
+	}
+	volume = 1.0
+}
+soundeffect = {
+	name = "endsieg"
+	sounds = {
+		sound = 
+			endsieg
+	}
+	volume = 1.0
+}

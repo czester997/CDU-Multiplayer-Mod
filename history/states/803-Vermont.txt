@@ -1,0 +1,19 @@
+state={
+	id=803
+	name="STATE_803"
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 7
+		}
+		add_core_of = USA
+
+	}
+
+	provinces={
+		4445 7629 9675 
+	}
+	manpower=1000000
+	state_category=metropolis
+	buildings_max_level_factor=1.000
+}

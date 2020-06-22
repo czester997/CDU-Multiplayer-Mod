@@ -1,0 +1,29 @@
+state={
+	id=695
+	name="STATE_695"
+	manpower = 76299
+	
+	state_category = town
+
+	resources={
+		oil=90
+	}
+
+	history={
+		owner = HOL
+		buildings = {
+			fuel_silo = 3
+			infrastructure = 5
+			industrial_complex = 2
+			synthetic_refinery = 3
+			153 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+	}
+
+	provinces={
+		153 
+	}
+}

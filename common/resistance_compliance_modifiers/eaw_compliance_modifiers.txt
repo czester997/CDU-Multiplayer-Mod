@@ -1,0 +1,19 @@
+compliance_40_core = {
+	type = core_compliance_modifier
+	icon = "GFX_occupation_compliance_modifier_strip:5"
+	small_icon = "GFX_occupation_compliance_modifier_small_strip:5"
+	threshold = 40
+	margin = 2
+	state_modifier = {
+	}
+	visible = {
+		can_core_nation_through_compliance = yes
+	}
+	
+	on_enable = {
+		set_temp_variable = {
+			occupied = FROM
+		}
+		core_occupied_through_compliance = yes
+	}
+}

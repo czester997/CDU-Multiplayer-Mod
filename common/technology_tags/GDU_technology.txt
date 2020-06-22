@@ -1,0 +1,8 @@
+technology_categories = {
+	cat_antiair
+	cat_tiger
+	cat_mechanized_1
+	cat_mechanized_2
+	special_forces
+}
+

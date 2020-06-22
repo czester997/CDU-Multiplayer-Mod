@@ -1,0 +1,40 @@
+state={
+	id=446
+	name="STATE_446"
+	resources={
+		oil=5.000
+	}
+
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			air_base = 8
+			radar_station = 1		
+			4073 = {
+				naval_base = 10
+			
+			}
+
+		}
+		victory_points = {
+			7011 90
+		}
+		victory_points = {
+			10127 15
+		}
+		victory_points = {
+			7188 15
+		}		
+		
+
+	}
+
+	provinces={
+		992 1068 3996 4055 4073 4143 7011 7117 7188 10031 10127 12004 12049 13307 13308
+	}
+	manpower=6586596
+	buildings_max_level_factor=1.000
+	state_category=town
+}

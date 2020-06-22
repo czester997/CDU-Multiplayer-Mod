@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_gdu_minigames_open_button"
+		texturefile = "gfx/gduminigames_gui/gdu_minigames_open_button.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	spriteType = {
+		name = "GFX_gdu_minigames_idea_button_available"
+		texturefile = "gfx/gduminigames_gui/gdu_minigames_idea_button_available.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+}

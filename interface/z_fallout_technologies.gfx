@@ -1,0 +1,28 @@
+spriteTypes = {
+	# debug_technology_icon_normal.dds needs to be replaced with a suitable icon
+
+	#-----------------------------
+	# Technologies
+	
+	#-----------------------------
+	# Dog
+	#-----------------------------
+	spriteType = {
+		name = "GFX_dog_tech_medium"
+		texturefile = "gfx/interface/technologies/dog_basic_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dog_rescue_tech_medium"
+		texturefile = "gfx/interface/technologies/dog_basic_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_dog_scav_tech_medium"
+		texturefile = "gfx/interface/technologies/dog_basic_icon.dds"
+		alwaystransparent = yes
+	}
+
+	
+}
+# vim: set ft=pdx tw=79 :

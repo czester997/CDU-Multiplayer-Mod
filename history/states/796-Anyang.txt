@@ -1,0 +1,23 @@
+state={
+	id=796
+	name="STATE_796"
+	provinces={
+		1004 1139 4066 4606 6932 7656 9958 10364 11931 
+	}
+	history={
+		#owner = CHI
+		#add_core_of = CHI
+		#add_core_of = PRC
+		victory_points = {
+			9958 1 
+		}
+		buildings = {
+			infrastructure = 4
+
+		}
+
+	}
+	manpower=4000000
+	state_category=town
+	buildings_max_level_factor=1.000
+}

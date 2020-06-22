@@ -1,0 +1,8 @@
+supply_area={
+	id=357
+	name="SUPPLYAREA_357"
+	value=50
+	states={
+		452 552 492 
+	}
+}

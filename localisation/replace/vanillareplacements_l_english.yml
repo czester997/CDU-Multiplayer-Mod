@@ -1,0 +1,111 @@
+﻿l_english:
+
+ CAN_the_plan:0 "Canadian Steel Company"
+ CAN_the_plan_desc:0 "Canadian Steel Company"
+
+ SOV_scorched_earth:0 "Manually fire Scorched Earth (not recommended)"
+ SOV_scorched_earth_auto:0 "Automatically fire Scorched Earth at appropriate times (recommended)"
+
+ news.109.t:0 "The Fall of El-Alamein"
+ news.109.d:0 "Forces from the Deutsches Afrikakorps have fought their way to El-Alamein. \n\nAs Allied forces retreated further into the desert in disarray, German soldiers marching through El-Alamein were cheered as liberators by Bedouin who had come to view the British as oppressors.\n\nThe fall of El-Alamein is a significant loss to the Allied war effort, and several experts have speculated that all of the Middle East now lies open to German conquest."
+ news.113.t:0 "The Fall of El-Alamein"
+ news.113.d:0 "Jubilant Italian soldiers entered El-Alamein today, moments after the last British units retreated from the city. \n\nWith El-Alamein under his control, [ITA.GetLeader] is now one step closer towards linking Italian East Africa with Italian Libya and forming a contiguous colony in Africa."
+
+ uk_service_focus:0 "Secure Iran"
+
+ GER_ussr_war_goal:0 "Führer Directive No. 21"
+ GER_ussr_war_goal_desc:0 "The German Armed Forces must be prepared, even before the conclusion of the war against England, to crush Soviet Russia in a rapid campaign ('Case Barbarossa'). It is of decisive importance that our intention to attack should not be known."
+ GER_danzig_or_war:0 "Fall Weiss"
+ GER_danzig_or_war_desc:0 "With the reunification of the German people nearly completed, the time has come to begin the acquisition of our rightful Lebensraum. The Danzig corridor, a German-majority area wrongfully given to Poland following the Great War, will provide a perfect pretext for invasion. The Western democracies claim they will stand behind Poland; they are likely bluffing, and if not? We shall crush them as well."
+ GER_japan_friend_desc:0 "We have long had a fruitful relationship with China, but our ambitions might be better served by instead aligning with our kindred warrior culture of Japan, even if it means throwing China to the wolves..."
+ GER_japan_friend_tt:0 "Recalls von Falkenhausen.\n"
+ GER_improve_national_spirit:0 "Über Alles"
+ GER_improve_national_spirit_desc:0 "May the bright flame of National Socialism never be extinguished. Our power bases itself upon conquest, requiring great sacrifice.  To win this titanic struggle, we must secure and also to champion the hearts of the Volk. It is our unbending will that this state and its people shall endure for a thousand years. The future is ours entirely!"
+ GER_around_maginot:0 "Fall Gelb"
+ GER_army_innovation:0 "Deutsches Heer" 
+ GER_air_innovation:0 "Luftwaffe" 
+ GER_air_innovation_desc:0 "The Luftwaffe will provide the necessary air support and strategic destruction needed for the coming struggle." 
+ GER_naval_rearmament:0 "Kriegsmarine" 
+ GER_air_innovation_2:0 "Funkmessgerät 80" 
+ 
+ SOV_far_east_fortification:0 "Caucasus Defense" 
+ SOV_far_east_fortification_desc:0 "With Operation Countenance completed and parts of Iran securely in our hands, we need to create a defense-in-depth system to secure Baku against possible attacks."
+ 
+ USA_lend_lease_act:0 "Lend-Lease Act"
+ USA_lend_lease_act_desc:0 "To manufacture in arsenals, factories, and shipyards under their jurisdiction, or otherwise procure, to the extent to which funds are made available therefor, or contracts are authorized from time to time by the Congress, or both, any defense article for the government of any country whose defense the President deems vital to the defense of the United States."
+ 
+ FRA_algerie_france:0 "Colonial Development" 
+ FRA_algerie_france_desc:0 "The French Colonial Empire is in a state of disrepair and neglect; we should see to the development and care of our colonial subjects." 
+ 
+ GER_CAS_equipment_3:0 "Junkers Ju 187"
+ GER_CAS_equipment_3_short:0 "Ju 187"
+ 
+ germany.60.b:0 "Issue a diplomatic objection... And quietly begin rearmament."
+ france.20.t:0 "Defeated but not Finished"
+ france.20.d:0 "The battle is lost. France has collapsed in the face of the German Wehrmacht, the back of the Third Republic that withstood the horrors of the Great War broken by the Blitzkrieg. A repulsive and weak puppet state set up in the town of Vichy grovels pathetically before Germany for mercy.\n\nAlthough France has lost the battle, it has not lost the war and the struggle carries on!  In the wake of the French armistice with Germany and establishment of a new government in Vichy France, a group of senior officers have rebelled against the so-called new French government. Charles de Gaulle has assumed leadership of this new Free French resistance, considering it his sacred duty to save the French people and nation, and to one day reclaim his homeland."
+ france.20.a:0 "We'll be back!"
+ news.60.d:0 "German troops have crossed into Bohemia and Moravia, ostensibly to restore order to the regions in the wake of the collapsing Czechoslovakian government. \n\nIn Prague, the occupying forces announced the creation of an 'autonomous protectorate' within the German Reich.\n\nWith German support, Slovakia has been "declared independent" under the leadership of Jozef Tiso. The nation of Czechoslovakia is no more."
+ USA_the_giant_wakes:0 "The Giant Wakes" 
+ USA_the_giant_wakes_desc:0 "America has awakened, and now she comes. Let there be retribution for the fallen, the enslaved, and those too weak to stand up for themselves. With confidence in our armed forces, with the unbounding determination of our people, we will gain the inevitable triumph—so help us God. We go to destroy fascism, not only because we will it, but because we must!"
+ 
+ mtg_usa_congress_small_opposition_tt:1 "§Y2 Senators§! and §Y10 Representatives§! will go into §ROpposition§!.\n" # Senators adjusted, house adjusted
+ mtg_usa_congress_medium_opposition_tt:1 "§Y4 Senators§! and §Y20 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_congress_large_opposition_tt:1 "§Y13 Senators§! and §Y50 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_congress_small_support_tt:1 "§Y3 Senators§! and §Y15 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_congress_medium_support_tt:1 "§Y8 Senators§! and §Y37 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_congress_large_support_tt:1 "§Y20 Senators§! and §Y75 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_senate_small_opposition_tt:0 "§Y2 Senators§! will go into §ROpposition§!.\n"  # Senators adjusted 
+ mtg_usa_house_small_opposition_tt:0 "§Y10 Representatives§! will go into §ROpposition§!.\n" #House adjusted 
+ mtg_usa_senate_small_support_tt:0 "§Y3 Senators§! will §GSupport§! the Government.\n"
+ mtg_usa_house_small_support_tt:0 "§Y15 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_senate_medium_opposition_tt:0 "§Y8 Senators§! will go into §ROpposition§!.\n"
+ mtg_usa_house_medium_opposition_tt:0 "§Y20 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_senate_medium_support_tt:0 "§Y8 Senators§! will §GSupport§! the Government.\n"
+ mtg_usa_house_medium_support_tt:0 "§Y37 Representatives§! will §GSupport§! the Government.\n"
+ mtg_usa_senate_large_opposition_tt:0 "§Y13 Senators§! will go into §ROpposition§!.\n"
+ mtg_usa_house_large_opposition_tt:0 "§Y50 Representatives§! will go into §ROpposition§!.\n"
+ mtg_usa_senate_large_support_tt:0 "§Y20 Senators§! will §GSupport§! the Government.\n"
+ mtg_usa_house_large_support_tt:0 "§Y75 Representatives§! will §GSupport§! the Government.\n"
+ 
+ mtg_britain.17:0 "Guided by Britain" 
+ mtg_britain.17_desc:0 "As a member of the Commonwealth of Nations, we have access to the integrated network of trade, advisors, and general assistance from the United Kingdom. Our government has come to rely on this aid greatly. Perhaps, one day, we will seek to be independent--But for now, we stand with Britain as storm clouds gather."
+ mtg_britain.17.a: "God save the King." 
+ 
+ uk_empire_focus:0 "The Sun Never Sets" 
+ ENG_maintaining_the_balance_of_power:0 "Until the End"
+ ENG_maintaining_the_balance_of_power_desc:0 "If this long island story of ours is to end at last, let it end only when each of us lies choking in his own blood upon the ground."
+ ENG_kickstart_the_war_industry:0 "Lock and Load"
+ ENG_kickstart_the_war_industry_desc:0 "We are outnumbered and outgunned. The only way we'll survive is if we give everything we have, and then a little more." 
+ naval_rearmament_focus:0 "Limited Naval Rearmament"
+
+ 
+ JAP_alliance_with_siam:0 "Military Occupation of Siam" 
+ JAP_alliance_with_siam_desc:0 "Siam is within our reach after our acquisition of Indochina. The United Kingdom is busy, and likely will look the other way if we quietly occupy them to prepare for our next move..." 
+ JAP_strike_on_the_southern_resource_area:0 "Begin the Pacific Campaign" 
+ JAP_strike_on_the_southern_resource_area_desc:0 "The only place we can obtain the raw resources needed to fuel our war machine is the East Indies. The American Philippines block our path, threatening to cut our logistics if we proceed. However, certain officers in the IJN have formulated a plan. The industry of the allies outmatches us by far, but if we strike quickly and aggressively enough, perhaps it won't matter." 
+ JAP_purge_the_kodoha_faction:0 "Aftermath of the Kodoha Incident" 
+ JAP_purge_the_kodoha_faction_desc:0 "On February 26, 1936, the Imperial Way Faction, or Kōdōha in Japanese, attempted to stage a coup of the Japanese government. They were rapidly suppressed and jailed, with several purges quickly taking place after. At the end of it all, the IJA and IJN emerged as the dominant force in Japanese politics." 
+ JAP_fighter_modernization:0 "Air Modernization Program" 
+ JAP_fighter_modernization_desc:0 "Our airforce is decidedly behind the West. A fierce program of air modernization from top-to-bottom is the only way to fix this issue." 
+ 
+ CHI_taiyuan_arsenal:0 "The Liangshan Stockpile" 
+ CHI_taiyuan_arsenal_desc:0 "While seen as an absurd idea, some have been promoting the construction of military industry deep inside our interior, even behind Chongqing. We could only construct a few factories, but it would certainly be hard for the Japanese to reach them."
+ CHI_develop_the_hanyan_arsenal:0 "Develop the Changde Arsenal" 
+ CHI_develop_the_hanyan_arsenal_desc:0 "Changde is a bit more of a practical choice, far enough away from Japan to not be at realistic risk... Right?" 
+ 
+ flying_tigers_tt:0 "Will receive 250 fighters from us." 
+ 
+ wtt_britain.27.t:0 "Vichy France Rejects Ultimatum!"
+ wtt_britain.27.d:0 "The rotten Vichy state, no more than a puppet of the Germans, has rejected our ultimatum to surrender their fleet to us. This was the Nazi plan all along--To put France's fleet out of our reach through this stupid pretense of neutrality.\n\nBut if he thinks we're just going to sit and play along, he's wrong. France used to be our ally, it is true, but we are faced with the most desperate situation--We have no choice but to strike first before those ships are outside of Sussex aimed at us."
+ wtt_britain.27.a:0 "Bombs away!" 
+ 
+ TITLE_BATTLEFIELD_SUPPORT:0 "Dogfighting Tactics"
+ BATTLEFIELD_SUPPORT_DESC:0 "The fundamentals of dogfighting are vital for any modern airforce to grasp." 
+ TITLE_OPERATIONAL_INTEGRITY:0 "Battlefield Support"
+ BATTLEFIELD_SUPPORT_DESC:0 "By improving how close air support interacts with divisions we can lay waste to the enemy with optimal speed."
+ 
+ antiair4:0 "Improved Anti-Air Upgrade III" 
+ antitank4:0 "Improved Anti-Tank Upgrade III" 
+ 
+ uk_asia_focus:0 "Improve Supply in the Raj" 
+ uk_asia_focus_desc:0 "Improve our supply in the British Raj. Also improve supply for Canada and Australia there (and elsewhere), which is limited by their home ports." 

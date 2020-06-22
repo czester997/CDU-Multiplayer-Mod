@@ -1,0 +1,486 @@
+﻿add_namespace = gduannexations
+
+country_event = { 
+	id = gduannexations.1
+	title = gduannexations.1.t
+	desc = gduannexations.1.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = BEL
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.1.a
+	
+	}
+}	
+
+
+country_event = { 
+	id = gduannexations.3
+	title = gduannexations.3.t
+	desc = gduannexations.3.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = HOL
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.3.a
+	
+	}	
+}
+
+country_event = { 
+	id = gduannexations.4
+	title = gduannexations.4.t
+	desc = gduannexations.4.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = DEN
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.4.a
+	
+	}	
+}
+
+country_event = { 
+	id = gduannexations.5
+	title = gduannexations.5.t
+	desc = gduannexations.5.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = NOR
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.5.a
+	
+	}	
+}
+	
+
+
+country_event = { 
+	id = gduannexations.6
+	title = gduannexations.6.t
+	desc = gduannexations.6.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = GRE
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.6.a
+	
+	}	
+}	
+
+
+country_event = { 
+	id = gduannexations.7
+	title = gduannexations.7.t
+	desc = gduannexations.7.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = YUG
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.7.a
+	
+	}
+	
+}
+
+
+country_event = { 
+	id = gduannexations.8
+	title = gduannexations.8.t
+	desc = gduannexations.8.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				ENG = {
+					annex_country = {
+						target = POL
+						transfer_troops = yes
+					}
+				}
+	}
+	
+	option = {
+		name = gduannexations.8.a
+	
+	}
+	
+}
+
+
+
+
+
+
+country_event = { 
+	id = gduannexations.10
+	title = gduannexations.10.t
+	desc = gduannexations.10.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				GER = {
+					transfer_state = 102
+					transfer_state = 107
+					transfer_state = 108					
+					}
+				if = {
+					limit = { ROM = { controls_state = 46 } }
+					ROM = {
+						transfer_state = 764
+					}
+				}	
+				if = {
+					limit = { BUL = { controls_state = 48 } }
+					BUL = {
+						transfer_state = 106
+					}
+				}
+				if = {
+					limit = { HUN = { controls_state = 43 } }
+					HUN = {
+						transfer_state = 45
+					}
+				}				
+	}
+	
+	option = {
+		name = gduannexations.10.a
+	
+	}
+	
+}
+
+
+
+country_event = { 
+	id = gduannexations.11
+	title = gduannexations.11.t
+	desc = gduannexations.11.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = { 
+				GER = {
+					transfer_state = 47					
+					}
+				if = {
+					limit = { BUL = { controls_state = 48 } }
+					BUL = {
+						transfer_state = 184
+						transfer_state = 731		
+					}
+				}
+
+	}
+	
+	option = {
+		name = gduannexations.11.a
+	
+	}
+	
+}
+
+
+
+
+country_event = { 
+	id = gduannexations.12
+	title = gduannexations.12.t
+	desc = gduannexations.12.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+				# removes USA cores on Hawaii etc after the Pearl Harbor debuff has run out
+				USA = { remove_state_core = 632 }
+				USA = { remove_state_core = 650 }
+				USA = { remove_state_core = 638 }
+				USA = { remove_state_core = 631 }
+				USA = { remove_state_core = 629 }
+	}
+	
+	option = {
+		name = gduannexations.12.a
+	
+	}
+}
+
+country_event = { 
+	id = gduannexations.13
+	title = yalta.1.a
+	desc = yalta.1.b
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+
+		every_state = {
+			limit = {
+				is_core_of = FRF
+			}
+			FRF = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = POL
+			}
+			POL = {
+				transfer_state = PREV
+			}
+		}
+	}
+	
+	option = {
+	    name = yalta.1.d
+	}
+}
+
+country_event = { 
+	id = gduannexations.14
+	title = yalta.1.a
+	desc = yalta.1.b
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+	    every_state = {
+			limit = {
+				is_core_of = BEL
+			}
+			BEL = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = HOL
+			}
+			HOL = {
+				transfer_state = PREV
+			}
+		}
+    	every_state = {
+    	    limit = {
+	    		is_core_of = DEN
+	    	}
+	    	DEN = {
+	    		transfer_state = PREV
+	    	}
+    	}
+		every_state = {
+			limit = {
+				is_core_of = NOR
+			}
+			NOR = {
+				transfer_state = PREV
+			}
+		}
+	}
+	option = {
+		name = yalta.1.d
+	}
+}
+
+country_event = { 
+	id = gduannexations.15
+	title = yalta.1.a
+	desc = yalta.1.b
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+	   	every_state = {
+			limit = {
+				is_core_of = AUS
+			}
+			AUS = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ITA
+			}
+			ITA = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ALB
+			}
+			ALB = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = GRE
+			}
+			GRE = {
+				transfer_state = PREV
+			}
+		}
+	}
+	
+	option = {
+	    name = yalta.1.d
+	}
+}
+
+country_event = { 
+	id = gduannexations.16
+	title = yalta.1.a
+	desc = yalta.1.b
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+	    every_state = {
+			limit = {
+				is_core_of = CZE
+			}
+			CZE = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = HUN
+			}
+			HUN = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = ROM
+			}
+			ROM = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = BUL
+			}
+			BUL = {
+				transfer_state = PREV
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = YUG
+			}
+			YUG = {
+				transfer_state = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = yalta.1.d
+	}
+}
+
+country_event = { 
+	id = gduannexations.17
+	title = yalta.1.a
+	desc = yalta.1.b
+	picture = GFX_report_event_canadian_soldiers
+	
+	is_triggered_only = yes 
+	
+	immediate = {
+	    SOV = {
+	        puppet = DDR
+	        puppet = POL
+	        puppet = CZE
+	        puppet = HUN
+	        puppet = ROM
+	        puppet = BUL
+	        puppet = YUG
+	        puppet = ALB
+	    }
+	    USA = {
+	        puppet = WGR
+	        puppet = ITA
+	    }
+	}
+	
+	option = {
+		name = yalta.1.d
+	}
+}

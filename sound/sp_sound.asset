@@ -1,0 +1,49 @@
+#################
+#DFU SOUNDS     #
+#################
+sound =
+{
+	name = "nanjing"
+	file = "dfu_sound/nanjing.wav"
+}
+sound =
+{
+	name = "france"
+	file = "dfu_sound/france.wav"
+}
+sound =
+{
+	name = "sovietfallen"
+	file = "dfu_sound/sovietfallen.wav"
+}
+sound =
+{
+	name = "sovietwar"
+	file = "dfu_sound/sovietwar.wav"
+
+}
+sound =
+{
+	name = "germanwar"
+	file = "dfu_sound/germanwar.wav"
+
+}
+
+sound =
+{
+	name = "italywar"
+	file = "dfu_sound/italywar.wav"
+
+}
+sound =
+{
+	name = "sovietfall"
+	file = "dfu_sound/sovietfall.wav"
+
+}
+sound =
+{
+	name = "citadel"
+	file = "dfu_sound/citadel.wav"
+
+}

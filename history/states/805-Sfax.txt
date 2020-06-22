@@ -1,0 +1,19 @@
+
+state={
+	id=805
+	name="STATE_805" # Sfax
+	manpower = 97047
+	
+	state_category = wasteland
+
+	history={
+		owner = FRA
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1037 4061 4129 10026 11921 11935
+	}
+}

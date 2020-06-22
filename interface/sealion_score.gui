@@ -1,0 +1,68 @@
+
+guiTypes = {
+	containerWindowType = {
+		name = "sealion_score_container"
+		position = { x = 967 y = 4 }
+		
+		buttonType ={
+			name ="sealion_score_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		
+		iconType = {
+			name ="sealion_score_icon"
+			spriteType = "GFX_sealion_score"
+			position = { x= 7 y = 6 }
+		}
+		
+		instantTextBoxType = {
+			name ="sealion_score_text"
+			position = { x= 15 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?sealion_score]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "sealion_score_TOOLTIP"
+			pdx_tooltip_delayed = "sealion_score_TOOLTIP_DELAYED"
+		}
+	}
+}
+
+guiTypes = {
+	containerWindowType = {
+		name = "ernieking_score_container"
+		position = { x = 967 y = 4 }
+		
+		buttonType ={
+			name ="ernieking_score_bg"
+			spriteType = "GFX_generic_box_smallest"
+			position = { x=0 y=0 }
+			shortcut = "ctrl+k"
+		}
+		
+		iconType = {
+			name ="ernieking_score_icon"
+			spriteType = "GFX_airwing_carrier_icon"
+			position = { x= -1 y = 3 }
+		}
+		
+		instantTextBoxType = {
+			name ="ernieking_score_text"
+			position = { x= 15 y = 4 }
+			font = "hoi_18mbs"
+			text = "[?ernieking_score]"
+			format = center
+			maxWidth = 46
+			maxHeight = 24
+			fixedsize = yes
+			
+			pdx_tooltip = "ernieking_score_TOOLTIP"
+			pdx_tooltip_delayed = "ernieking_score_TOOLTIP_DELAYED"
+		}
+	}
+}

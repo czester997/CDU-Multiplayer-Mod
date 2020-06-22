@@ -1,0 +1,941 @@
+ideas = {
+
+	mobilization_laws = {
+		law = yes
+
+		disarmed_nation = {
+
+			cost = 150
+			removal_cost = -1
+			level = 7
+
+			available = {
+				has_government = democratic
+				#has_manpower_for_recruit_change_to = { value = 0.005 group = mobilization_laws }
+			}
+
+			modifier = {
+				conscription = 0.01
+				
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		volunteer_only = {
+
+			cost = 150
+			removal_cost = -1
+			level = 6
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.015 group = mobilization_laws }
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+			}
+
+			ai_will_do = {
+   				factor = 1
+			}
+
+			modifier = {
+				conscription = 0.025
+
+			}
+
+			default = yes
+
+			cancel_if_invalid = no
+		}
+
+		limited_conscription = {
+
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.025 group = mobilization_laws }
+				NOT = { has_idea = undisturbed_isolation }
+				NOT = { has_idea = isolation }
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					date > 1941.1.1
+				}
+
+			}
+
+			modifier = {
+				conscription = 0.04
+			}
+
+			cancel_if_invalid = no
+		}
+
+		extensive_conscription = {
+
+			available = {
+				#has_manpower_for_recruit_change_to = { value = 0.05 group = mobilization_laws }
+				OR = {
+					has_government = fascism
+					has_government = communism
+					AND = {
+						has_war = yes
+						#any_enemy_country = {
+						#	strength_ratio = {
+						#		tag = ROOT
+						#		ratio > 0.5
+						#	}
+						#}
+					}
+				}
+				#Special rules AST in TFV
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = CAN_commit_to_the_war
+					has_completed_focus = CAN_if_day
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					date > 1941.1.1
+				}
+
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  800
+				}
+
+				modifier = { # china relies a lot on throwing bodies at the enemy
+					factor = 3
+
+					tag = CHI
+					has_manpower < 200000
+				}
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			modifier = {
+				conscription = 0.07
+				training_time_factor = 0.1
+			}
+
+			cancel_if_invalid = no
+		}
+
+		service_by_requirement = {
+
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
+				OR = {
+					has_government = fascism
+					has_government = communism
+					AND = {
+						has_war = yes
+						#any_enemy_country = {
+						#	strength_ratio = {
+						#		tag = ROOT
+						#		ratio > 0.6
+						#	}
+						#}
+					}
+				}
+
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}
+
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = CAN_compromise_with_quebec
+						has_completed_focus = CAN_forced_quebec_conscription
+					}
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					date > 1941.1.1
+				}
+
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  700
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					NOT = { tag = CHI }
+					manpower_per_military_factory >  3000
+				}
+
+				modifier = { # china relies a lot on throwing bodies at the enemy
+					factor = 3
+
+					tag = CHI
+					has_manpower < 200000
+				}
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			modifier = {
+				conscription = 0.09
+				training_time_factor = 0.2
+				max_dig_in = -5
+				cas_damage_reduction = -0.025
+				enemy_army_bonus_air_superiority_factor = 0.025
+				army_attack_factor = -0.01
+				army_defence_factor = -0.01
+				army_armor_attack_factor = 0.01
+				army_armor_defence_factor = 0.01
+				special_forces_attack_factor = 0.01
+				special_forces_defence_factor = 0.01
+				motorized_attack_factor = 0.01
+				motorized_defence_factor = 0.01		
+				army_core_attack_factor = 0.015
+				army_core_defence_factor = 0.015
+				army_morale_factor = 0.015				
+			}	
+
+			cancel_if_invalid = no
+		}
+		
+#		service_by_requirement_42 = {
+#
+#			picture = service_by_requirement
+#
+#			available = {
+#				#has_manpower_for_recruit_change_to =  { value = 0.1 group = mobilization_laws }
+#				date > 1942.1.1
+#				OR = {
+#					has_government = fascism
+#					has_government = communism
+#					AND = {
+#						has_war = yes
+#						#any_enemy_country = {
+#						#	strength_ratio = {
+#						#		tag = ROOT
+##						#		ratio > 0.6
+#						#	}
+#						#}
+#					}
+#				}
+#
+#				if = {
+#					limit = {
+#						original_tag = AST
+#						has_dlc = "Together for Victory"
+#					}
+#					has_completed_focus = AST_citizen_military_forces
+#					has_completed_focus = AST_fight_work_or_perish
+#				}
+#
+#				if = {
+#					limit = {
+#						original_tag = CAN
+#						has_dlc = "Together for Victory"
+#					}
+#					OR = {
+#						has_completed_focus = CAN_compromise_with_quebec
+#						has_completed_focus = CAN_forced_quebec_conscription
+#					}
+#				}
+#				if = {
+#					limit = {
+#						original_tag = RAJ
+#						has_dlc = "Together for Victory"
+#					}
+#					date > 1941.1.1
+#				}
+#
+#			}
+#
+#			ai_will_do = {
+#  				factor = 1
+#				modifier = {
+#					#Prio if low on manpower
+#					factor = 20
+#					manpower_per_military_factory <  700
+##				}
+#				modifier = {
+#					#Lower chance if has decent amount
+#					factor = 0.5
+#					manpower_per_military_factory >  1000
+#				}
+#				modifier = {
+#					#Block has plenty manpower
+#					factor = 0
+#					NOT = { tag = CHI }
+#					manpower_per_military_factory >  3000
+#				}
+#
+#				modifier = { # china relies a lot on throwing bodies at the enemy
+#					factor = 3
+#
+#					tag = CHI
+#					has_manpower < 200000
+#				}
+#			}
+#
+#			cost = 150
+##			removal_cost = -1
+#			level = 3
+#
+#			modifier = {
+#				conscription = 0.09
+#				training_time_factor = 0.2				
+#			}	
+#
+#			cancel_if_invalid = no
+#		}		
+#
+		all_adults_serve = {
+
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
+				has_war = yes
+				#any_enemy_country = {
+				#	strength_ratio = {
+				#		tag = ROOT
+				#		ratio > 0.75
+				#	}
+				#}
+
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}
+
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = CAN_compromise_with_quebec
+						has_completed_focus = CAN_forced_quebec_conscription
+					}
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					date > 1941.1.1
+				}
+
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  600
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					NOT = { tag = CHI }
+					manpower_per_military_factory >  5000
+				}
+
+				modifier = { # china relies a lot on throwing bodies at the enemy
+					factor = 3
+
+					tag = CHI
+					has_manpower < 200000
+				}
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			modifier = {
+				conscription = 0.11
+				max_dig_in = -10
+				training_time_factor = 0.3
+				cas_damage_reduction = -0.05
+				enemy_army_bonus_air_superiority_factor = 0.05
+				army_attack_factor = -0.02
+				army_defence_factor = -0.02
+				army_armor_attack_factor = 0.02
+				army_armor_defence_factor = 0.02
+				special_forces_attack_factor = 0.02
+				special_forces_defence_factor = 0.02
+				motorized_attack_factor = 0.02
+				motorized_defence_factor = 0.02						
+				army_core_attack_factor = 0.03
+				army_core_defence_factor = 0.03
+				army_morale_factor = 0.03				
+			}
+
+			cancel_if_invalid = no
+		}
+
+#		all_adults_serve_42 = {
+#
+#			picture = all_adults_serve
+##
+#			available = {
+#				date > 1942.1.1
+#				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
+#				has_war = yes
+#				#any_enemy_country = {
+#				#	strength_ratio = {
+#				#		tag = ROOT
+#				#		ratio > 0.75
+#				#	}
+#				#}
+#
+#				if = {
+#					limit = {
+#						original_tag = AST
+#						has_dlc = "Together for Victory"
+#					}
+#					has_completed_focus = AST_citizen_military_forces
+#					has_completed_focus = AST_fight_work_or_perish
+#				}
+#
+#				if = {
+#					limit = {
+#						original_tag = CAN
+#						has_dlc = "Together for Victory"
+#					}
+#					OR = {
+#						has_completed_focus = CAN_compromise_with_quebec
+#						has_completed_focus = CAN_forced_quebec_conscription
+#					}
+#				}
+#				if = {
+#					limit = {
+#						original_tag = RAJ
+#						has_dlc = "Together for Victory"
+#					}
+#					date > 1941.1.1
+#				}
+#
+#			}
+#
+#			ai_will_do = {
+ #  				factor = 1
+#				modifier = {
+#					#Prio if low on manpower
+##					factor = 20
+#					manpower_per_military_factory <  600
+#				}
+#				modifier = {
+#					#Lower chance if has decent amount
+#					factor = 0.5
+#					manpower_per_military_factory >  1000
+#				}
+#				modifier = {
+#					#Block has plenty manpower
+#					factor = 0
+#					NOT = { tag = CHI }
+#					manpower_per_military_factory >  5000
+#				}
+##
+##				modifier = { # china relies a lot on throwing bodies at the enemy
+#					factor = 3
+#
+#					tag = CHI
+#					has_manpower < 200000
+#				}
+#			}
+#
+#			cost = 150
+#			removal_cost = -1
+#			level = 2
+#
+#			modifier = {
+#				conscription = 0.11
+#				industrial_capacity_factory = -0.1
+#				industrial_capacity_dockyard = -0.1
+#				production_speed_buildings_factor = -0.1
+#				#XP from reinforcement penalty (small)
+#				training_time_factor = 0.3
+#			}
+#
+#			cancel_if_invalid = no
+#		}
+#
+#		all_adults_serve_43 = {
+#
+#			picture = all_adults_serve
+#
+#			available = {
+#				date > 1943.1.1
+#				#has_manpower_for_recruit_change_to =  { value = 0.2 group = mobilization_laws }
+#				has_war = yes
+##				#any_enemy_country = {
+#				#	strength_ratio = {
+##				#		tag = ROOT
+#				#		ratio > 0.75
+#				#	}
+#				#}
+#
+#				if = {
+#					limit = {
+#						original_tag = AST
+#						has_dlc = "Together for Victory"
+#					}
+#					has_completed_focus = AST_citizen_military_forces
+#					has_completed_focus = AST_fight_work_or_perish
+#				}
+#
+#				if = {
+#					limit = {
+#						original_tag = CAN
+#						has_dlc = "Together for Victory"
+#					}
+#					OR = {
+#						has_completed_focus = CAN_compromise_with_quebec
+#						has_completed_focus = CAN_forced_quebec_conscription
+#					}
+#				}
+#				if = {
+#					limit = {
+#						original_tag = RAJ
+#						has_dlc = "Together for Victory"
+#					}
+#					date > 1941.1.1
+#				}
+#
+#			}
+#
+#			ai_will_do = {
+ ##  				factor = 1
+#				modifier = {
+#					#Prio if low on manpower
+#					factor = 20
+#					manpower_per_military_factory <  600
+#				}
+#				modifier = {
+#					#Lower chance if has decent amount
+#					factor = 0.5
+#					manpower_per_military_factory >  1000
+#				}
+#				modifier = {
+#					#Block has plenty manpower
+#					factor = 0
+#					NOT = { tag = CHI }
+#					manpower_per_military_factory >  5000
+#				}
+#
+#				modifier = { # china relies a lot on throwing bodies at the enemy
+##					factor = 3
+#
+#					tag = CHI
+#					has_manpower < 200000
+#				}
+#			}
+#
+#			cost = 150
+#			removal_cost = -1
+##			level = 2
+#
+##			modifier = {
+#				conscription = 0.11
+#				#XP from reinforcement penalty (small)
+#				training_time_factor = 0.3
+#			}
+#
+#			cancel_if_invalid = no
+#		}
+#
+		scraping_the_barrel = {
+
+
+			available = {
+				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+				has_war = yes
+
+				#any_enemy_country = {
+				#	strength_ratio = {
+				#		tag = ROOT
+				#		ratio > 1
+				#	}
+				#}
+				if = {
+					limit = {
+						original_tag = AST
+						has_dlc = "Together for Victory"
+					}
+					has_completed_focus = AST_citizen_military_forces
+					has_completed_focus = AST_fight_work_or_perish
+				}
+
+				if = {
+					limit = {
+						original_tag = CAN
+						has_dlc = "Together for Victory"
+					}
+					OR = {
+						has_completed_focus = CAN_compromise_with_quebec
+						has_completed_focus = CAN_forced_quebec_conscription
+					}
+				}
+				if = {
+					limit = {
+						original_tag = RAJ
+						has_dlc = "Together for Victory"
+					}
+					date > 1941.1.1
+				}
+
+			}
+
+			ai_will_do = {
+   				factor = 1
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  500
+				}
+				modifier = {
+					#Lower chance if has decent amount
+					factor = 0.5
+					manpower_per_military_factory >  1000
+				}
+				modifier = {
+					#Block has plenty manpower
+					factor = 0
+					manpower_per_military_factory >  5000
+				}
+			}
+
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			modifier = {
+				conscription = 0.13
+				max_dig_in = -15
+				training_time_factor = 0.5
+				cas_damage_reduction = -0.075
+				enemy_army_bonus_air_superiority_factor = 0.075
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
+				army_armor_attack_factor = 0.03
+				army_armor_defence_factor = 0.03
+				special_forces_attack_factor = 0.03
+				special_forces_defence_factor = 0.03
+				motorized_attack_factor = 0.03
+				motorized_defence_factor = 0.03						
+				army_core_attack_factor = 0.045
+				army_core_defence_factor = 0.045
+				army_morale_factor = 0.045
+			}
+
+			cancel_if_invalid = no
+		}
+		
+#		scraping_the_barrel_42 = {
+#
+#			picture = scraping_the_barrel
+#
+#			available = {
+#				date > 1942.1.1
+#				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+#				has_war = yes
+#
+#				#any_enemy_country = {
+#				#	strength_ratio = {
+#				#		tag = ROOT
+#				#		ratio > 1
+#				#	}
+#				#}
+#				if = {
+#					limit = {
+#						original_tag = AST
+#						has_dlc = "Together for Victory"
+#					}
+#					has_completed_focus = AST_citizen_military_forces
+#					has_completed_focus = AST_fight_work_or_perish
+#				}
+#
+#				if = {
+#					limit = {
+#						original_tag = CAN
+#						has_dlc = "Together for Victory"
+#					}
+##					OR = {
+#						has_completed_focus = CAN_compromise_with_quebec
+#						has_completed_focus = CAN_forced_quebec_conscription
+#					}
+#				}
+#				if = {
+#					limit = {
+#						original_tag = RAJ
+#						has_dlc = "Together for Victory"
+#					}
+#					date > 1941.1.1
+#				}
+#
+###			}
+#
+#			ai_will_do = {
+ #  				factor = 1
+#				modifier = {
+##					#Prio if low on manpower
+#					factor = 20
+#					manpower_per_military_factory <  500
+#				}
+#				modifier = {
+#					#Lower chance if has decent amount
+#					factor = 0.5
+#					manpower_per_military_factory >  1000
+#				}
+#				modifier = {
+#					#Block has plenty manpower
+#					factor = 0
+#					manpower_per_military_factory >  5000
+#				}
+#			}
+#
+#			cost = 150
+#			removal_cost = -1
+#			level = 1
+#
+#			modifier = {
+#				conscription = 0.13
+#				industrial_capacity_factory = -0.2
+#				industrial_capacity_dockyard = -0.2
+#				production_speed_buildings_factor = -0.2
+#				training_time_factor = 0.5
+#			}
+#
+#			cancel_if_invalid = no
+#		}		
+#		
+#	
+#		scraping_the_barrel_43 = {
+#
+##			picture = scraping_the_barrel
+#
+#			available = {
+#				date > 1943.1.1
+#				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+#				has_war = yes
+#
+#				#any_enemy_country = {
+#				#	strength_ratio = {
+#				#		tag = ROOT
+#				#		ratio > 1
+#				#	}
+#				#}
+#				if = {
+#					limit = {
+#						original_tag = AST
+#						has_dlc = "Together for Victory"
+#					}
+#					has_completed_focus = AST_citizen_military_forces
+#					has_completed_focus = AST_fight_work_or_perish
+#				}
+#
+#				if = {
+#					limit = {
+##						original_tag = CAN
+#						has_dlc = "Together for Victory"
+#					}
+#					OR = {
+#						has_completed_focus = CAN_compromise_with_quebec
+#						has_completed_focus = CAN_forced_quebec_conscription
+#					}
+#				}
+#				if = {
+#					limit = {
+#						original_tag = RAJ
+#						has_dlc = "Together for Victory"
+#					}
+#					date > 1941.1.1
+#				}
+#
+#			}
+#
+#			ai_will_do = {
+ #  				factor = 1
+#				modifier = {
+#					#Prio if low on manpower
+#					factor = 20
+#					manpower_per_military_factory <  500
+#				}
+#				modifier = {
+#					#Lower chance if has decent amount
+#					factor = 0.5
+#					manpower_per_military_factory >  1000
+#				}
+#				modifier = {
+#					#Block has plenty manpower
+##					factor = 0
+#					manpower_per_military_factory >  5000
+#				}
+#			}
+#
+#			cost = 150
+#			removal_cost = -1
+#			level = 1
+#
+#			modifier = {
+#				conscription = 0.13
+#				industrial_capacity_factory = -0.1
+#				industrial_capacity_dockyard = -0.1
+#				production_speed_buildings_factor = -0.1
+#				training_time_factor = 0.5
+#			}
+##
+#			cancel_if_invalid = no
+#		}
+#	
+#		scraping_the_barrel_44 = {
+#
+#			picture = scraping_the_barrel
+#			
+##			available = {
+#				date > 1944.1.1
+#				#has_manpower_for_recruit_change_to =  { value = 0.25 group = mobilization_laws }
+#				has_war = yes
+#
+##				#any_enemy_country = {
+#				#	strength_ratio = {
+#				#		tag = ROOT
+#				#		ratio > 1
+#				#	}
+#				#}
+#				if = {
+#					limit = {
+#						original_tag = AST
+#						has_dlc = "Together for Victory"
+#					}
+#					has_completed_focus = AST_citizen_military_forces
+#					has_completed_focus = AST_fight_work_or_perish
+#				}
+#
+#				if = {
+#					limit = {
+#						original_tag = CAN
+#						has_dlc = "Together for Victory"
+#					}
+#					OR = {
+#						has_completed_focus = CAN_compromise_with_quebec
+#						has_completed_focus = CAN_forced_quebec_conscription
+#					}
+#				}
+#				if = {
+#					limit = {
+#						original_tag = RAJ
+#						has_dlc = "Together for Victory"
+#					}
+#					date > 1941.1.1
+#				}
+#
+#			}
+#
+#			ai_will_do = {
+ #  				factor = 1
+#				modifier = {
+##					#Prio if low on manpower
+#					factor = 20
+#					manpower_per_military_factory <  500
+#				}
+#				modifier = {
+#					#Lower chance if has decent amount
+#					factor = 0.5
+#					manpower_per_military_factory >  1000
+#				}
+#				modifier = {
+#					#Block has plenty manpower
+#					factor = 0
+#					manpower_per_military_factory >  5000
+#				}
+#			}
+#
+##			cost = 150
+#			removal_cost = -1
+#			level = 1
+#
+#			modifier = {
+#				conscription = 0.13
+#				training_time_factor = 0.5
+#			}
+#
+#			cancel_if_invalid = no
+#		}
+#		
+	}
+}

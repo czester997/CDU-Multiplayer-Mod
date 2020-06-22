@@ -1,0 +1,94 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Canadian Navy"
+		naval_base = 7361 # Halifax
+		task_force = {				
+			name = "Atlantic Squadron"			
+			location = 7361 # Halifax
+			# Scrap Iron Flotilla
+			ship = { name = "HMCS Saguenay" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Torp DD1" } } }
+			ship = { name = "HMCS Skeena" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Torp DD1" } } }
+		}				
+	}
+	
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Kongelige Norske Marine"			
+		naval_base = 7361 # Kristiansand
+		task_force = {					
+			name = "1. Sjøforsvarsdistrikt"				
+			location =  7361 # Kristiansand
+			ship = { name = "HNoMS Harald Haarfagre" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "CA1" } } }				
+			ship = { name = "HNoMS Tordenskjold" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "CA1" } } }				
+			ship = { name = "HNoMS Olaf Tryggvason" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = CAN version_name = "DD2" } } }
+			ship = { name = "HNoMS Frøya" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Torp DD1" } } }
+			# 1st Submarine Detachment
+			ship = { name = "HNoMS A2" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HNoMS A3" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HNoMS A4" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			# 2nd Submarine Detachment
+			ship = { name = "HNoMS B2" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HNoMS B4" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HNoMS B5" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+		}					
+		task_force = {					
+			name = "2. Sjøforsvarsdistrikt"				
+			location =  7361 # Bergen
+			# 1st Destroyer Detachment
+			ship = { name = "HNoMS Draug" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Torp DD1" } } }
+			ship = { name = "HNoMS Troll" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Torp DD1" } } }
+			ship = { name = "HNoMS Garm" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "Torp DD1" } } }
+			# Submarine Detachment
+			ship = { name = "HNoMS B6" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+		}					
+		task_force = {					
+			name = "3. Sjøforsvarsdistrikt"				
+			location =  7361 # Tromso
+			ship = { name = "HNoMS Norge" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "CA1" } } }				
+			ship = { name = "HNoMS Eidsvold" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "CA1" } } }				
+			# Submarine Detachment
+			ship = { name = "HNoMS B1" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HNoMS B3" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+		}					
+	}
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Den Danske Flåde"			
+		naval_base = 7361  # Copenhagen
+		task_force = {
+			name = "Den Danske Flåde"
+			location = 7361  # Copenhagen			
+			ship = { name = "HDMS Niels Iuel" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "CA1" } } }
+			ship = { name = "HDMS Peder Skram" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = CAN version_name = "CA1" } } }
+			ship = { name = "HDMS Rota" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }			
+			ship = { name = "HDMS Bellona" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }		
+			ship = { name = "HDMS Flora" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HDMS Daphne" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+			ship = { name = "HDMS Dryaden" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = CAN version_name = "SS1" } } }
+		}				
+	}
+
+	######## NAVAL OOB ########
+	fleet = {
+		name = "Polska Flota Niszczycieli"
+		naval_base = 7361 
+		task_force = {				
+			name = "Polska Flota Niszczycieli"
+			location = 7361 # Danzig
+			ship = { name = "ORP Burza" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "ASW DD1" } } }	
+			ship = { name = "ORP Wicher" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = CAN version_name = "ASW DD1" } } }	
+		}		
+		task_force = {
+			name = "Dywizjon Okretów Podwodnych"
+			location = 7361 # Danzig
+			ship = { name = "ORP Rys" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAN version_name = "SS2" } } }					
+			ship = { name = "ORP Wilk" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAN version_name = "SS2" } } }					
+			ship = { name = "ORP Zbik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = CAN version_name = "SS2" } } }			
+		}
+	}	
+}
+
+

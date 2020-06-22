@@ -1,0 +1,108 @@
+﻿#add_namespace = veren
+#
+#country_event = {
+	id = veren.2
+	title = veren.2.t
+	desc = veren.2.d
+	picture = GFX_report_event_fascists_posing
+	is_triggered_only = yes 
+
+    fire_only_once = yes
+
+    
+
+#old_guard brilliant_strategist inflexible_strategist politically_connected war_hero career_officer trait_cautious trait_reckless media_personality harsh_leader infantry_officer cavalry_officer armor_officer offensive_doctrine defensive_doctrine organizer cavalry_leader infantry_leader skilled_staffer trickster winter_specialist
+#adaptable trait_engineer panzer_leader commando desert_fox swamp_fox trait_mountaineer hill_fighter jungle_rat ranger urban_assault_specialist naval_invader
+
+#	option = {
+
+		name = veren.2.a
+		ai_chance = {
+		factor = 100
+		}
+		create_field_marshal = {
+                name = "Francisco Franco"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                portrait_path = "gfx/leaders/SPA/Portrait_Spain_Francisco_Franco.dds"
+                traits = { offensive_doctrine brilliant_strategist politically_connected war_hero media_personality desert_fox }
+                skill = 6
+				attack_skill = 5
+				defense_skill = 5
+				planning_skill = 5
+				logistics_skill = 4
+        }
+		create_corps_commander = {
+                name = "Alonso Vega"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                picture = "Portrait_SPR_Alonso_Vega.dds"
+                traits = { infantry_officer infantry_leader hill_fighter organizer trait_engineer harsh_leader  }
+                skill = 4
+				attack_skill = 4
+				defense_skill = 3
+				planning_skill = 3
+				logistics_skill = 3
+        }
+			create_corps_commander = {
+                name = "Davila Arrondo"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                picture = "Portrait_SPR_Davila_Arrondo.dds"
+                traits = { panzer_leader armor_officer trait_reckless harsh_leader trickster media_personality trait_engineer desert_fox }
+                skill = 5
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 4
+        }
+			create_corps_commander = {
+                name = "Goded Llopis"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                picture = "Portrait_SPR_Goded_Llopis.dds"
+                traits = { skilled_staffer infantry_leader commando old_guard trait_cautious infantry_officer  ranger politically_connected}
+                skill = 4
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 6
+        }
+			create_corps_commander = {
+                name = "Jose Sanjurjo Sacanell"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                picture = "Portrait_SPR_Jose_Sanjurjo_Sacanell.dds"
+                traits = { skilled_staffer swamp_fox cavalry_leader cavalry_officer trickster career_officer harsh_leader }
+                skill = 4
+				attack_skill = 5
+				defense_skill = 2
+				planning_skill = 5
+				logistics_skill = 1
+        }
+			create_corps_commander = {
+                name = "Miguel Cabanellas Ferrer"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                picture = "Portrait_SPR_Miguel_Cabanellas_Ferrer.dds"
+                traits = { desert_fox panzer_leader career_officer cavalry_officer trickster harsh_leader trait_reckless  }
+                skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 5
+        }
+			create_corps_commander = {
+                name = "Vicente Lluch"
+                desc = "POLITICS_FRANCOGEN_DESC"
+                picture = "SPR_Portrait_Vicente_Lluch.dds"
+                traits = { infantry_leader skilled_staffer urban_assault_specialist trait_engineer old_guard trait_cautious harsh_leader infantry_officer  }
+                skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 2
+        }
+        
+	}
+}
+
+
+
+
+
+

@@ -1,0 +1,39 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_ww2"
+		texturefile = "gfx/event_pictures/news_dfu8.dds"
+	}
+		spriteType = {
+		name = "GFX_news_event_warsaw"
+		texturefile = "gfx/event_pictures/warsaw.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_fallblau"
+		texturefile = "gfx/event_pictures/news_dfu5.dds"
+	}
+		spriteType = {
+		name = "GFX_news_event_citadel"
+		texturefile = "gfx/event_pictures/news_dfu6.dds"
+	}
+		spriteType = {
+		name = "GFX_news_event_sovietfall"
+		texturefile = "gfx/event_pictures/news_dfu7.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_japan"
+		texturefile = "gfx/event_pictures/news_dfu4.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_barbarossa"
+		texturefile = "gfx/event_pictures/news_dfu1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_mobilization"
+		texturefile = "gfx/event_pictures/news_dfu2.dds"
+	}
+			spriteType = {
+		name = "GFX_news_event_italy"
+		texturefile = "gfx/event_pictures/news_dfu3.dds"
+	}
+
+}

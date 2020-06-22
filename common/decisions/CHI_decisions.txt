@@ -1,0 +1,512 @@
+#Category allowed for all potential nationalist china
+#Category visible when CHI_army_reform focus is completed
+
+
+
+### #  # ###  #  #  ### ### ###  #   #    #### #   #  ##   ##  #  #  ##  ### ###  ##  #  #
+ #  ## # #  # #  # #     #  #  #  # #     #    #   # #  # #  # #  # #  #  #   #  #  # ## #
+ #  # ## #  # #  #   #   #  ###    #      ##    # #  #### #    #  # ####  #   #  #  # # ##
+ #  #  # #  # #  #    #  #  #  #   #      #     # #  #  # #  # #  # #  #  #   #  #  # #  #
+### #  # ###   ##  ###   #  #  #   #      ####   #   #  #  ##   ##  #  #  #  ###  ##  #  #
+
+
+#Category allowed for all potential nationalist china
+#Visible for nationalist china if has warlords as subjects
+
+
+
+###  ##  ###  ### ###  ##  #  #      ## #  # ###  ###   ##  ###  ###
+#   #  # #  # #    #  #    ## #     #   #  # #  # #  # #  # #  #  #
+##  #  # ###  ##   #  # ## # ##      #  #  # ###  ###  #  # ###   #
+#   #  # #  # #    #  #  # #  #       # #  # #    #    #  # #  #  #
+#    ##  #  # ### ###  ##  #  #     ##   ##  #    #     ##  #  #  #
+
+foreign_support = {
+	CHI_flying_tigers = {
+		icon = generic_air
+		available = {
+			has_equipment = { fighter_equipment <250 }
+		}
+		visible = {
+			has_country_flag = CHI_flying_tigers
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = -1
+		complete_effect = {
+			random_country = {
+				limit = {
+					has_completed_focus = CHI_invite_the_flying_tigers
+				}
+				custom_effect_tooltip = flying_tigers_tt
+				hidden_effect = {
+					USA = {
+						send_equipment = {
+							target = PREV
+							type = fighter_equipment
+							amount = 250
+						}
+					}
+				}
+			}
+			add_war_support = 0.05
+		}
+		modifier = {
+			air_volunteer_cap = 100
+		}
+	}
+
+	CHI_soviet_volunteer_group = {
+		icon = generic_air
+		available = {
+			has_equipment = { fighter_equipment > 99 }
+			has_equipment = { tac_bomber_equipment > 49 }
+		}
+		visible = {
+			has_country_flag = CHI_soviet_volunteer_group
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = -1
+		fire_only_once = yes
+		complete_effect = {
+			random_country = {
+				limit = {
+					has_completed_focus = CHI_the_soviet_volunteer_group
+				}
+				custom_effect_tooltip = soviet_volunteers_tt
+				hidden_effect = {
+					SOV = {
+						send_equipment = {
+							target = PREV
+							type = fighter_equipment
+							amount = 100
+						}
+					}
+					SOV = {
+						send_equipment = {
+							target = PREV
+							type = tac_bomber_equipment
+							amount = 50
+						}
+					}
+				}
+			}
+			add_war_support = 0.05
+		}
+		modifier = {
+			air_volunteer_cap = 100
+		}
+	}
+
+	CHI_expand_the_burma_road = {
+		icon = generic_construction
+		allowed = {
+			OR = {
+				original_tag = ENG
+				is_literally_china = yes
+			}
+		}
+
+		available = { #WTT_TODO_CD: Make this tooltip not look like complete garbage
+			if = {
+				limit = {
+					OR = {
+						has_focus_tree = china_nationalist_focus
+						has_focus_tree = china_communist_focus
+					}
+				}
+				has_completed_focus = CHI_burma_road
+			}
+			if = {
+				limit = {
+					has_focus_tree = british_focus
+				}
+				has_completed_focus = uk_burma_focus
+			}
+
+			288 = {
+				CONTROLLER = {
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			640 = {
+				CONTROLLER = {
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			325 = {
+				CONTROLLER = {
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+			747 = {
+				CONTROLLER = {
+					NOT = {
+						has_war_with = ROOT
+					}
+				}
+			}
+
+			any_state = {
+				OR = {
+					state = 288
+					state = 640
+					state = 325
+					state = 747
+				}
+				CONTROLLER = {
+					OR = {
+						has_completed_focus = uk_burma_focus
+						has_completed_focus = CHI_burma_road
+						AND = {
+							is_in_faction_with = ROOT
+							has_completed_focus = uk_burma_focus
+							has_completed_focus = CHI_burma_road
+						}
+						if = {
+							limit = {
+								is_subject = yes
+							}
+							OVERLORD = {
+								OR = {
+									has_completed_focus = uk_burma_focus
+									has_completed_focus = CHI_burma_road
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				has_focus_tree = china_nationalist_focus
+				has_focus_tree = china_communist_focus
+				has_focus_tree = british_focus
+			}
+			OR = {
+				AND = {
+					OR = {
+						controls_state = 325
+						325 = {
+							CONTROLLER = {
+								OR = {
+									is_subject_of = ROOT
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+					}
+				}
+				AND = {
+					controls_state = 288
+					controls_state = 640
+				}
+				AND = {
+					288 = { CONTROLLER = { is_in_faction_with = ROOT } }
+					640 = { CONTROLLER = { is_in_faction_with = ROOT } }
+				}
+			}
+		}
+		days_re_enable = 90
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 50
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 6
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					AND = {
+						has_war = no
+						has_war_support < 0.6
+					}
+				}
+				add_war_support = 0.05
+			}
+		}
+		remove_effect = {
+			288 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			640 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			325 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			random_country = {
+				limit = { check_variable = { CHI_burma_road_current_level > 0 } }
+				add_to_variable = { var = CHI_burma_road_current_level value = 3 }
+
+				#Country that had the burma road open
+				add_offsite_building = { type = arms_factory level = 3 }
+			}
+		}
+	}
+
+	CHI_expand_the_ledo_road = {
+		icon = generic_construction
+		available = {
+			any_country = {
+				has_completed_focus = CHI_ledo_road
+			}
+			OR = {
+				controls_state = 640
+				640 = {
+					CONTROLLER = {
+						is_in_faction_with = ROOT
+					}
+				}
+				controls_state = 325
+				325 = {
+					CONTROLLER = {
+						OR = {
+							AND = {
+								is_subject = yes
+								OVERLORD = {
+									has_completed_focus = CHI_ledo_road
+								}
+							}
+							AND = {
+								is_in_faction_with = event_target:WTT_current_china_leader
+								event_target:WTT_current_china_leader = {
+									has_completed_focus = CHI_ledo_road
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			any_country = {
+				has_completed_focus = CHI_ledo_road
+			}
+			OR = {
+				has_completed_focus = CHI_ledo_road
+				controls_state = 640
+				640 = {
+					CONTROLLER = {
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+			NOT = {
+				has_global_flag = CHI_ledo_3
+			}
+		}
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 50
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 2
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					has_global_flag = CHI_ledo_2
+				}
+				set_global_flag = CHI_ledo_3
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = CHI_ledo_2} #
+				}
+				set_global_flag = CHI_ledo_2
+			}
+
+			random_country = {
+				limit = { check_variable = { CHI_ledo_road > 0 } }
+				add_to_variable = { var = CHI_ledo_road value = 1 }
+
+				#Country that had the ledo road open
+				add_offsite_building = { type = arms_factory level = 2 }
+			}
+		}
+	}
+
+	CHI_expand_the_airlift = {
+		icon = generic_construction
+		available = {
+			OR = {
+				434 = {
+					CONTROLLER = {
+						NOT = {
+							has_war_with = CHI
+						}
+						is_in_faction_with = ROOT
+					}
+				}
+				601 = {
+					CONTROLLER = {
+						OR = {
+							has_completed_focus = CHI_the_hump
+							is_in_faction_with = ROOT
+						}
+					}
+				}
+			}
+		}
+		visible = {
+			OR = {
+				AND = {
+					has_completed_focus = CHI_the_hump
+					OR = {
+						controls_state = 601
+						601 = {
+							CONTROLLER = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				AND = {
+					any_country = {
+						has_completed_focus = CHI_the_hump
+					}
+					controls_state = 434
+				}
+			}
+			NOT = {
+				has_global_flag = CHI_hump_3
+			}
+		}
+		cost = 50
+		days_re_enable = 360
+		ai_will_do = {
+			factor = 1
+		}
+		days_remove = 60
+		modifier = {
+			civilian_factory_use = 2
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					AND = {
+						has_war = no
+						has_war_support < 0.6
+					}
+				}
+				add_war_support = 0.05
+			}
+		}
+		remove_effect = {
+			434 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			601 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					has_global_flag = CHI_hump_2
+				}
+				set_global_flag = CHI_hump_3 # Hump 3: Revenge of the Hump: The Humpening
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = CHI_hump_2} # Hump 2: Hump Harder
+				}
+				set_global_flag = CHI_hump_2
+			}
+			601 = {
+				CONTROLLER = {
+					add_to_variable = { var = CHI_the_hump value = 1 }
+					add_offsite_building = { type = arms_factory level = 1 }
+				}
+			}
+		}
+	}
+}
+
+political_actions = {
+
+
+	CHI_move_the_capital = {
+		allowed = {
+			is_literally_china = yes
+			has_dlc = "Waking the Tiger"
+		}
+		available = {
+			has_war = no
+			OR = {
+				has_full_control_of_state = 608
+				has_full_control_of_state = 613
+			}
+			capital_scope = {
+				NOT = {
+					OR = {
+						state = 608
+						state = 613
+					}
+				}
+			}
+		}
+		visible = {
+			has_war = no
+			OR = {
+				has_full_control_of_state = 608
+				has_full_control_of_state = 613
+			}
+			capital_scope = {
+				NOT = {
+					OR = {
+						state = 608
+						state = 613
+					}
+				}
+			}
+		}
+		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			country_event = wtt_china.204
+		}
+	}
+}
+
+

@@ -1,0 +1,96 @@
+﻿###########################
+# Chinese Events
+###########################
+
+add_namespace = china
+
+# Japanese Stage Border Incident
+country_event = {
+	id = china.1
+	title = china.1.t
+	desc = china.1.d
+	picture = GFX_report_event_chinese_soldiers_fighting
+
+	is_triggered_only = yes
+
+	option = { # Breaking point!
+		name = china.1.a
+		ai_chance = { factor = 100 }
+		effect_tooltip = {
+			JAP = {
+				add_stability = 0.05
+				country_event = { id = japan.1 }
+			}
+		}
+		hidden_effect = {
+			JAP = { country_event = { id = japan.1 } }
+			CHI = { country_event = { id = china.2 days = 60 } } 
+		}
+	}
+}
+
+# Germany Withdraws Advisors
+country_event = {
+	id = china.2
+	title = china.2.t
+	desc = china.2.d
+	picture = GFX_report_event_chinese_army_training
+
+	is_triggered_only = yes
+
+	option = {
+		name = china.2.a
+		remove_ideas = german_advisors
+	}
+}
+
+# Chinese - German Relations Poor, Mission Recalled
+country_event = {
+	id = china.3
+	title = china.3.t
+	desc = china.3.d
+	picture = GFX_report_event_chinese_soldiers
+
+	is_triggered_only = yes
+
+	option = {
+		name = china.3.a
+	}
+}
+
+# China is at war with Germany, Advisors Detained
+country_event = {
+	id = china.4
+	title = china.4.t
+	desc = china.4.d
+	picture = GFX_report_event_german_detained_china
+
+	is_triggered_only = yes
+
+	option = {
+		name = china.4.a
+	}
+}
+
+
+# Japan attacks - Chinese Popular Front forms
+country_event = {
+	id = china.100
+	title = china.100.t
+	desc = china.100.d
+	picture = GFX_report_event_chinese_officers
+
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = { factor = 100 }
+		name = china.100.a
+		news_event = { id = news.288 }
+		create_faction = chinese_united_front
+		hidden_effect = {
+
+
+		}
+	}
+}
+

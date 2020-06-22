@@ -1,0 +1,24 @@
+
+state={
+	id=662
+	name="STATE_662"
+	resources={
+		oil=0.000
+	}
+
+	history={
+		owner = ITA
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		4117 8069 12866 13284 13285 13286 13287 13288 13289 13290 13291 13293 13306
+	}
+	manpower=13213
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+}

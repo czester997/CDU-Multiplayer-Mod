@@ -1,0 +1,66 @@
+
+state={
+	id=195
+	name="STATE_195"
+
+	history={
+		owner = SOV
+		victory_points = {
+			3151 40 
+		}
+		victory_points = {
+			13258 5 
+		}
+		victory_points = {
+			13259 5 
+		}
+		victory_points = {
+			13260 5 
+		}
+		buildings = {
+			infrastructure = 7
+			arms_factory = 6
+			industrial_complex = 1
+			dockyard = 3
+			air_base = 9
+			13258 = {
+				naval_base = 10
+				coastal_bunker = 5
+
+			}
+			149 = {
+				bunker = 5
+
+			}
+			3151 = {
+				bunker = 3
+
+			}
+			13259 = {
+				bunker = 5
+
+			}
+			13260 = {
+				bunker = 2
+
+			}
+
+		}
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 7
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		79 149 3072 3151 6174 9164 9197 11068 13258 13259 13260 13261 13262 
+	}
+	manpower=3750158
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

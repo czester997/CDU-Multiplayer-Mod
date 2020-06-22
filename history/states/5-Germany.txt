@@ -1,0 +1,34 @@
+
+state={
+	id=5
+	name="STATE_5"
+
+	history={
+		owner = GER
+		controller = GER
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			arms_factory = 5
+			anti_air_building = 2
+			air_base = 6
+
+		}
+		add_core_of = GER
+		1939.1.1 = {
+			buildings = {
+				anti_air_building = 5
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		281 348 395 3384  
+	}
+	manpower=2578108
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

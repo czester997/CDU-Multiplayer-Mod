@@ -1,0 +1,499 @@
+technologies = {
+	
+
+	ifu_ft0 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_fighter_equipment_0
+		}		
+	}
+
+    ifu_ft1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_fighter_equipment_1
+		}		
+	}
+      ifu_ft2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_fighter_equipment_2
+		}		
+	}
+
+
+	ifu_ft3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_fighter_equipment_3
+		}		
+	}
+
+    ifu_jft1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_jet_fighter_equipment_1
+		}		
+	}
+      ifu_jft2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_jet_fighter_equipment_2
+		}		
+	}
+
+
+	ifu_cft0 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_fighter_equipment_0
+		}		
+	}
+
+    ifu_cft1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_fighter_equipment_1
+		}		
+	}
+      ifu_cft2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_fighter_equipment_2
+		}		
+	}
+
+	 
+
+	ifu_cft3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_fighter_equipment_3
+		}		
+	}
+
+    ifu_cas1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_CAS_equipment_1
+		}		
+	}
+      ifu_cas2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_CAS_equipment_2
+		}		
+	}
+
+        ifu_cas3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_CAS_equipment_3
+		}		
+	}
+
+    ifu_cvcas1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_CAS_equipment_1
+		}		
+	}
+      ifu_cvcas2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_CAS_equipment_2
+		}		
+	}
+
+
+	ifu_cvcas3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_CAS_equipment_3
+		}		
+	}
+
+    ifu_nav1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_nav_bomber_equipment_1
+		}		
+	}
+      ifu_nav2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_nav_bomber_equipment_2
+		}		
+	}
+
+
+	ifu_nav3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_nav_bomber_equipment_3
+		}		
+	}
+
+    ifu_cvnav1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_nav_bomber_equipment_1
+		}		
+	}
+      ifu_cvnav2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_nav_bomber_equipment_2
+		}		
+	}
+
+	 
+
+	ifu_cvnav3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_cv_nav_bomber_equipment_3
+		}		
+	}
+
+    ifu_tac0 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_tac_bomber_equipment_0
+		}		
+	}
+      ifu_tac1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_tac_bomber_equipment_1
+		}		
+	}
+	ifu_tac2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_tac_bomber_equipment_2
+		}		
+	}
+
+    ifu_tac3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_tac_bomber_equipment_3
+		}		
+	}
+      ifu_jtac1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_jet_tac_bomber_equipment_1
+		}		
+	}
+
+
+	ifu_jtac2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_jet_tac_bomber_equipment_2
+		}		
+	}
+
+    ifu_hft1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_fighter_equipment_1
+		}		
+	}
+      ifu_hft2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_fighter_equipment_2
+		}		
+	}
+
+
+	ifu_hft3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_fighter_equipment_3
+		}		
+	}
+
+    ifu_str1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_strat_bomber_equipment_1
+		}		
+	}
+      ifu_str2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_strat_bomber_equipment_2
+		}		
+	}
+
+	 
+
+	ifu_str3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_strat_bomber_equipment_3
+		}		
+	}
+
+    ifu_jstr1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+		  ifu_jet_strat_bomber_equipment_1
+		}		
+	}
+     
+
+
+
+
+
+}

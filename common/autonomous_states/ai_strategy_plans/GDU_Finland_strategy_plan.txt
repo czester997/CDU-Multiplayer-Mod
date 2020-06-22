@@ -1,0 +1,63 @@
+Finland_strategy_plan = {
+	name = "I'm Finland"
+	desc = ""
+
+	enable = {
+		original_tag = FIN 
+	}
+			
+		
+
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		FIN_imitate_sweden
+		FIN_stockpile_rations
+		FIN_prepare_for_winter 
+		FIN_invest_in_the_private_sector
+		FIN_prepare_for_war 
+		FIN_develop_the_war_machine
+		FIN_nokia 
+		FIN_eastern_defense
+		FIN_frantic_planning
+		FIN_promote_sisu
+		FIN_civilian_kitchens 
+		FIN_expand_the_mines 
+		FIN_cautious_politics
+		FIN_deterrence 
+		
+		
+	}
+
+	research = {
+		industry = 20.0
+		infantry_tech = 15.0
+		artillery = 8.0
+		support_tech = 6.5
+	}
+
+#	ideas = {
+#		
+#	}
+#
+	traits = {
+		captain_of_industry = 5
+		war_industrialist = 5
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+	focus_factors = {
+		
+	}
+
+}

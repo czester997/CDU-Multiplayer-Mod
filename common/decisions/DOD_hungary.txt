@@ -1,0 +1,69 @@
+political_actions = {
+	
+	HUN_closer_ties_to_CZE = {
+		allowed = {
+			original_tag = HUN
+		}
+		available = {
+			
+		}
+		visible = {
+			has_completed_focus = HUN_protect_czechoslovakia
+			CZE = {
+				exists = yes
+				is_subject_of = ROOT
+			}
+		}
+		cost = 75
+		days_re_enable = 90
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				CZE = {
+					is_ai = no
+				}
+				factor = 0
+			}
+		}
+		complete_effect = {
+			CZE = {
+				add_autonomy_ratio = {
+					value = -0.1
+					localization = HUN_closer_ties_to_CZE
+				}
+			}
+		}
+	}
+}
+
+economy_decisions = {
+
+	
+}
+
+
+
+
+operations = {
+	
+	
+}
+
+
+
+war_measures = {
+	
+	
+}
+
+foreign_politics = {
+	
+}
+
+economy_decisions = {
+	
+}
+
+foreign_support = {
+
+}

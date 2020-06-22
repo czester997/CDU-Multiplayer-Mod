@@ -1,0 +1,36 @@
+units = {
+	fleet = {
+		name = "Amiral Ouest"
+		naval_base = 5139 # Gabon
+		task_force = {
+			name = "Free French Fleet"
+			location = 5139 # Gabon			
+			ship = { name = "Béarn" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRF version_name = "Béarn Class" } } 
+				air_wings = {
+					cv_fighter_equipment_1 =  { owner = "FRF" amount = 40 }
+				}
+			}
+			# Battleship Group
+			ship = { name = "Courbet" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRF version_name = "Courbet Class" } } }        
+			ship = { name = "Paris" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = FRF version_name = "Courbet Class" } } }
+			# Heavy Cruiser Group
+			ship = { name = "Algérie" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Algérie Class" } } }			
+			ship = { name = "Foch" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Suffren Class" } } }
+			# Light Cruiser Group
+			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Duguay-Trouin Class" } } }
+			ship = { name = "Primauguet" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Duguay-Trouin Class" } } }	
+			ship = { name = "Pluton" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Duguay-Trouin Class" } } }
+			ship = { name = "Émile Bertin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRF version_name = "Émile Bertin Class" } } }
+			# Destroyer Group 1
+			ship = { name = "Siroco" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Bourrasque Class" } } }	
+			ship = { name = "Mistral" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Bourrasque Class" } } }	
+			ship = { name = "Ouragan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Bourrasque Class" } } }
+			ship = { name = "Orage" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Bourrasque Class" } } }	
+			# Destroyer Group  2
+			ship = { name = "Milan" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } }
+			ship = { name = "Épervier" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } }
+			ship = { name = "Léopard" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } }
+			ship = { name = "Panthère" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRF version_name = "Chacal Class" } } }
+		}	
+	}
+}

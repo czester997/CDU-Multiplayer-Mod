@@ -1,0 +1,1106 @@
+﻿add_namespace = gduevents
+
+#### Event that gives phoney war to allies ####
+country_event = { 
+	id = gduevents.1
+	title = gduevents.1.t
+	desc = gduevents.1.d
+	picture = GFX_report_event_canadian_soldiers
+	
+	trigger = {
+		has_global_flag = war_is_hell 
+		NOT = {
+			has_country_flag = war_is_hell_2
+		}
+		OR = { 
+			tag = IRE 
+			tag = HOL
+			is_in_faction_with = ENG 
+		}
+		NOT = { tag = FRA }
+		NOT = { tag = USA }
+		NOT = { tag = ENG }
+	}
+		
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = { 
+		set_country_flag = war_is_hell_2
+	}
+	
+	option = {
+		name = gduevents.1.a
+		trigger = { NOT = { tag = FRA } } 
+		trigger = { NOT = { tag = ENG } }
+		add_timed_idea = { idea = alli_phoney_war days = 240 }
+		add_ideas = war_economy
+	
+	}
+	
+	
+	
+}
+#on action 
+country_event = { 
+	id = gduevents.2
+	title = gduevents.2.t
+	desc = gduevents.2.d
+	picture = GFX_report_event_fall_blau
+	
+	is_triggered_only = yes 
+	
+	fire_only_once = yes 
+	
+	immediate = { 
+		hidden_effect = { 
+			add_manpower = 0
+		}
+	}
+	
+	option = {
+		name = gduevents.2.a
+	}
+	
+	
+}
+
+# This event is triggered by Germany's decision to begin Barbarossa, unlocked by the USSR wargoal focus for GER. It warns the Axis of what's coming. 
+
+country_event = { 
+	id = gduevents.3
+	title = gduevents.3.t
+	desc = gduevents.3.d
+	picture = GFX_report_event_fall_blau
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gduevents.3.a
+	}
+	
+	
+}
+
+country_event = { 
+	id = gduevents.4
+	title = gduevents.4.t
+	desc = gduevents.4.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.4.a
+		custom_effect_tooltip = SOV_barbarossa_tooltip
+		add_tech_bonus = {
+			name = barb_landdoc_rush_disincentive_bonus
+			bonus = 9.99 
+			uses = 1
+			technology = kampfgruppe
+			technology = concentrated_fire_plans
+			technology = centralized_fire_control
+			technology = branch_interoperation
+			technology = infiltration_assault
+			technology = vast_offensives
+			technology = human_wave_offensive
+		
+			if = {
+				limit = {
+					has_tech = mechanised_offensive
+				}	
+				set_technology = { kampfgruppe = 1 }
+			}
+			if = {
+				limit = {
+					has_tech = blitzkrieg
+				}	
+				set_technology = { kampfgruppe = 1 }
+			}
+			if = {
+				limit = {
+					has_tech = sup_mechanized_offensive
+				}
+				set_technology = { concentrated_fire_plans = 1 }
+			}
+			if = {
+				limit = {
+					has_tech = armored_operations
+				}
+				set_technology = { infiltration_assault = 1 }
+			}
+			if = {
+				limit = {
+					has_tech = assault_concentration
+				}
+				set_technology = { branch_interoperation = 1 }
+			}			
+			if = {
+				limit = {
+					has_tech = operational_concentration
+				}
+				set_technology = { vast_offensives = 1 }
+			}
+			if = {
+				limit = {
+					has_tech = large_front_offensive
+				}
+				set_technology = { human_wave_offensive = 1 }
+			}
+
+		}
+	}
+	
+	
+}
+
+##Soviet 227 event
+
+country_event = { 
+	id = gduevents.5 
+	title = gduevents.5.t 
+	desc = gduevents.5.d
+	picture = GFX_report_event_stalin_01
+	
+	is_triggered_only = yes 
+	
+	fire_only_once = yes 
+	
+	option = { 
+		name = gduevents.5.a 
+	}
+	
+}
+
+country_event = {
+	id = gduevents.6
+	title = gduevents.6.t
+	desc = gduevents.6.d
+	picture = GFX_report_event_merchant_ship_01
+
+	is_triggered_only = yes
+	
+	#Praise the Americans!
+	option = {
+		name = gduevents.6.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = { type = convoy amount = 200 producer = USA }
+		}
+	}
+}
+
+country_event = {
+	id = gduevents.7
+	title = gduevents.7.t
+	desc = gduevents.7.d
+	picture = GFX_report_event_generic_factory 
+
+	is_triggered_only = yes
+	
+	#Praise the Americans!
+	option = {
+		name = gduevents.7.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = USA }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 500 producer = USA }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 500 producer = USA }
+		}
+	}
+}
+
+country_event = {
+	id = gduevents.8
+	title = gduevents.8.t
+	desc = gduevents.8.d
+	picture = GFX_report_event_fighters
+
+	is_triggered_only = yes
+	
+	#Praise the Americans!
+	option = {
+		name = gduevents.8.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = { type = fighter_equipment amount = 650 producer = USA }
+		}
+	}
+}
+
+country_event = {
+	id = gduevents.9
+	title = gduevents.9.t
+	desc = gduevents.9.d
+	picture = GFX_report_event_fighters
+
+	is_triggered_only = yes
+	
+	#Praise the Americans!
+	option = {
+		name = gduevents.9.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = { type = CAS_equipment amount = 300 producer = USA }
+		}
+	}
+}
+
+country_event = {
+	id = gduevents.10
+	title = gduevents.10.t
+	desc = gduevents.10.d
+	picture = GFX_report_event_generic_bombers
+
+	is_triggered_only = yes
+	
+	#Praise the Americans!
+	option = {
+		name = gduevents.10.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = { type = tac_bomber_equipment amount = 200 producer = USA }
+		}
+	}
+}
+##Countenance event for Soviets 
+country_event = {
+	id = gduevents.11
+	title = gduevents.11.t
+	desc = gduevents.11.d
+	picture = GFX_report_event_canadian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gduevents.11.a
+	}
+}
+
+##Countenance event for UK 
+country_event = {
+	id = gduevents.12
+	title = gduevents.12.t
+	desc = gduevents.12.d
+	picture = GFX_report_event_canadian_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = gduevents.11.a
+	}
+}
+
+##Yamamoto's Warning to JAP player 
+
+country_event = { 
+	id = gduevents.13 
+	title = gduevents.13.t 
+	desc = gduevents.13.d 
+	picture = GFX_report_event_japanese_officers 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.13.a 
+
+	}
+	
+}
+
+#Germany chooses who to give Vichy fleet to
+country_event = { 
+	id = gduevents.14 
+	title = gduevents.14.t 
+	desc = gduevents.14.d 
+	picture =  GFX_report_event_merchant_ship_01 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.14.a
+		custom_effect_tooltip = gduevents14a_tt
+		hidden_effect = { 
+			set_global_flag = vichyfleet_GER 
+		}
+	}
+	
+	option = { 
+		name = gduevents.14.b 
+		custom_effect_tooltip = gduevents14b_tt
+		hidden_effect = { 
+			set_global_flag = vichyfleet_ITA
+		}
+
+	}
+	
+}
+
+country_event = { 
+	id = gduevents.15
+	title = gduevents.15.t 
+	desc = gduevents.15.d 
+	picture = GFX_report_event_saf_soldiers 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.15.a 
+
+	}
+	
+}
+
+###Cancels military access with EFR 45 days following the armistice. Currently unused.### 
+country_event = { 
+	id = gduevents.17
+	title = gduevents.17.t 
+	desc = gduevents.17.d 
+	picture = GFX_report_event_generic_peaceful_annexation  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.17.a 
+		if = { 
+			limit = {
+				tag = GER 
+			}
+			GER = { 
+				diplomatic_relation = {
+				country = EFR
+				relation = military_access
+				active = no
+				}
+			}
+		}
+		if = { 
+			limit = {
+				tag = ITA  
+			}
+			ITA = { 
+				diplomatic_relation = {
+				country = EFR
+				relation = military_access
+				active = no
+				}
+			}
+		}
+		if = { 
+			limit = {
+				tag = ROM 
+			}
+			ROM = { 
+				diplomatic_relation = {
+				country = EFR
+				relation = military_access
+				active = no
+				}
+			}
+		}
+		if = { 
+			limit = {
+				tag = BUL
+			}
+			BUL = { 
+				diplomatic_relation = {
+				country = EFR
+				relation = military_access
+				active = no
+				}
+			}
+		}
+		if = { 
+			limit = {
+				tag = HUN
+			}
+			HUN = { 
+				diplomatic_relation = {
+				country = EFR
+				relation = military_access
+				active = no
+				}
+			}
+		}
+		if = { 
+			limit = {
+				tag = SPR
+			}
+			SPR = { 
+				diplomatic_relation = {
+				country = EFR
+				relation = military_access
+				active = no
+				}
+			}
+		}
+
+		
+	}
+	
+}
+
+#country_event = { 
+#	id = gduevents.18
+#	title = gduevents.18.t 
+#	desc = gduevents.18.d 
+#	picture = GFX_report_event_usa_macarthur_speech 
+#	
+#	is_triggered_only = yes 
+#	
+#	option = { 
+#		name = gduevents.18.a 
+#		annex_country = {
+#			target = PHI
+#		}
+#
+#	}
+#	
+#}
+
+#HOLD FRANCE YOU MONGREL# 
+country_event = { 
+	id = gduevents.19
+	title = gduevents.19.t 
+	desc = gduevents.19.d 
+	picture = GFX_report_event_generic_peaceful_annexation 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.19.a 
+
+	}
+	
+}
+
+country_event = { 
+	id = gduevents.20
+	title = gduevents.20.t 
+	desc = gduevents.20.d 
+	picture = GFX_report_event_merchant_ship_01  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.20.a 
+
+	}
+	
+}
+
+country_event = { 
+	id = gduevents.21
+	title = gduevents.21.t 
+	desc = gduevents.21.d 
+	picture = GFX_report_event_stalin_01  
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.21.a 
+
+	}
+	
+}
+
+
+country_event = { 
+	id = gduevents.22
+	title = gduevents.22.t 
+	desc = gduevents.22.d 
+	picture = GFX_report_event_french_resistance_01
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.22.a 
+
+	}
+	
+}	
+	
+	
+	
+# Explaining to USA that the Congress mechanic has been removed and replaced with PP so you don't have to remember when/how much to repeatedly click lobbying efforts.
+country_event = { 
+	id = gduevents.23 
+	title = gduevents.23.t 
+	desc = gduevents.23.d 
+	picture = GFX_report_event_usa_election_generic 
+
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.23.a
+		hidden_effect = { 
+			set_global_flag = GDU_USA_Congress_Abolished 
+		}
+	}
+	
+}	
+
+
+
+
+
+
+
+
+# Returning France to its normal infrastructure levels in 1939
+country_event = { 
+	id = gduevents.24
+	title = gduevents.24.t 
+	desc = gduevents.24.d 
+	picture = GFX_report_event_usa_election_generic 
+
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.24.a
+		hidden_effect = { 
+
+
+
+			14 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			15 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			16 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 4
+					instant_build = yes 
+				}
+			}
+			17 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 4
+					instant_build = yes 
+				}
+			}
+			18 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 3
+					instant_build = yes 
+				}
+			}
+			19 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			20 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 3
+					instant_build = yes 
+				}
+			}
+			21 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}				
+			22 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			23 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			24 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 3
+					instant_build = yes 
+				}
+			}
+			25 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+			8 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}			
+			26 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}			
+			27 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 3
+					instant_build = yes 
+				}
+			}			
+			28 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 4
+					instant_build = yes 
+				}
+			}
+			29 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 3 
+					instant_build = yes 
+				}
+			}
+			30 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			31 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}			
+			33 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				}
+			}
+			458 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 2 
+					instant_build = yes 
+				}
+			}
+			665 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 1 
+					instant_build = yes 
+				}
+			}
+			785 = { 
+				add_building_construction = { 
+					type = infrastructure
+					level = 4 
+					instant_build = yes 
+				}
+			}
+			
+		}
+	}
+	
+}	
+
+
+
+
+
+# Explaining France Infrastructure to the France Player
+country_event = { 
+	id = gduevents.25
+	title = gduevents.25.t 
+	desc = gduevents.25.d 
+	picture = GFX_report_event_generic_peaceful_annexation 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.25.a 
+
+	}
+	
+}
+
+
+# USA can't join allies yet, letting USA player know
+country_event = {
+	id = gduevents.26
+	title = gduevents.26.t 
+	desc = gduevents.26.d 
+	picture = GFX_report_event_merchant_ship_01 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.26.a 
+
+	}
+	
+}
+	
+	
+	
+# Explaining Sealion Mechanic to UK
+country_event = {
+	id = gduevents.27
+	title = gduevents.27.t 
+	desc = gduevents.27.d 
+	picture = GFX_report_event_merchant_ship_01 
+	
+	is_triggered_only = yes 
+	
+	option = { 
+		name = gduevents.27.a 
+
+	}
+	
+}
+
+
+
+
+
+# When Soviets finish their 5th land doctrine, explain that they are stopped from researching the 6th one for now to avoid wasting research and they will get a bonus for the 7th when they get the event about suspicious activity on the western border just before Barbarossa
+country_event = { 
+	id = gduevents.28
+	title = gduevents.28.t
+	desc = gduevents.28.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.28.a
+	}
+	
+	
+}
+
+
+
+
+
+
+
+country_event = {
+	id = gduevents.29
+	title = gduevents.29.t
+	desc = gduevents.29.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.29.a
+		
+		if = {
+			limit = { has_global_flag = ttfocus_enabled }
+			add_political_power = 50
+		}
+	}
+	
+	
+}
+
+
+
+country_event = {
+	id = gduevents.30
+	title = gduevents.30.t
+	desc = gduevents.30.d
+	picture = GFX_report_event_soviet_tanks
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.30.a
+		
+		POL = {
+			load_oob = "POL_GDU_SPAWN"
+		}
+		YUG = {
+			load_oob = "YUG_GDU_SPAWN"
+		}
+		GRE = {
+			load_oob = "GRE_GDU_SPAWN"
+		}		
+	}
+	
+	
+}
+
+
+
+
+
+
+country_event = {
+	id = gduevents.31
+	title = gduevents.31.t
+	desc = gduevents.31.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.31.a
+	}
+	
+	
+}
+
+country_event = {
+	id = gduevents.32
+	title = gduevents.32.t
+	desc = gduevents.32.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.32.a
+	}
+	
+	
+}
+
+
+
+country_event = {
+	id = gduevents.33
+	title = gduevents.33.t
+	desc = gduevents.33.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.33.a
+		
+		SOV = {
+			if = { limit = { has_idea = officers_purged } remove_ideas = officers_purged }
+			if = { limit = { has_idea = officers_purged_2 } remove_ideas = officers_purged_2 }
+			if = { limit = { has_idea = officers_purged_3 } remove_ideas = officers_purged_3 }
+			if = { limit = { has_idea = officers_purged_4 } remove_ideas = officers_purged_4 }
+			if = { limit = { has_idea = officers_purged_5 } remove_ideas = officers_purged_5 }
+			if = { limit = { has_idea = officers_purged_6 } remove_ideas = officers_purged_6 }
+			if = { limit = { has_idea = officers_purged_7 } remove_ideas = officers_purged_7 }
+			if = { limit = { has_idea = officers_purged_8 } remove_ideas = officers_purged_8 }
+			if = { limit = { has_idea = officers_purged_9 } remove_ideas = officers_purged_9 }
+			if = { limit = { has_idea = officers_purged_10 } remove_ideas = officers_purged_10 }
+			add_ideas = { officers_purged_10 } 
+		}	
+		
+	}
+	
+	
+}
+
+
+
+country_event = {
+	id = gduevents.34
+	title = gduevents.34.t
+	desc = gduevents.34.d
+	picture = GFX_report_event_usa_british_sailors_destroyers
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.34.a
+		
+		
+	}
+	
+}	
+
+country_event = {
+	id = gduevents.35
+	title = gduevents.35.t
+	desc = gduevents.35.d
+	picture = GFX_report_event_ast_troops_landing
+	
+	is_triggered_only = yes
+		
+	fire_only_once = yes 
+	
+	option = {
+		name = gduevents.35.a
+		
+		
+	}
+	
+}	
+
+
+country_event = {
+	id = gduevents.36
+	title = gduevents.36.t
+	desc = gduevents.36.d
+	picture = GFX_report_event_fall_blau
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = gduevents.36.a
+		
+		
+	}
+	
+}	
+
+
+### event telling allies France has started armistice negotiations, they have 10 days to get out of France
+
+country_event = {
+	id = gduevents.37
+	title = gduevents.37.t
+	desc = gduevents.37.d
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = gduevents.37.a
+		
+		
+	}
+	
+}	
+
+### French armistice news event
+
+country_event = {
+	id = gduevents.38
+	title = gduevents.38.t
+	desc = gduevents.38.d
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = gduevents.38.a
+		
+		
+	}
+	
+}	
+
+### Axis armistice news event
+
+country_event = {
+	id = gduevents.39
+	title = gduevents.39.t
+	desc = gduevents.39.d
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = gduevents.39.a
+		
+		
+	}
+	
+}	
+
+### Neutral armistice news event
+
+country_event = {
+	id = gduevents.40
+	title = gduevents.40.t
+	desc = gduevents.40.d
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = gduevents.40.a
+		
+		
+	}
+	
+}
+
+country_event = {
+	id = gduevents.41
+	title = gduevents.41.t
+	desc = gduevents.41.d
+	picture = GFX_report_event_fall_blau
+	fire_only_once = no
+	
+	trigger = {
+		date > 1940.9.1
+		original_tag = USA
+		NOT = {
+			has_country_flag = partialmob2
+		}
+	}
+		
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	immediate = { 
+		set_country_flag = partialmob2
+	}
+	
+	option = {
+		name = gduevents.41.b
+	
+	}
+	
+}		
+

@@ -1,0 +1,512 @@
+technologies = {
+	
+
+	ifu_lt1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_equipment_1
+		}		
+	}
+
+    ifu_lt2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_equipment_2
+		}		
+	}
+      ifu_lt3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_equipment_3
+		}		
+	}
+
+
+	ifu_lts1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_artillery_equipment_1
+		}		
+	}
+
+    ifu_lts2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_artillery_equipment_2
+		}		
+	}
+      ifu_lts3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_artillery_equipment_3
+		}		
+	}
+
+
+	ifu_ltd1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_destroyer_equipment_1
+		}		
+	}
+
+    ifu_ltd2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_destroyer_equipment_2
+		}		
+	}
+      ifu_ltd3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_destroyer_equipment_3
+		}		
+	}
+
+	 
+
+	ifu_lta1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_aa_equipment_1
+		}		
+	}
+
+    ifu_lta2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_aa_equipment_2
+		}		
+	}
+      ifu_lta3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_light_tank_aa_equipment_3
+		}		
+	}
+
+        ifu_ht1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_equipment_1
+		}		
+	}
+
+    ifu_ht2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_equipment_2
+		}		
+	}
+      ifu_ht3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_equipment_3
+		}		
+	}
+
+
+	ifu_hts1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_artillery_equipment_1
+		}		
+	}
+
+    ifu_hts2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_artillery_equipment_2
+		}		
+	}
+      ifu_hts3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_artillery_equipment_3
+		}		
+	}
+
+
+	ifu_htd1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_dequipment_1
+		}		
+	}
+
+    ifu_htd2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_equipment_2
+		}		
+	}
+      ifu_htd3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_equipment_3
+		}		
+	}
+
+	 
+
+	ifu_hta1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_aa_equipment_1
+		}		
+	}
+
+    ifu_hta2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_aa_equipment_2
+		}		
+	}
+      ifu_hta3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_heavy_tank_aa_equipment_3
+		}		
+	}
+	ifu_mt1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_equipment_1
+		}		
+	}
+
+    ifu_mt2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_equipment_2
+		}		
+	}
+      ifu_mt3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_equipment_3
+		}		
+	}
+
+
+	ifu_mts1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_artillery_equipment_1
+		}		
+	}
+
+    ifu_mts2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_artillery_equipment_2
+		}		
+	}
+      ifu_mts3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_artillery_equipment_3
+		}		
+	}
+
+
+	ifu_mtd1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_destroyer_equipment_1
+		}		
+	}
+
+    ifu_mtd2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_destroyer_equipment_2
+		}		
+	}
+      ifu_mtd3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_destroyer_equipment_3
+		}		
+	}
+
+	 
+
+	ifu_mta1 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_aa_equipment_1
+		}		
+	}
+
+    ifu_mta2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+		  ifu_medium_tank_aa_equipment_1
+		}		
+	}
+      ifu_mta3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_medium_tank_aa_equipment_3
+		}		
+	}
+
+
+
+
+
+
+}

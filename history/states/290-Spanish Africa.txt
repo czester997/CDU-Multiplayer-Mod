@@ -1,0 +1,27 @@
+
+state={
+	id=290
+	name="STATE_290"
+	manpower = 744000
+	
+	
+	state_category = rural
+	
+
+
+	history={
+		#owner = POR
+		victory_points = {
+			9945 5 
+		}
+		buildings = {
+			12100 = {
+		
+			}
+		}
+	}
+
+	provinces={
+		4199 7215 9945 10113 12087 12100 
+	}
+}

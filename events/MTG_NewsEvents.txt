@@ -1,0 +1,15 @@
+﻿add_namespace = mtg_news
+
+
+#ID mtg_news 1-10: USA
+
+#  #  ##  ##  
+#  # #   #  # 
+#  #  #  #### 
+#  #   # #  # 
+ ##  ##  #  # 
+
+
+
+
+

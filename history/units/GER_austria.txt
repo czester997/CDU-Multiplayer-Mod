@@ -1,0 +1,132 @@
+division_template = {
+	name = "Infanterie-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+
+
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
+	}
+}
+
+division_template = {
+	name = "Gebirgsjäger-Division"		# Gebirgsbrigade
+	#Note: precursor to Gebirgs-Divisions
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
+
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+		anti_tank_brigade = { x = 2 y = 4 }
+	
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		recon = { x = 0 y = 1 }
+		logistics_company { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		artillery = { x = 0 y = 5 }
+		anti_air = { x = 0 y = 6 }
+		
+	}
+}
+
+units = {
+	##### PFU Austria #####
+	division= {
+		name = "100. Gebirgsjäger-Division"
+		location = 688
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.3
+	}
+		division= {
+		name = "117. Gebirgsjäger-Division"
+		location = 688
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.3
+	}
+			division= {
+		name = "118. Gebirgsjäger-Division"
+		location = 688
+		division_template = "Gebirgsjäger-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "44. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "45. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "137. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "262. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		name = "297. Infanterie-Division"
+		location = 11666
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,237 @@
+technologies = {
+	
+
+	ifu_dd2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = { 
+			ifu_ship_hull_light_2
+		}
+		
+	}
+
+    ifu_dd3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = { 
+			ifu_ship_hull_light_3
+		}
+		
+	}
+      ifu_dd4 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = { 
+			ifu_ship_hull_light_4
+		}
+				
+	}
+
+
+	ifu_cl2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_cruiser_2
+		}
+			
+	}
+
+    ifu_cl3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_cruiser_3
+		}
+	}
+      ifu_cl4 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_cruiser_4
+		}	
+	}
+
+
+	ifu_bb2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_heavy_2
+		}		
+	}
+
+    ifu_bb3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_heavy_3
+		}	
+	}
+      ifu_bb4 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_heavy_4
+		}		
+	}
+
+	 
+
+	ifu_cv2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_carrier_1
+		}		
+	}
+
+    ifu_cv3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_carrier_2
+		}		
+	}
+      ifu_cv4 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_carrier_3
+		}		
+	}
+
+    ifu_sub2 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_submarine_2
+		}		
+	}
+
+    ifu_sub3 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_submarine_3
+		}		
+	}
+    ifu_sub4 = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_submarine_4
+		}		
+	}
+
+
+	ifu_shbb = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_equipments = {
+			ifu_ship_hull_super_heavy_1
+		}
+	}
+
+
+
+
+
+
+}

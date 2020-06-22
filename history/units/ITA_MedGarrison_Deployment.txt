@@ -1,0 +1,569 @@
+﻿division_template = {
+
+	name = "Mediterranean Garrisons"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+		infantry = { x = 2 y = 0 }
+		anti_tank_brigade = { x = 2 y = 1 }
+		artillery_brigade = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		anti_air_brigade = { x = 4 y = 0 } 
+
+
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		recon = { x = 0 y = 1 } 
+		logistics_company { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+	}
+}
+
+units = {
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1149
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1149
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1189
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4194
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11954
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11954
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4120
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1127
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1130
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13267
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1130
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13267
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10007
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10007
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10007
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11773
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11773
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11874
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 902
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 6891
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 6891
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9772
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9863
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7059
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7059
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}	
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10074
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10074
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4014
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4014
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4159
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4159
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7147
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7147
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1009
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1009
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 3857
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 3857
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1156
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1156
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 3943
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 3943
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11735
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11735
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 599
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 599
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11595
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11595
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7003
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7003
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 6788
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 6788
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 6973
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 6973
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11833
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11833
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11751
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11751
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9904
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9904
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11846
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11846
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 819
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 819
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 955
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9826
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11837
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11837
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11998
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 11998
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9856
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9784
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 9856
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 12039
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10067
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13295
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 7154
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13297
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10120
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13236
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 10120
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13236
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4060
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 4060
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1060
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 1060
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13240
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13240
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13238
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+	division = {	
+		start_equipment_factor = 0.01 start_experience_factor = .3
+		location = 13238
+		division_template = "Mediterranean Garrisons"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+	}
+}

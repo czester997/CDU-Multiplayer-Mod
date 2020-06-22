@@ -1,0 +1,34 @@
+on_actions = {
+
+ #####REMOVING THIS CANCER ################
+
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+		}
+	}
+
+	#FROM is the one that joins the faction
+	on_offer_join_faction = {
+
+	# called when a country send volunteers to another
+	# ROOT is sender, FROM is receiver
+
+	#FROM is war target
+	# scope is operative
+	# from scope is the country 
+	#on_operative_recruited = {
+	#	effect = {
+	#	
+	#	}
+	#}
+	
+	# scope is operative
+	# from scope is the country 
+	#on_operative_created = {
+	#	effect = {
+	#	
+	#	}
+	#}
+	}
+}

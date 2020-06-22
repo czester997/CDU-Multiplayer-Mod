@@ -1,0 +1,3187 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+                    tag = ENG
+                }
+                set_variable = { sealion_score = 0 }
+				set_variable = { sub_weight = 1 }
+				set_variable = { screen_weight = 7 }
+				set_variable = { capital_weight = 19 }
+				set_variable = { carrier_weight = 18 }				
+            }
+		}
+	}
+    
+    on_daily = {
+		effect = {
+		
+		
+
+
+
+		
+		
+			#reset the sealion score to re-calculate it each day
+			
+			clear_variable = sealion_score
+			
+
+
+#interval number 1						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 0			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 7			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 3.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 0			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 3			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 1.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 0			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 39			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 19.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 0			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 3			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 1.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 2						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 6			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 13			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 9.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 2			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 5			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 3.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 38			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 77			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 57.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 2			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 5			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 3.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 3						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 12			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 19			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 15.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 4			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 7			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 5.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 76			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 115			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 95.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 4			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 7			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 5.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 4						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 18			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 25			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 21.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 6			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 9			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 7.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 114			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 153			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 133.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 6			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 9			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 7.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 5						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 24			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 31			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 27.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 8			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 11			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 9.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 152			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 191			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 171.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 8			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 11			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 9.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 6						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 30			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 37			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 33.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 10			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 13			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 11.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 190			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 229			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 209.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 10			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 13			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 11.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 7						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 36			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 43			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 39.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 12			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 15			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 13.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 228			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 267			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 247.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 12			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 15			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 13.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 8						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 42			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 49			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 45.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 14			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 17			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 15.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 266			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 305			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 285.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 14			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 17			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 15.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 9						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 48			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 55			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 51.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 16			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 19			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 17.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 304			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 343			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 323.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 16			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 19			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 17.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 10						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 54			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 61			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 57.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 18			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 21			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 19.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 342			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 381			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 361.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 18			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 21			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 19.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 11						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 60			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 67			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 63.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 20			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 23			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 21.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 380			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 419			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 399.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 20			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 23			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 21.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 12						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 66			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 73			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 69.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 22			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 25			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 23.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 418			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 457			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 437.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 22			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 25			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 23.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 13						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 72			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 79			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 75.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 24			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 27			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 25.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 456			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 495			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 475.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 24			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 27			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 25.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 14						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 78			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 85			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 81.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 26			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 29			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 27.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 494			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 533			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 513.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 26			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 29			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 27.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 15						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 84			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 91			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 87.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 28			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 31			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 29.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 532			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 571			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 551.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 28			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 31			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 29.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 16						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 90			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 97			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 93.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 30			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 33			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 31.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 570			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 609			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 589.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 30			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 33			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 31.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 17						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 96			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 103			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 99.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 32			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 35			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 33.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 608			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 647			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 627.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 32			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 35			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 33.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 18						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 102			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 109			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 105.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 34			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 37			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 35.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 646			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 685			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 665.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 34			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 37			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 35.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 19						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 108			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 115			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 111.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 36			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 39			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 37.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 684			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 723			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 703.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 36			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 39			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 37.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 20						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 114			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 121			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 117.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 38			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 41			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 39.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 722			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 761			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 741.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 38			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 41			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 39.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 21						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 120			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 127			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 123.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 40			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 43			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 41.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 760			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 799			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 779.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 40			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 43			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 41.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 22						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 126			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 133			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 129.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 42			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 45			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 43.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 798			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 837			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 817.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 42			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 45			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 43.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 23						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 132			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 139			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 135.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 44			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 47			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 45.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 836			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 875			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 855.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 44			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 47			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 45.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 24						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 138			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 145			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 141.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 46			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 49			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 47.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 874			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 913			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 893.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 46			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 49			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 47.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 25						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 144			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 151			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 147.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 48			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 51			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 49.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 912			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 951			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 931.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 48			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 51			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 49.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 26						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 150			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 157			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 153.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 50			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 53			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 51.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 950			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 989			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 969.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 50			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 53			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 51.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 27						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 156			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 163			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 159.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 52			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 55			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 53.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 988			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 1027			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 1007.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 52			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 55			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 53.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 28						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 162			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 169			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 165.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 54			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 57			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 55.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 1026			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 1065			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 1045.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 54			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 57			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 55.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 29						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 168			
+		}				
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size < 175			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 171.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 56			
+		}				
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size < 59			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 57.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 1064			
+		}				
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size < 1103			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 1083.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 56			
+		}				
+		ships_in_area = {				
+			type = carrier 			
+			area = 18    # English Channel			
+			size < 59			
+		}				
+	}					
+	set_temp_variable = { avgshipcount1 = 57.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+						
+						
+						
+						
+						
+#interval number 30						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = screen_ship			
+			area = 18    # English Channel			
+			size > 174			
+		}							
+	}					
+	set_temp_variable = { avgshipcount1 = 177.5 }					
+	multiply_temp_variable = { avgshipcount1 = screen_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = capital_ship			
+			area = 18    # English Channel			
+			size > 58			
+		}						
+	}					
+	set_temp_variable = { avgshipcount1 = 59.5 }					
+	multiply_temp_variable = { avgshipcount1 = capital_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = submarine 			
+			area = 18    # English Channel			
+			size > 1102			
+		}							
+	}					
+	set_temp_variable = { avgshipcount1 = 1121.5 }					
+	multiply_temp_variable = { avgshipcount1 = sub_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+						
+if = {						
+	limit = {					
+		ships_in_area = {				
+			type = carrier			
+			area = 18    # English Channel			
+			size > 58			
+		}							
+	}					
+	set_temp_variable = { avgshipcount1 = 59.5 }					
+	multiply_temp_variable = { avgshipcount1 = carrier_weight }					
+	add_to_variable = { sealion_score = avgshipcount1 }					
+}						
+
+
+
+# divide the Sealion score by 25, which is a normalizing value that makes it relate to reasonable-seeming core attack/defense values and set 
+
+set_temp_variable = { temp2 = sealion_score }
+divide_temp_variable = { temp2 = 13.33 }
+
+set_variable = { sealion_score = temp2 }
+
+clamp_variable = {
+    var = sealion_score
+    min = 0
+    max = 150
+}
+
+
+
+
+round_variable = sealion_score
+
+
+
+# assign a core attack and defense bonus based on the sealion score
+
+if = {		
+	limit = { check_variable = { sealion_score > 0 } check_variable = { sealion_score < 2 } }	
+	ENG = { add_ideas = GDU_SealionScore_1 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 1 } check_variable = { sealion_score < 3 } }	
+	ENG = { add_ideas = GDU_SealionScore_2 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 2 } check_variable = { sealion_score < 4 } }	
+	ENG = { add_ideas = GDU_SealionScore_3 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 3 } check_variable = { sealion_score < 5 } }	
+	ENG = { add_ideas = GDU_SealionScore_4 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 4 } check_variable = { sealion_score < 6 } }	
+	ENG = { add_ideas = GDU_SealionScore_5 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 5 } check_variable = { sealion_score < 7 } }	
+	ENG = { add_ideas = GDU_SealionScore_6 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 6 } check_variable = { sealion_score < 8 } }	
+	ENG = { add_ideas = GDU_SealionScore_7 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 7 } check_variable = { sealion_score < 9 } }	
+	ENG = { add_ideas = GDU_SealionScore_8 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 8 } check_variable = { sealion_score < 10 } }	
+	ENG = { add_ideas = GDU_SealionScore_9 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 9 } check_variable = { sealion_score < 11 } }	
+	ENG = { add_ideas = GDU_SealionScore_10 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 10 } check_variable = { sealion_score < 12 } }	
+	ENG = { add_ideas = GDU_SealionScore_11 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 11 } check_variable = { sealion_score < 13 } }	
+	ENG = { add_ideas = GDU_SealionScore_12 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 12 } check_variable = { sealion_score < 14 } }	
+	ENG = { add_ideas = GDU_SealionScore_13 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 13 } check_variable = { sealion_score < 15 } }	
+	ENG = { add_ideas = GDU_SealionScore_14 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 14 } check_variable = { sealion_score < 16 } }	
+	ENG = { add_ideas = GDU_SealionScore_15 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 15 } check_variable = { sealion_score < 17 } }	
+	ENG = { add_ideas = GDU_SealionScore_16 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 16 } check_variable = { sealion_score < 18 } }	
+	ENG = { add_ideas = GDU_SealionScore_17 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 17 } check_variable = { sealion_score < 19 } }	
+	ENG = { add_ideas = GDU_SealionScore_18 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 18 } check_variable = { sealion_score < 20 } }	
+	ENG = { add_ideas = GDU_SealionScore_19 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 19 } check_variable = { sealion_score < 21 } }	
+	ENG = { add_ideas = GDU_SealionScore_20 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 20 } check_variable = { sealion_score < 22 } }	
+	ENG = { add_ideas = GDU_SealionScore_21 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 21 } check_variable = { sealion_score < 23 } }	
+	ENG = { add_ideas = GDU_SealionScore_22 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 22 } check_variable = { sealion_score < 24 } }	
+	ENG = { add_ideas = GDU_SealionScore_23 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 23 } check_variable = { sealion_score < 25 } }	
+	ENG = { add_ideas = GDU_SealionScore_24 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 24 } check_variable = { sealion_score < 26 } }	
+	ENG = { add_ideas = GDU_SealionScore_25 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 25 } check_variable = { sealion_score < 27 } }	
+	ENG = { add_ideas = GDU_SealionScore_26 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 26 } check_variable = { sealion_score < 28 } }	
+	ENG = { add_ideas = GDU_SealionScore_27 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 27 } check_variable = { sealion_score < 29 } }	
+	ENG = { add_ideas = GDU_SealionScore_28 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 28 } check_variable = { sealion_score < 30 } }	
+	ENG = { add_ideas = GDU_SealionScore_29 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 29 } check_variable = { sealion_score < 31 } }	
+	ENG = { add_ideas = GDU_SealionScore_30 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 30 } check_variable = { sealion_score < 32 } }	
+	ENG = { add_ideas = GDU_SealionScore_31 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 31 } check_variable = { sealion_score < 33 } }	
+	ENG = { add_ideas = GDU_SealionScore_32 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 32 } check_variable = { sealion_score < 34 } }	
+	ENG = { add_ideas = GDU_SealionScore_33 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 33 } check_variable = { sealion_score < 35 } }	
+	ENG = { add_ideas = GDU_SealionScore_34 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 34 } check_variable = { sealion_score < 36 } }	
+	ENG = { add_ideas = GDU_SealionScore_35 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 35 } check_variable = { sealion_score < 37 } }	
+	ENG = { add_ideas = GDU_SealionScore_36 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 36 } check_variable = { sealion_score < 38 } }	
+	ENG = { add_ideas = GDU_SealionScore_37 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 37 } check_variable = { sealion_score < 39 } }	
+	ENG = { add_ideas = GDU_SealionScore_38 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 38 } check_variable = { sealion_score < 40 } }	
+	ENG = { add_ideas = GDU_SealionScore_39 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 39 } check_variable = { sealion_score < 41 } }	
+	ENG = { add_ideas = GDU_SealionScore_40 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 40 } check_variable = { sealion_score < 42 } }	
+	ENG = { add_ideas = GDU_SealionScore_41 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 41 } check_variable = { sealion_score < 43 } }	
+	ENG = { add_ideas = GDU_SealionScore_42 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 42 } check_variable = { sealion_score < 44 } }	
+	ENG = { add_ideas = GDU_SealionScore_43 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 43 } check_variable = { sealion_score < 45 } }	
+	ENG = { add_ideas = GDU_SealionScore_44 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 44 } check_variable = { sealion_score < 46 } }	
+	ENG = { add_ideas = GDU_SealionScore_45 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 45 } check_variable = { sealion_score < 47 } }	
+	ENG = { add_ideas = GDU_SealionScore_46 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 46 } check_variable = { sealion_score < 48 } }	
+	ENG = { add_ideas = GDU_SealionScore_47 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 47 } check_variable = { sealion_score < 49 } }	
+	ENG = { add_ideas = GDU_SealionScore_48 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 48 } check_variable = { sealion_score < 50 } }	
+	ENG = { add_ideas = GDU_SealionScore_49 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 49 } check_variable = { sealion_score < 51 } }	
+	ENG = { add_ideas = GDU_SealionScore_50 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 50 } check_variable = { sealion_score < 52 } }	
+	ENG = { add_ideas = GDU_SealionScore_51 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 51 } check_variable = { sealion_score < 53 } }	
+	ENG = { add_ideas = GDU_SealionScore_52 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 52 } check_variable = { sealion_score < 54 } }	
+	ENG = { add_ideas = GDU_SealionScore_53 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 53 } check_variable = { sealion_score < 55 } }	
+	ENG = { add_ideas = GDU_SealionScore_54 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 54 } check_variable = { sealion_score < 56 } }	
+	ENG = { add_ideas = GDU_SealionScore_55 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 55 } check_variable = { sealion_score < 57 } }	
+	ENG = { add_ideas = GDU_SealionScore_56 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 56 } check_variable = { sealion_score < 58 } }	
+	ENG = { add_ideas = GDU_SealionScore_57 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 57 } check_variable = { sealion_score < 59 } }	
+	ENG = { add_ideas = GDU_SealionScore_58 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 58 } check_variable = { sealion_score < 60 } }	
+	ENG = { add_ideas = GDU_SealionScore_59 }	
+}
+if = {		
+	limit = { check_variable = { sealion_score > 59 } check_variable = { sealion_score < 61 } }	
+	ENG = { add_ideas = GDU_SealionScore_60 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 60 } check_variable = { sealion_score < 62 } }	
+	ENG = { add_ideas = GDU_SealionScore_61 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 61 } check_variable = { sealion_score < 63 } }	
+	ENG = { add_ideas = GDU_SealionScore_62 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 62 } check_variable = { sealion_score < 64 } }	
+	ENG = { add_ideas = GDU_SealionScore_63 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 63 } check_variable = { sealion_score < 65 } }	
+	ENG = { add_ideas = GDU_SealionScore_64 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 64 } check_variable = { sealion_score < 66 } }	
+	ENG = { add_ideas = GDU_SealionScore_65 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 65 } check_variable = { sealion_score < 67 } }	
+	ENG = { add_ideas = GDU_SealionScore_66 }
+}	
+if = {		
+	limit = { check_variable = { sealion_score > 66 } check_variable = { sealion_score < 68 } }	
+	ENG = { add_ideas = GDU_SealionScore_67 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 67 } check_variable = { sealion_score < 69 } }	
+	ENG = { add_ideas = GDU_SealionScore_68 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 68 } check_variable = { sealion_score < 70 } }	
+	ENG = { add_ideas = GDU_SealionScore_69 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 69 } check_variable = { sealion_score < 71 } }	
+	ENG = { add_ideas = GDU_SealionScore_70 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 70 } check_variable = { sealion_score < 72 } }	
+	ENG = { add_ideas = GDU_SealionScore_71 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 71 } check_variable = { sealion_score < 73 } }	
+	ENG = { add_ideas = GDU_SealionScore_72 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 72 } check_variable = { sealion_score < 74 } }	
+	ENG = { add_ideas = GDU_SealionScore_73 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 73 } check_variable = { sealion_score < 75 } }	
+	ENG = { add_ideas = GDU_SealionScore_74 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 74 } check_variable = { sealion_score < 76 } }	
+	ENG = { add_ideas = GDU_SealionScore_75 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 75 } check_variable = { sealion_score < 77 } }	
+	ENG = { add_ideas = GDU_SealionScore_76 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 76 } check_variable = { sealion_score < 78 } }	
+	ENG = { add_ideas = GDU_SealionScore_77 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 77 } check_variable = { sealion_score < 79 } }	
+	ENG = { add_ideas = GDU_SealionScore_78 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 78 } check_variable = { sealion_score < 80 } }	
+	ENG = { add_ideas = GDU_SealionScore_79 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 79 } check_variable = { sealion_score < 81 } }	
+	ENG = { add_ideas = GDU_SealionScore_80 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 80 } check_variable = { sealion_score < 82 } }	
+	ENG = { add_ideas = GDU_SealionScore_81 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 81 } check_variable = { sealion_score < 83 } }	
+	ENG = { add_ideas = GDU_SealionScore_82 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 82 } check_variable = { sealion_score < 84 } }	
+	ENG = { add_ideas = GDU_SealionScore_83 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 83 } check_variable = { sealion_score < 85 } }	
+	ENG = { add_ideas = GDU_SealionScore_84 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 84 } check_variable = { sealion_score < 86 } }	
+	ENG = { add_ideas = GDU_SealionScore_85 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 85 } check_variable = { sealion_score < 87 } }	
+	ENG = { add_ideas = GDU_SealionScore_86 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 86 } check_variable = { sealion_score < 88 } }	
+	ENG = { add_ideas = GDU_SealionScore_87 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 87 } check_variable = { sealion_score < 89 } }	
+	ENG = { add_ideas = GDU_SealionScore_88 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 88 } check_variable = { sealion_score < 90 } }	
+	ENG = { add_ideas = GDU_SealionScore_89 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 89 } check_variable = { sealion_score < 91 } }	
+	ENG = { add_ideas = GDU_SealionScore_90 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 90 } check_variable = { sealion_score < 92 } }	
+	ENG = { add_ideas = GDU_SealionScore_91 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 91 } check_variable = { sealion_score < 93 } }	
+	ENG = { add_ideas = GDU_SealionScore_92 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 92 } check_variable = { sealion_score < 94 } }	
+	ENG = { add_ideas = GDU_SealionScore_93 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 93 } check_variable = { sealion_score < 95 } }	
+	ENG = { add_ideas = GDU_SealionScore_94 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 94 } check_variable = { sealion_score < 96 } }	
+	ENG = { add_ideas = GDU_SealionScore_95 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 95 } check_variable = { sealion_score < 97 } }	
+	ENG = { add_ideas = GDU_SealionScore_96 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 96 } check_variable = { sealion_score < 98 } }	
+	ENG = { add_ideas = GDU_SealionScore_97 }
+}
+if = {		
+	limit = { check_variable = { sealion_score > 97 } check_variable = { sealion_score < 99 } }	
+	ENG = { add_ideas = GDU_SealionScore_98 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 98 } check_variable = { sealion_score < 100 } }	
+	ENG = { add_ideas = GDU_SealionScore_99 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 99 } check_variable = { sealion_score < 101 } }	
+	ENG = { add_ideas = GDU_SealionScore_100 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 100 } check_variable = { sealion_score < 102 } }	
+	ENG = { add_ideas = GDU_SealionScore_101 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 101 } check_variable = { sealion_score < 103 } }	
+	ENG = { add_ideas = GDU_SealionScore_102 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 102 } check_variable = { sealion_score < 104 } }	
+	ENG = { add_ideas = GDU_SealionScore_103 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 103 } check_variable = { sealion_score < 105 } }	
+	ENG = { add_ideas = GDU_SealionScore_104 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 104 } check_variable = { sealion_score < 106 } }	
+	ENG = { add_ideas = GDU_SealionScore_105 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 105 } check_variable = { sealion_score < 107 } }	
+	ENG = { add_ideas = GDU_SealionScore_106 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 106 } check_variable = { sealion_score < 108 } }	
+	ENG = { add_ideas = GDU_SealionScore_107 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 107 } check_variable = { sealion_score < 109 } }	
+	ENG = { add_ideas = GDU_SealionScore_108 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 108 } check_variable = { sealion_score < 110 } }	
+	ENG = { add_ideas = GDU_SealionScore_109 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 109 } check_variable = { sealion_score < 111 } }	
+	ENG = { add_ideas = GDU_SealionScore_110 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 110 } check_variable = { sealion_score < 112 } }	
+	ENG = { add_ideas = GDU_SealionScore_111 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 111 } check_variable = { sealion_score < 113 } }	
+	ENG = { add_ideas = GDU_SealionScore_112 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 112 } check_variable = { sealion_score < 114 } }	
+	ENG = { add_ideas = GDU_SealionScore_113 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 113 } check_variable = { sealion_score < 115 } }	
+	ENG = { add_ideas = GDU_SealionScore_114 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 114 } check_variable = { sealion_score < 116 } }	
+	ENG = { add_ideas = GDU_SealionScore_115 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 115 } check_variable = { sealion_score < 117 } }	
+	ENG = { add_ideas = GDU_SealionScore_116 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 116 } check_variable = { sealion_score < 118 } }	
+	ENG = { add_ideas = GDU_SealionScore_117 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 117 } check_variable = { sealion_score < 119 } }	
+	ENG = { add_ideas = GDU_SealionScore_118 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 118 } check_variable = { sealion_score < 120 } }	
+	ENG = { add_ideas = GDU_SealionScore_119 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 119 } check_variable = { sealion_score < 121 } }	
+	ENG = { add_ideas = GDU_SealionScore_120 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 120 } check_variable = { sealion_score < 122 } }	
+	ENG = { add_ideas = GDU_SealionScore_121 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 121 } check_variable = { sealion_score < 123 } }	
+	ENG = { add_ideas = GDU_SealionScore_122 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 122 } check_variable = { sealion_score < 124 } }	
+	ENG = { add_ideas = GDU_SealionScore_123 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 123 } check_variable = { sealion_score < 125 } }	
+	ENG = { add_ideas = GDU_SealionScore_124 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 124 } check_variable = { sealion_score < 126 } }	
+	ENG = { add_ideas = GDU_SealionScore_125 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 125 } check_variable = { sealion_score < 127 } }	
+	ENG = { add_ideas = GDU_SealionScore_126 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 126 } check_variable = { sealion_score < 128 } }	
+	ENG = { add_ideas = GDU_SealionScore_127 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 127 } check_variable = { sealion_score < 129 } }	
+	ENG = { add_ideas = GDU_SealionScore_128 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 128 } check_variable = { sealion_score < 130 } }	
+	ENG = { add_ideas = GDU_SealionScore_129 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 129 } check_variable = { sealion_score < 131 } }	
+	ENG = { add_ideas = GDU_SealionScore_130 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 130 } check_variable = { sealion_score < 132 } }	
+	ENG = { add_ideas = GDU_SealionScore_131 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 131 } check_variable = { sealion_score < 133 } }	
+	ENG = { add_ideas = GDU_SealionScore_132 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 132 } check_variable = { sealion_score < 134 } }	
+	ENG = { add_ideas = GDU_SealionScore_133 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 133 } check_variable = { sealion_score < 135 } }	
+	ENG = { add_ideas = GDU_SealionScore_134 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 134 } check_variable = { sealion_score < 136 } }	
+	ENG = { add_ideas = GDU_SealionScore_135 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 135 } check_variable = { sealion_score < 137 } }	
+	ENG = { add_ideas = GDU_SealionScore_136 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 136 } check_variable = { sealion_score < 138 } }	
+	ENG = { add_ideas = GDU_SealionScore_137 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 137 } check_variable = { sealion_score < 139 } }	
+	ENG = { add_ideas = GDU_SealionScore_138 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 138 } check_variable = { sealion_score < 140 } }	
+	ENG = { add_ideas = GDU_SealionScore_139 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 139 } check_variable = { sealion_score < 141 } }	
+	ENG = { add_ideas = GDU_SealionScore_140 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 140 } check_variable = { sealion_score < 142 } }	
+	ENG = { add_ideas = GDU_SealionScore_141 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 141 } check_variable = { sealion_score < 143 } }	
+	ENG = { add_ideas = GDU_SealionScore_142 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 142 } check_variable = { sealion_score < 144 } }	
+	ENG = { add_ideas = GDU_SealionScore_143 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 143 } check_variable = { sealion_score < 145 } }	
+	ENG = { add_ideas = GDU_SealionScore_144 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 144 } check_variable = { sealion_score < 146 } }	
+	ENG = { add_ideas = GDU_SealionScore_145 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 145 } check_variable = { sealion_score < 147 } }	
+	ENG = { add_ideas = GDU_SealionScore_146 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 146 } check_variable = { sealion_score < 148 } }	
+	ENG = { add_ideas = GDU_SealionScore_147 }	
+}		
+if = {		
+	limit = { check_variable = { sealion_score > 147 } check_variable = { sealion_score < 149 } }	
+	ENG = { add_ideas = GDU_SealionScore_148 }	
+}		
+if = {
+	limit = { check_variable = { sealion_score > 148 } check_variable = { sealion_score < 150 } }	
+	ENG = { add_ideas = GDU_SealionScore_149 }	
+}
+if = {
+	limit = { check_variable = { sealion_score > 149 } check_variable = { sealion_score < 151 } }	
+	ENG = { add_ideas = GDU_SealionScore_150 }	
+}
+
+
+			
+
+
+
+
+		
+	#remove the UK's core attack/defense bonus, because it will need to be updated each day based on the current #s of ships	
+		
+ENG = {	
+if = { limit = { check_variable = { sealion_score < 1 } } remove_ideas = GDU_SealionScore_1 }
+if = { limit = { OR = { check_variable = { sealion_score > 1 } check_variable = { sealion_score < 1 } } } remove_ideas = GDU_SealionScore_1 }
+if = { limit = { OR = { check_variable = { sealion_score > 2 } check_variable = { sealion_score < 2 } } } remove_ideas = GDU_SealionScore_2 }
+if = { limit = { OR = { check_variable = { sealion_score > 3 } check_variable = { sealion_score < 3 } } } remove_ideas = GDU_SealionScore_3 }
+if = { limit = { OR = { check_variable = { sealion_score > 4 } check_variable = { sealion_score < 4 } } } remove_ideas = GDU_SealionScore_4 }
+if = { limit = { OR = { check_variable = { sealion_score > 5 } check_variable = { sealion_score < 5 } } } remove_ideas = GDU_SealionScore_5 }
+if = { limit = { OR = { check_variable = { sealion_score > 6 } check_variable = { sealion_score < 6 } } } remove_ideas = GDU_SealionScore_6 }
+if = { limit = { OR = { check_variable = { sealion_score > 7 } check_variable = { sealion_score < 7 } } } remove_ideas = GDU_SealionScore_7 }
+if = { limit = { OR = { check_variable = { sealion_score > 8 } check_variable = { sealion_score < 8 } } } remove_ideas = GDU_SealionScore_8 }
+if = { limit = { OR = { check_variable = { sealion_score > 9 } check_variable = { sealion_score < 9 } } } remove_ideas = GDU_SealionScore_9 }
+if = { limit = { OR = { check_variable = { sealion_score > 10 } check_variable = { sealion_score < 10 } } } remove_ideas = GDU_SealionScore_10 }
+if = { limit = { OR = { check_variable = { sealion_score > 11 } check_variable = { sealion_score < 11 } } } remove_ideas = GDU_SealionScore_11 }
+if = { limit = { OR = { check_variable = { sealion_score > 12 } check_variable = { sealion_score < 12 } } } remove_ideas = GDU_SealionScore_12 }
+if = { limit = { OR = { check_variable = { sealion_score > 13 } check_variable = { sealion_score < 13 } } } remove_ideas = GDU_SealionScore_13 }
+if = { limit = { OR = { check_variable = { sealion_score > 14 } check_variable = { sealion_score < 14 } } } remove_ideas = GDU_SealionScore_14 }
+if = { limit = { OR = { check_variable = { sealion_score > 15 } check_variable = { sealion_score < 15 } } } remove_ideas = GDU_SealionScore_15 }
+if = { limit = { OR = { check_variable = { sealion_score > 16 } check_variable = { sealion_score < 16 } } } remove_ideas = GDU_SealionScore_16 }
+if = { limit = { OR = { check_variable = { sealion_score > 17 } check_variable = { sealion_score < 17 } } } remove_ideas = GDU_SealionScore_17 }
+if = { limit = { OR = { check_variable = { sealion_score > 18 } check_variable = { sealion_score < 18 } } } remove_ideas = GDU_SealionScore_18 }
+if = { limit = { OR = { check_variable = { sealion_score > 19 } check_variable = { sealion_score < 19 } } } remove_ideas = GDU_SealionScore_19 }
+if = { limit = { OR = { check_variable = { sealion_score > 20 } check_variable = { sealion_score < 20 } } } remove_ideas = GDU_SealionScore_20 }
+if = { limit = { OR = { check_variable = { sealion_score > 21 } check_variable = { sealion_score < 21 } } } remove_ideas = GDU_SealionScore_21 }
+if = { limit = { OR = { check_variable = { sealion_score > 22 } check_variable = { sealion_score < 22 } } } remove_ideas = GDU_SealionScore_22 }
+if = { limit = { OR = { check_variable = { sealion_score > 23 } check_variable = { sealion_score < 23 } } } remove_ideas = GDU_SealionScore_23 }
+if = { limit = { OR = { check_variable = { sealion_score > 24 } check_variable = { sealion_score < 24 } } } remove_ideas = GDU_SealionScore_24 }
+if = { limit = { OR = { check_variable = { sealion_score > 25 } check_variable = { sealion_score < 25 } } } remove_ideas = GDU_SealionScore_25 }
+if = { limit = { OR = { check_variable = { sealion_score > 26 } check_variable = { sealion_score < 26 } } } remove_ideas = GDU_SealionScore_26 }
+if = { limit = { OR = { check_variable = { sealion_score > 27 } check_variable = { sealion_score < 27 } } } remove_ideas = GDU_SealionScore_27 }
+if = { limit = { OR = { check_variable = { sealion_score > 28 } check_variable = { sealion_score < 28 } } } remove_ideas = GDU_SealionScore_28 }
+if = { limit = { OR = { check_variable = { sealion_score > 29 } check_variable = { sealion_score < 29 } } } remove_ideas = GDU_SealionScore_29 }
+if = { limit = { OR = { check_variable = { sealion_score > 30 } check_variable = { sealion_score < 30 } } } remove_ideas = GDU_SealionScore_30 }
+if = { limit = { OR = { check_variable = { sealion_score > 31 } check_variable = { sealion_score < 31 } } } remove_ideas = GDU_SealionScore_31 }
+if = { limit = { OR = { check_variable = { sealion_score > 32 } check_variable = { sealion_score < 32 } } } remove_ideas = GDU_SealionScore_32 }
+if = { limit = { OR = { check_variable = { sealion_score > 33 } check_variable = { sealion_score < 33 } } } remove_ideas = GDU_SealionScore_33 }
+if = { limit = { OR = { check_variable = { sealion_score > 34 } check_variable = { sealion_score < 34 } } } remove_ideas = GDU_SealionScore_34 }
+if = { limit = { OR = { check_variable = { sealion_score > 35 } check_variable = { sealion_score < 35 } } } remove_ideas = GDU_SealionScore_35 }
+if = { limit = { OR = { check_variable = { sealion_score > 36 } check_variable = { sealion_score < 36 } } } remove_ideas = GDU_SealionScore_36 }
+if = { limit = { OR = { check_variable = { sealion_score > 37 } check_variable = { sealion_score < 37 } } } remove_ideas = GDU_SealionScore_37 }
+if = { limit = { OR = { check_variable = { sealion_score > 38 } check_variable = { sealion_score < 38 } } } remove_ideas = GDU_SealionScore_38 }
+if = { limit = { OR = { check_variable = { sealion_score > 39 } check_variable = { sealion_score < 39 } } } remove_ideas = GDU_SealionScore_39 }
+if = { limit = { OR = { check_variable = { sealion_score > 40 } check_variable = { sealion_score < 40 } } } remove_ideas = GDU_SealionScore_40 }
+if = { limit = { OR = { check_variable = { sealion_score > 41 } check_variable = { sealion_score < 41 } } } remove_ideas = GDU_SealionScore_41 }
+if = { limit = { OR = { check_variable = { sealion_score > 42 } check_variable = { sealion_score < 42 } } } remove_ideas = GDU_SealionScore_42 }
+if = { limit = { OR = { check_variable = { sealion_score > 43 } check_variable = { sealion_score < 43 } } } remove_ideas = GDU_SealionScore_43 }
+if = { limit = { OR = { check_variable = { sealion_score > 44 } check_variable = { sealion_score < 44 } } } remove_ideas = GDU_SealionScore_44 }
+if = { limit = { OR = { check_variable = { sealion_score > 45 } check_variable = { sealion_score < 45 } } } remove_ideas = GDU_SealionScore_45 }
+if = { limit = { OR = { check_variable = { sealion_score > 46 } check_variable = { sealion_score < 46 } } } remove_ideas = GDU_SealionScore_46 }
+if = { limit = { OR = { check_variable = { sealion_score > 47 } check_variable = { sealion_score < 47 } } } remove_ideas = GDU_SealionScore_47 }
+if = { limit = { OR = { check_variable = { sealion_score > 48 } check_variable = { sealion_score < 48 } } } remove_ideas = GDU_SealionScore_48 }
+if = { limit = { OR = { check_variable = { sealion_score > 49 } check_variable = { sealion_score < 49 } } } remove_ideas = GDU_SealionScore_49 }
+if = { limit = { OR = { check_variable = { sealion_score > 50 } check_variable = { sealion_score < 50 } } } remove_ideas = GDU_SealionScore_50 }
+if = { limit = { OR = { check_variable = { sealion_score > 51 } check_variable = { sealion_score < 51 } } } remove_ideas = GDU_SealionScore_51 }
+if = { limit = { OR = { check_variable = { sealion_score > 52 } check_variable = { sealion_score < 52 } } } remove_ideas = GDU_SealionScore_52 }
+if = { limit = { OR = { check_variable = { sealion_score > 53 } check_variable = { sealion_score < 53 } } } remove_ideas = GDU_SealionScore_53 }
+if = { limit = { OR = { check_variable = { sealion_score > 54 } check_variable = { sealion_score < 54 } } } remove_ideas = GDU_SealionScore_54 }
+if = { limit = { OR = { check_variable = { sealion_score > 55 } check_variable = { sealion_score < 55 } } } remove_ideas = GDU_SealionScore_55 }
+if = { limit = { OR = { check_variable = { sealion_score > 56 } check_variable = { sealion_score < 56 } } } remove_ideas = GDU_SealionScore_56 }
+if = { limit = { OR = { check_variable = { sealion_score > 57 } check_variable = { sealion_score < 57 } } } remove_ideas = GDU_SealionScore_57 }
+if = { limit = { OR = { check_variable = { sealion_score > 58 } check_variable = { sealion_score < 58 } } } remove_ideas = GDU_SealionScore_58 }
+if = { limit = { OR = { check_variable = { sealion_score > 59 } check_variable = { sealion_score < 59 } } } remove_ideas = GDU_SealionScore_59 }
+if = { limit = { OR = { check_variable = { sealion_score > 60 } check_variable = { sealion_score < 60 } } } remove_ideas = GDU_SealionScore_60 }
+if = { limit = { OR = { check_variable = { sealion_score > 61 } check_variable = { sealion_score < 61 } } } remove_ideas = GDU_SealionScore_61 }
+if = { limit = { OR = { check_variable = { sealion_score > 62 } check_variable = { sealion_score < 62 } } } remove_ideas = GDU_SealionScore_62 }
+if = { limit = { OR = { check_variable = { sealion_score > 63 } check_variable = { sealion_score < 63 } } } remove_ideas = GDU_SealionScore_63 }
+if = { limit = { OR = { check_variable = { sealion_score > 64 } check_variable = { sealion_score < 64 } } } remove_ideas = GDU_SealionScore_64 }
+if = { limit = { OR = { check_variable = { sealion_score > 65 } check_variable = { sealion_score < 65 } } } remove_ideas = GDU_SealionScore_65 }
+if = { limit = { OR = { check_variable = { sealion_score > 66 } check_variable = { sealion_score < 66 } } } remove_ideas = GDU_SealionScore_66 }
+if = { limit = { OR = { check_variable = { sealion_score > 67 } check_variable = { sealion_score < 67 } } } remove_ideas = GDU_SealionScore_67 }
+if = { limit = { OR = { check_variable = { sealion_score > 68 } check_variable = { sealion_score < 68 } } } remove_ideas = GDU_SealionScore_68 }
+if = { limit = { OR = { check_variable = { sealion_score > 69 } check_variable = { sealion_score < 69 } } } remove_ideas = GDU_SealionScore_69 }
+if = { limit = { OR = { check_variable = { sealion_score > 70 } check_variable = { sealion_score < 70 } } } remove_ideas = GDU_SealionScore_70 }
+if = { limit = { OR = { check_variable = { sealion_score > 71 } check_variable = { sealion_score < 71 } } } remove_ideas = GDU_SealionScore_71 }
+if = { limit = { OR = { check_variable = { sealion_score > 72 } check_variable = { sealion_score < 72 } } } remove_ideas = GDU_SealionScore_72 }
+if = { limit = { OR = { check_variable = { sealion_score > 73 } check_variable = { sealion_score < 73 } } } remove_ideas = GDU_SealionScore_73 }
+if = { limit = { OR = { check_variable = { sealion_score > 74 } check_variable = { sealion_score < 74 } } } remove_ideas = GDU_SealionScore_74 }
+if = { limit = { OR = { check_variable = { sealion_score > 75 } check_variable = { sealion_score < 75 } } } remove_ideas = GDU_SealionScore_75 }
+if = { limit = { OR = { check_variable = { sealion_score > 76 } check_variable = { sealion_score < 76 } } } remove_ideas = GDU_SealionScore_76 }
+if = { limit = { OR = { check_variable = { sealion_score > 77 } check_variable = { sealion_score < 77 } } } remove_ideas = GDU_SealionScore_77 }
+if = { limit = { OR = { check_variable = { sealion_score > 78 } check_variable = { sealion_score < 78 } } } remove_ideas = GDU_SealionScore_78 }
+if = { limit = { OR = { check_variable = { sealion_score > 79 } check_variable = { sealion_score < 79 } } } remove_ideas = GDU_SealionScore_79 }
+if = { limit = { OR = { check_variable = { sealion_score > 80 } check_variable = { sealion_score < 80 } } } remove_ideas = GDU_SealionScore_80 }
+if = { limit = { OR = { check_variable = { sealion_score > 81 } check_variable = { sealion_score < 81 } } } remove_ideas = GDU_SealionScore_81 }
+if = { limit = { OR = { check_variable = { sealion_score > 82 } check_variable = { sealion_score < 82 } } } remove_ideas = GDU_SealionScore_82 }
+if = { limit = { OR = { check_variable = { sealion_score > 83 } check_variable = { sealion_score < 83 } } } remove_ideas = GDU_SealionScore_83 }
+if = { limit = { OR = { check_variable = { sealion_score > 84 } check_variable = { sealion_score < 84 } } } remove_ideas = GDU_SealionScore_84 }
+if = { limit = { OR = { check_variable = { sealion_score > 85 } check_variable = { sealion_score < 85 } } } remove_ideas = GDU_SealionScore_85 }
+if = { limit = { OR = { check_variable = { sealion_score > 86 } check_variable = { sealion_score < 86 } } } remove_ideas = GDU_SealionScore_86 }
+if = { limit = { OR = { check_variable = { sealion_score > 87 } check_variable = { sealion_score < 87 } } } remove_ideas = GDU_SealionScore_87 }
+if = { limit = { OR = { check_variable = { sealion_score > 88 } check_variable = { sealion_score < 88 } } } remove_ideas = GDU_SealionScore_88 }
+if = { limit = { OR = { check_variable = { sealion_score > 89 } check_variable = { sealion_score < 89 } } } remove_ideas = GDU_SealionScore_89 }
+if = { limit = { OR = { check_variable = { sealion_score > 90 } check_variable = { sealion_score < 90 } } } remove_ideas = GDU_SealionScore_90 }
+if = { limit = { OR = { check_variable = { sealion_score > 91 } check_variable = { sealion_score < 91 } } } remove_ideas = GDU_SealionScore_91 }
+if = { limit = { OR = { check_variable = { sealion_score > 92 } check_variable = { sealion_score < 92 } } } remove_ideas = GDU_SealionScore_92 }
+if = { limit = { OR = { check_variable = { sealion_score > 93 } check_variable = { sealion_score < 93 } } } remove_ideas = GDU_SealionScore_93 }
+if = { limit = { OR = { check_variable = { sealion_score > 94 } check_variable = { sealion_score < 94 } } } remove_ideas = GDU_SealionScore_94 }
+if = { limit = { OR = { check_variable = { sealion_score > 95 } check_variable = { sealion_score < 95 } } } remove_ideas = GDU_SealionScore_95 }
+if = { limit = { OR = { check_variable = { sealion_score > 96 } check_variable = { sealion_score < 96 } } } remove_ideas = GDU_SealionScore_96 }
+if = { limit = { OR = { check_variable = { sealion_score > 97 } check_variable = { sealion_score < 97 } } } remove_ideas = GDU_SealionScore_97 }
+if = { limit = { OR = { check_variable = { sealion_score > 98 } check_variable = { sealion_score < 98 } } } remove_ideas = GDU_SealionScore_98 }
+if = { limit = { OR = { check_variable = { sealion_score > 99 } check_variable = { sealion_score < 99 } } } remove_ideas = GDU_SealionScore_99 }
+if = { limit = { OR = { check_variable = { sealion_score > 100 } check_variable = { sealion_score < 100 } } } remove_ideas = GDU_SealionScore_100 }
+if = { limit = { OR = { check_variable = { sealion_score > 101 } check_variable = { sealion_score < 101 } } } remove_ideas = GDU_SealionScore_101 }
+if = { limit = { OR = { check_variable = { sealion_score > 102 } check_variable = { sealion_score < 102 } } } remove_ideas = GDU_SealionScore_102 }
+if = { limit = { OR = { check_variable = { sealion_score > 103 } check_variable = { sealion_score < 103 } } } remove_ideas = GDU_SealionScore_103 }
+if = { limit = { OR = { check_variable = { sealion_score > 104 } check_variable = { sealion_score < 104 } } } remove_ideas = GDU_SealionScore_104 }
+if = { limit = { OR = { check_variable = { sealion_score > 105 } check_variable = { sealion_score < 105 } } } remove_ideas = GDU_SealionScore_105 }
+if = { limit = { OR = { check_variable = { sealion_score > 106 } check_variable = { sealion_score < 106 } } } remove_ideas = GDU_SealionScore_106 }
+if = { limit = { OR = { check_variable = { sealion_score > 107 } check_variable = { sealion_score < 107 } } } remove_ideas = GDU_SealionScore_107 }
+if = { limit = { OR = { check_variable = { sealion_score > 108 } check_variable = { sealion_score < 108 } } } remove_ideas = GDU_SealionScore_108 }
+if = { limit = { OR = { check_variable = { sealion_score > 109 } check_variable = { sealion_score < 109 } } } remove_ideas = GDU_SealionScore_109 }
+if = { limit = { OR = { check_variable = { sealion_score > 110 } check_variable = { sealion_score < 110 } } } remove_ideas = GDU_SealionScore_110 }
+if = { limit = { OR = { check_variable = { sealion_score > 111 } check_variable = { sealion_score < 111 } } } remove_ideas = GDU_SealionScore_111 }
+if = { limit = { OR = { check_variable = { sealion_score > 112 } check_variable = { sealion_score < 112 } } } remove_ideas = GDU_SealionScore_112 }
+if = { limit = { OR = { check_variable = { sealion_score > 113 } check_variable = { sealion_score < 113 } } } remove_ideas = GDU_SealionScore_113 }
+if = { limit = { OR = { check_variable = { sealion_score > 114 } check_variable = { sealion_score < 114 } } } remove_ideas = GDU_SealionScore_114 }
+if = { limit = { OR = { check_variable = { sealion_score > 115 } check_variable = { sealion_score < 115 } } } remove_ideas = GDU_SealionScore_115 }
+if = { limit = { OR = { check_variable = { sealion_score > 116 } check_variable = { sealion_score < 116 } } } remove_ideas = GDU_SealionScore_116 }
+if = { limit = { OR = { check_variable = { sealion_score > 117 } check_variable = { sealion_score < 117 } } } remove_ideas = GDU_SealionScore_117 }
+if = { limit = { OR = { check_variable = { sealion_score > 118 } check_variable = { sealion_score < 118 } } } remove_ideas = GDU_SealionScore_118 }
+if = { limit = { OR = { check_variable = { sealion_score > 119 } check_variable = { sealion_score < 119 } } } remove_ideas = GDU_SealionScore_119 }
+if = { limit = { OR = { check_variable = { sealion_score > 120 } check_variable = { sealion_score < 120 } } } remove_ideas = GDU_SealionScore_120 }
+if = { limit = { OR = { check_variable = { sealion_score > 121 } check_variable = { sealion_score < 121 } } } remove_ideas = GDU_SealionScore_121 }
+if = { limit = { OR = { check_variable = { sealion_score > 122 } check_variable = { sealion_score < 122 } } } remove_ideas = GDU_SealionScore_122 }
+if = { limit = { OR = { check_variable = { sealion_score > 123 } check_variable = { sealion_score < 123 } } } remove_ideas = GDU_SealionScore_123 }
+if = { limit = { OR = { check_variable = { sealion_score > 124 } check_variable = { sealion_score < 124 } } } remove_ideas = GDU_SealionScore_124 }
+if = { limit = { OR = { check_variable = { sealion_score > 125 } check_variable = { sealion_score < 125 } } } remove_ideas = GDU_SealionScore_125 }
+if = { limit = { OR = { check_variable = { sealion_score > 126 } check_variable = { sealion_score < 126 } } } remove_ideas = GDU_SealionScore_126 }
+if = { limit = { OR = { check_variable = { sealion_score > 127 } check_variable = { sealion_score < 127 } } } remove_ideas = GDU_SealionScore_127 }
+if = { limit = { OR = { check_variable = { sealion_score > 128 } check_variable = { sealion_score < 128 } } } remove_ideas = GDU_SealionScore_128 }
+if = { limit = { OR = { check_variable = { sealion_score > 129 } check_variable = { sealion_score < 129 } } } remove_ideas = GDU_SealionScore_129 }
+if = { limit = { OR = { check_variable = { sealion_score > 130 } check_variable = { sealion_score < 130 } } } remove_ideas = GDU_SealionScore_130 }
+if = { limit = { OR = { check_variable = { sealion_score > 131 } check_variable = { sealion_score < 131 } } } remove_ideas = GDU_SealionScore_131 }
+if = { limit = { OR = { check_variable = { sealion_score > 132 } check_variable = { sealion_score < 132 } } } remove_ideas = GDU_SealionScore_132 }
+if = { limit = { OR = { check_variable = { sealion_score > 133 } check_variable = { sealion_score < 133 } } } remove_ideas = GDU_SealionScore_133 }
+if = { limit = { OR = { check_variable = { sealion_score > 134 } check_variable = { sealion_score < 134 } } } remove_ideas = GDU_SealionScore_134 }
+if = { limit = { OR = { check_variable = { sealion_score > 135 } check_variable = { sealion_score < 135 } } } remove_ideas = GDU_SealionScore_135 }
+if = { limit = { OR = { check_variable = { sealion_score > 136 } check_variable = { sealion_score < 136 } } } remove_ideas = GDU_SealionScore_136 }
+if = { limit = { OR = { check_variable = { sealion_score > 137 } check_variable = { sealion_score < 137 } } } remove_ideas = GDU_SealionScore_137 }
+if = { limit = { OR = { check_variable = { sealion_score > 138 } check_variable = { sealion_score < 138 } } } remove_ideas = GDU_SealionScore_138 }
+if = { limit = { OR = { check_variable = { sealion_score > 139 } check_variable = { sealion_score < 139 } } } remove_ideas = GDU_SealionScore_139 }
+if = { limit = { OR = { check_variable = { sealion_score > 140 } check_variable = { sealion_score < 140 } } } remove_ideas = GDU_SealionScore_140 }
+if = { limit = { OR = { check_variable = { sealion_score > 141 } check_variable = { sealion_score < 141 } } } remove_ideas = GDU_SealionScore_141 }
+if = { limit = { OR = { check_variable = { sealion_score > 142 } check_variable = { sealion_score < 142 } } } remove_ideas = GDU_SealionScore_142 }
+if = { limit = { OR = { check_variable = { sealion_score > 143 } check_variable = { sealion_score < 143 } } } remove_ideas = GDU_SealionScore_143 }
+if = { limit = { OR = { check_variable = { sealion_score > 144 } check_variable = { sealion_score < 144 } } } remove_ideas = GDU_SealionScore_144 }
+if = { limit = { OR = { check_variable = { sealion_score > 145 } check_variable = { sealion_score < 145 } } } remove_ideas = GDU_SealionScore_145 }
+if = { limit = { OR = { check_variable = { sealion_score > 146 } check_variable = { sealion_score < 146 } } } remove_ideas = GDU_SealionScore_146 }
+if = { limit = { OR = { check_variable = { sealion_score > 147 } check_variable = { sealion_score < 147 } } } remove_ideas = GDU_SealionScore_147 }
+if = { limit = { OR = { check_variable = { sealion_score > 148 } check_variable = { sealion_score < 148 } } } remove_ideas = GDU_SealionScore_148 }
+if = { limit = { OR = { check_variable = { sealion_score > 149 } check_variable = { sealion_score < 149 } } } remove_ideas = GDU_SealionScore_149 }
+if = { limit = { OR = { check_variable = { sealion_score > 150 } check_variable = { sealion_score < 150 } } } remove_ideas = GDU_SealionScore_150 }
+
+
+
+}
+		
+
+
+
+
+
+
+
+			}
+
+			
+		
+		
+		
+  
+			
+			
+
+        }
+    }

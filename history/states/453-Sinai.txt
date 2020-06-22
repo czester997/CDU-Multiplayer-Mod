@@ -1,0 +1,46 @@
+
+state={
+	id=453
+	name="STATE_453"
+	manpower = 15359
+
+	state_category = wasteland
+
+
+
+	history = {
+		owner = ENG
+		victory_points = {
+			1155 15
+		}
+		victory_points = {
+			9947 15
+		}
+		victory_points = {
+			10099 5
+		}
+		victory_points = {
+			4115 5
+		}
+		victory_points = {
+			1015 15
+		}				
+		buildings = {
+			air_base = 2
+			infrastructure = 6
+			1155 = {
+				naval_base = 2
+			}
+			10099 = {
+				naval_base = 3
+			}
+			9947 = {
+				naval_base = 10
+			}			
+		}
+	}
+
+	provinces={
+		1112 1155 4161 9947 10002 10099 11922 11979 12073 1015 4115
+	}
+}

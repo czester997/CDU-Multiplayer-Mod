@@ -1,0 +1,27 @@
+
+state={
+	id=451
+	name="STATE_451"
+	manpower = 45628
+
+	state_category = rural
+
+	history={
+		owner = ITA
+
+		victory_points = {
+			1130 175
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 4
+			1130 = {
+				naval_base = 1
+			}
+		}
+	}
+
+	provinces={
+		1130 1204 4136 7082 7206 9992 10049 12025 13241 13242 13251 13267 
+	}
+}

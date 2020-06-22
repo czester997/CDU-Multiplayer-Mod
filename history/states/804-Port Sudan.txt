@@ -1,0 +1,27 @@
+state={
+	id=804
+	name="STATE_804"
+	provinces={
+		1977 2003 2046 2088 7989 12725 
+	}
+	
+	history={
+		owner = ENG
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+			12725 = {
+				naval_base = 5
+
+			}
+
+		}
+		victory_points = {
+			12725 3
+		}
+
+	}	
+	manpower=463507
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

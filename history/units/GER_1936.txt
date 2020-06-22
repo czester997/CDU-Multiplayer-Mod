@@ -1,0 +1,835 @@
+﻿division_template = {
+	name = "Infanterie-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+
+
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
+	}
+}
+division_template = {
+	name = "Panzer-Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mot_anti_air_brigade = { x = 1 y = 3 }		
+	    
+		medium_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+		medium_armor = { x = 2 y = 2 }
+		medium_armor = { x = 2 y = 3 }
+		medium_armor = { x = 2 y = 4 }		
+		
+		medium_armor = { x = 3 y = 0 }
+		medium_armor = { x = 3 y = 1 }
+		medium_armor = { x = 3 y = 2 }
+		medium_armor = { x = 3 y = 3 }
+		medium_armor = { x = 3 y = 4 }
+		
+		medium_armor = { x = 4 y = 0 }
+		medium_armor = { x = 4 y = 1 }
+
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
+	}
+priority = 2
+	
+}
+
+division_template = {
+	name = "Leichte-Division"
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		mot_anti_air_brigade = { x = 1 y = 4 }
+	    
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		light_armor = { x = 2 y = 3 }
+		light_armor = { x = 2 y = 4 }
+	
+		light_armor = { x = 3 y = 0 }
+		light_armor = { x = 3 y = 1 }
+		light_armor = { x = 3 y = 2 }
+		light_armor = { x = 3 y = 3 }
+		light_armor = { x = 3 y = 4 }
+
+	}
+	support = {
+        engineer = { x = 0 y = 0 }
+        recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		anti_air = { x = 0 y = 5 }
+	}
+}
+division_template = {
+	name = "Motorized-Division" 		# Motorized division
+	# Note: actually a grouping of 3 independent SS-mot regiments
+	regiments = {
+		motorized = { x = 0 y = 0 }
+	    motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 0 y = 4 }
+		
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 1 y = 3 }
+		motorized = { x = 1 y = 4 }
+		
+		
+		motorized = { x = 2 y = 0 }
+	    motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		mot_anti_air_brigade = { x = 2 y = 3 }
+		
+		mot_anti_tank_brigade = { x = 3 y = 0 }
+		mot_anti_tank_brigade = { x = 3 y = 1 }
+		mot_anti_tank_brigade = { x = 3 y = 2 }
+
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+
+		
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	 	engineer = { x = 0 y = 1 }
+        signal_company = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		anti_air = { x = 0 y = 4 }
+		anti_tank = { x = 0 y = 5 }
+	}
+
+}
+division_template = {
+	name = "Fallschirmjäger"
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 0 y = 3 }
+		paratrooper = { x = 0 y = 4 }
+        paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+		paratrooper = { x = 1 y = 3 }
+		paratrooper = { x = 1 y = 4 }
+		paratrooper = { x = 2 y = 0 }
+		paratrooper = { x = 2 y = 1 }
+		paratrooper = { x = 2 y = 2 }
+		paratrooper = { x = 2 y = 3 }
+		paratrooper = { x = 2 y = 4 }
+        paratrooper = { x = 3 y = 0 }
+		paratrooper = { x = 3 y = 1 }
+		paratrooper = { x = 3 y = 2 }
+		paratrooper = { x = 3 y = 3 }
+		paratrooper = { x = 3 y = 4 }
+	}
+	
+	support = {
+        engineer = { x = 0 y = 0 }
+	    recon = { x = 0 y = 1 }
+		signal_company { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+		logistics_company = { x = 0 y = 4 }
+	}
+	priority = 2
+}
+
+
+division_template = {
+	name = "Gebirgsjäger-Division"		# Gebirgsbrigade
+	#Note: precursor to Gebirgs-Divisions
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 0 y = 3 }
+		mountaineers = { x = 0 y = 4 }
+
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 1 y = 3 }
+		mountaineers = { x = 1 y = 4 }
+
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+		anti_tank_brigade = { x = 2 y = 4 }
+	
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		recon = { x = 0 y = 1 }
+		logistics_company { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		artillery = { x = 0 y = 5 }
+		
+	}
+}
+
+division_template = {
+	name = "Jäger-Division"
+	regiments = {
+		jaeger = { x = 0 y = 0 }
+		jaeger = { x = 0 y = 1 }
+		jaeger = { x = 0 y = 2 }
+		jaeger = { x = 0 y = 3 }
+		jaeger = { x = 0 y = 4 }
+
+		jaeger = { x = 1 y = 0 }
+		jaeger = { x = 1 y = 1 }
+		jaeger = { x = 1 y = 2 }
+		jaeger = { x = 1 y = 3 }
+		jaeger = { x = 1 y = 4 }
+
+		jaeger = { x = 2 y = 0 }
+		jaeger = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+		anti_tank_brigade = { x = 2 y = 4 }
+	
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		recon = { x = 0 y = 1 }
+		logistics_company { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		artillery = { x = 0 y = 5 }
+		
+	}
+}
+
+division_template = {
+	name = "Stoßtruppen-Division"
+	regiments = {
+		shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+		shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
+		shocktroop = { x = 0 y = 4 }
+
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		shocktroop = { x = 1 y = 3 }
+		shocktroop = { x = 1 y = 4 }
+
+		shocktroop = { x = 2 y = 0 }
+		shocktroop = { x = 2 y = 1 }
+		anti_tank_brigade = { x = 2 y = 2 }
+		anti_air_brigade = { x = 2 y = 3 }
+		anti_tank_brigade = { x = 2 y = 4 }
+	
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }      # includes 1x AC comp, 1x L tank comp
+		recon = { x = 0 y = 1 }
+		logistics_company { x = 0 y = 2 }
+		signal_company = { x = 0 y = 3 }
+		anti_tank = { x = 0 y = 4 }
+		artillery = { x = 0 y = 5 }
+		
+	}
+}
+
+
+ 
+
+division_template = {
+	name = "Garnison-Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		infantry = { x = 1 y = 4 }
+	
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+		infantry = { x = 2 y = 4 }
+		
+		infantry = { x = 3 y = 0 }
+		anti_air_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		artillery = { x = 0 y = 1 }
+		anti_air = { x = 0 y = 2 }
+	}
+priority = 0
+	
+}
+
+
+units = {
+	
+# Panzertruppenkommando
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "23. Infanterie-Division"
+		location = 478
+		division_template = "Infanterie-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "1. Panzer-Division"
+		location = 6521
+		division_template = "Leichte-Division"
+		start_experience_factor = 0.65
+	}
+	division= {	
+		name = "2. Panzer-Division"
+		location = 6521
+		division_template = "Leichte-Division"
+		start_experience_factor = 0.65
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+	}
+	division= {	
+		name = "3. Panzer-Division"
+		location = 6521
+		division_template = "Leichte-Division"
+		start_experience_factor = 0.65
+		force_equipment_variants = { light_tank_equipment_1 = { owner = "GER" } }
+	}
+    division= {	
+		name = "1. Fallschirmjäger Division "
+		location = 11276
+		division_template = "Fallschirmjäger"
+		start_experience_factor = 0.48
+	}
+
+	
+}
+
+### Air oob
+air_wings = {
+			
+	### I. Luftkreiskommando -- Berlin ###
+	56 = { 
+		# Jagdgeschwader 132 'Richtofen'		
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}		
+		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+			modifier="fighter_genius"
+			name="Erich"
+			surname="Hartmann"
+			callsign="Bubi"
+			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# Ar 68
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		# Kampfgeschwader 153		
+	}
+     ### italy
+     56 = {
+		# 5a Divisione Aerea 'Eolo'
+		# 8a Divisione Aerea 'Ibis'
+		fighter_equipment_1 = {
+			owner = "GER"
+			creator = "ITA"
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "GER"
+			creator = "ITA"
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "GER"
+			creator = "ITA"
+			amount = 100
+		}
+		tac_bomber_equipment_0 =  {
+			owner = "GER"
+			creator = "ITA"
+			amount = 100
+		}
+		
+		CAS_equipment_1 =  {
+			owner = "GER"
+			creator = "ITA"
+			amount = 100
+		}
+	
+
+	}
+
+
+     ### bulgaria
+     56 = {
+		# Vuzdushnite voiski na Negovo Velichestvo
+		fighter_equipment_0 =  {
+			creator = "BUL"
+			owner = "GER" 
+			amount = 100
+		}
+	} 
+
+     ### romania
+
+     56 = {
+		# Grup 1 Avion de Vanatoare -- PZL P.11 fighters
+		fighter_equipment_0 = {
+			creator = "ROM"
+			owner = "GER" 
+			amount = 100
+		}
+	}
+
+     ### hungary
+
+	 56 = {
+		# 1. Légi Ezred -- Fiat CR.32 fighters
+		# 2. Légi Ezred -- Fiat CR.32 fighters
+		fighter_equipment_0 = {
+			creator = "HUN" 
+			owner = "GER"
+			amount = 100
+		}
+
+	}
+
+
+
+
+	### II. Luftkreiskommando -- Munich ###
+	57 = { 
+		# Jagdgeschwader 136		
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+			owner = "GER" 
+			amount = 100
+			version_name = "Bf 109 E"
+		}
+		fighter_equipment_1 =  {		# bf109s
+		owner = "GER" 
+		amount = 100
+		version_name = "Bf 109 E"
+	}
+
+
+	}
+		64 = { 
+		# Jagdgeschwader 136		
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+		}
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+		}		
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+		}
+		CAS_equipment_1 =  {			# Hs 123
+			owner = "GER" 
+			amount = 100
+		}		
+		# Kampfgeschwader 154	
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+		tac_bomber_equipment_1 = {		# Do 23
+			owner = "GER" 
+			amount = 100
+		}
+	}
+	61 = {
+		transport_plane_equipment_1 = {
+			owner = "GER" 
+			amount = 20
+		}
+	}
+	### VI. Luftkreiskommando -- Kiel ###
+	58 = { 
+		# Küstenfliegergruppe 106		
+		nav_bomber_equipment_1 =  {		# He 59, Do 18
+			owner = "GER" 
+			amount = 100
+		}
+		# Küstenfliegergruppe 206
+	}
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GER"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 100
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 100
+	}
+		add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 10
+	}
+		add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 3
+		progress = 0.3
+		efficiency = 50
+	}
+		
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "GER" 
+		}
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_artillery_equipment_2
+			creator = "GER" 
+		}
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_destroyer_equipment_2
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_aa_equipment_2
+			creator = "GER" 
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 50
+	}	
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 3
+		progress = 0.4
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "GER" 
+			version_name = "Bf 109 E"
+		}
+		requested_factories = 25
+		progress = 0.15
+		efficiency = 40
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 5
+		progress = 0.2
+		efficiency = 30
+	}
+		add_equipment_production = {
+		equipment = {
+			type = tac_bomber_equipment_1
+			creator = "GER" 
+		}
+		requested_factories = 4
+		progress = 0.2
+		efficiency = 90
+	}
+	
+}
+
+#####################

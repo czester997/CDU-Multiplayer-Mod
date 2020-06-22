@@ -1,0 +1,64 @@
+﻿
+add_namespace = usajap_events
+### USA gets this event, sets usa naval factories to a variable, and uk Gets next event in 2 days
+country_event = {
+	id = usajap_events.1
+    hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = { 
+
+    set_variable = {
+		usa_naval_factories = num_of_naval_factories
+	}
+
+    hidden_effect = { ENG = { country_event = { id = usajap_events.2 days = 10 } } }
+    }	
+}
+### ENG gets this event, sets UK number of naval factories to a variable, afterwards adds eng naval factories number to usa number of factories number
+country_event = {
+	id = usajap_events.2
+    hidden = yes
+
+	is_triggered_only = yes
+	
+	immediate = { 
+
+    set_variable = {
+		eng_naval_factories = num_of_naval_factories
+	}
+	add_to_variable = { USA.usa_naval_factories = eng_naval_factories }
+    hidden_effect = { JAP = { country_event = { id = usajap_events.3 days = 10 } } }
+    }	
+}
+### JAP gets this event, adds jap naval factories to a variable, Variable is divided by the USA.usa_naval_factories which had uk num of naval factories added to it
+country_event = {
+	id = usajap_events.3
+    hidden = yes
+
+	is_triggered_only = yes
+    
+    immediate = { 
+    set_variable = {
+		
+		jap_naval_factories = num_of_naval_factories
+	}
+
+    divide_variable = { USA.usa_naval_factories = jap_naval_factories }
+        if = {
+				limit = { check_variable = { USA.usa_naval_factories < 0.80 } }
+                JAP = { add_ideas = USA_low_dockyard_count }
+				
+		}
+	
+	else = {
+	
+	JAP = { remove_ideas = USA_low_dockyard_count }
+	}	
+    
+    hidden_effect = { USA = { country_event = { id = usajap_events.1 days = 10 } }
+    }
+    }
+    	
+}

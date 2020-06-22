@@ -1,0 +1,36 @@
+
+state={
+	id=249
+	name="STATE_249"
+	resources={
+		steel=40.000
+	}
+
+	history={
+		owner = SOV
+		buildings = {
+			infrastructure = 6
+			arms_factory = 3
+			air_base = 7
+		}
+		victory_points = {
+			6338 1 
+		}
+		add_core_of = SOV
+		1939.1.1 = {
+			buildings = {
+				arms_factory = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		228 260 292 355 372 404 3251 3365 6338 9336 9354 9401 9514 11243 11292 11339 11496 
+	}
+	manpower=2761291
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

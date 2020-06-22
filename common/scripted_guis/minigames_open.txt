@@ -1,0 +1,37 @@
+scripted_gui = {
+
+	gdu_minigames = {
+		context_type = player_context
+		
+		window_name = "gdu_minigames_container"
+		
+		visible = {
+            always = yes
+		}
+		
+		effects = {
+			gdu_minigames_open_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = gduminigames_opened } }
+					set_country_flag = gduminigames_opened
+				}
+				else = {
+					clr_country_flag = gduminigames_opened
+				}
+			}
+		}
+		
+		triggers = {
+			gdu_minigames_open_button_visible = {
+				always = yes
+			}
+		}
+		
+		
+		ai_enabled = {
+            always = no
+		}
+
+	}
+    
+}

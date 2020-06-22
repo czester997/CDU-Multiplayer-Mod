@@ -1,0 +1,239 @@
+﻿add_namespace = wtt_britain 
+
+#IRE gets choice; trade northern ireland in return for joining the alliance?
+country_event = {
+	id = wtt_britain.24
+	title = wtt_britain.24.t
+	desc = wtt_britain.24.d
+	picture = GFX_report_event_generic_parliament
+
+	is_triggered_only = yes
+	
+	#decline
+	option = {
+		name = wtt_britain.24.b
+		ENG = { country_event = { id = wtt_britain.29 } }
+	}
+}
+
+#Mers-El-Kebir Raid: France gets choice; transfer fleet or lose a portion
+country_event = {
+	id = wtt_britain.25
+	title = wtt_britain.25.t
+	desc = wtt_britain.25.d
+	picture = GFX_report_event_generic_conference
+
+	is_triggered_only = yes
+
+	#decline
+	option = {
+		ai_chance = {
+			factor = 90
+		}
+		name = wtt_britain.25.b
+		ENG = { country_event = { id = wtt_britain.27 } }
+	}
+}
+
+#Mers-El-Kebir Raid: Notification event for French accepted
+country_event = {
+	id = wtt_britain.26
+	title = wtt_britain.26.t
+	desc = wtt_britain.26.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+	
+	#excellent
+	option = {
+		name = wtt_britain.26.a
+	}
+}
+
+#Mers-El-Kebir Raid: British informed of rejection; bombs away! 
+country_event = {
+	id = wtt_britain.27
+	title = wtt_britain.27.t
+	desc = wtt_britain.27.d
+	picture = GFX_report_event_usa_pearl_harbor_airphoto
+
+	is_triggered_only = yes
+	
+	#bombard!
+	option = {
+		ai_chance = {
+			factor = 85
+		}
+		name = wtt_britain.27.a
+		add_war_support = 0.05
+		random_other_country = {
+			limit = {
+				original_tag = EFR
+				has_government = fascism
+			}
+			add_war_support = 0.05
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = FRA_mers_el_kebir
+			}
+		}
+		USA = { set_country_flag = mers_el_kebir_raid }
+		hidden_effect = {
+			news_event = { id = news.333 days = 1 }
+		}
+
+		EFR = {
+			destroy_ships = {
+				type = ship_hull_light_1
+				count = 6
+			}
+			destroy_ships = { 
+				type = ship_hull_cruiser_1
+				count = 2
+			}
+			destroy_ships = {
+				type = ship_hull_heavy_1 
+				count = 2
+			}
+		}
+
+	}
+}
+
+
+#MacDonald Proposal - Ireland Accepts
+country_event = {
+	id = wtt_britain.28
+	title = wtt_britain.28.t
+	desc = wtt_britain.28.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	#excellent
+	option = {
+		name = excellent
+	}
+}
+
+#MacDonald Proposal - Ireland Rejects Offer
+country_event = {
+	id = wtt_britain.29
+	title = wtt_britain.29.t
+	desc = wtt_britain.29.d
+	picture = GFX_report_event_generic_sign_treaty3
+
+	is_triggered_only = yes
+	
+	#Damn
+	option = {
+		name = wtt_britain.29.a
+	}
+}
+
+# Emergency Arms Deliveries - Event should not trigger right now. Decision was changed to give equipment to CAN instead, UK gets convoys though 
+country_event = {
+	id = wtt_britain.30
+	title = wtt_britain.30.t
+	desc = wtt_britain.30.d
+	picture = GFX_report_event_generic_factory
+
+	is_triggered_only = yes
+	
+	#Praise the Americans!
+	option = {
+		name = wtt_britain.30.a
+		effect_tooltip = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = USA }
+			add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = USA }
+		}
+	}
+}
+
+#   ###  ##   ## ###      ##  ###  ##  ###  ###  ## 
+#   #   #  # #   #       #  #   # #  # #  # #   #   
+#   ##  ####  #  ##      ####  #  #  # ###  ##   #  
+#   #   #  #   # #       #  # #   #  # #  # #     # 
+### ### #  # ##  ###     #  # ###  ##  #  # ### ##  
+
+add_namespace = wtt_britain_lease_azores
+
+# England request lease of Azore from POR
+country_event = {
+	id = wtt_britain_lease_azores.1
+	title = wtt_britain_lease_azores.1.t
+	desc = wtt_britain_lease_azores.1.desc
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+	
+	#Accept lease
+	option = {
+		name = wtt_britain_lease_azores.1.a
+		ai_chance = {
+			base = 10
+		}
+		FROM = {
+			set_country_flag = wtt_britain_lease_azores_accepted
+			transfer_state = 698
+			country_event = { id = wtt_britain_lease_azores.2 }
+		}
+	}
+
+	#Never
+	option = {
+		name = wtt_britain_lease_azores.1.b
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			country_event = { id = wtt_britain_lease_azores.3 }
+		}
+	}
+}
+
+# Answer from POR - yes
+country_event = {
+	id = wtt_britain_lease_azores.2
+	title = wtt_britain_lease_azores.2.t
+	desc = wtt_britain_lease_azores.2.desc
+	picture = GFX_report_event_usa_heavy_cruiser
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_britain_lease_azores.2.a
+	}
+}
+
+
+# Answer from POR - no
+country_event = {
+	id = wtt_britain_lease_azores.3
+	title = wtt_britain_lease_azores.3.t
+	desc = wtt_britain_lease_azores.3.desc
+	picture = GFX_report_event_french_british_officers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_britain_lease_azores.3.a
+		add_opinion_modifier = { target = FROM modifier = POR_rejected_lease }
+	}
+}
+
+
+
+country_event = {
+	id = wtt_britain_lease_azores.5
+	title = wtt_britain_lease_azores.5.t
+	desc = wtt_britain_lease_azores.5.desc
+	picture = GFX_report_event_ast_navy
+
+	is_triggered_only = yes
+	
+	option = {
+		name = wtt_britain_lease_azores.5.a		
+	}
+}

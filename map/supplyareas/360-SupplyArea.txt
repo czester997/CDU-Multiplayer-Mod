@@ -1,0 +1,9 @@
+
+supply_area={
+	id=360
+	name="SUPPLYAREA_360"
+	value=5
+	states={
+		248 822 826 806 811 
+	}
+}

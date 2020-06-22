@@ -1,0 +1,931 @@
+#Category only allowed for GER
+GER_mefo_bills_category = {
+
+	GER_mefo_bills_mission = {
+
+		allowed = { always = no }
+
+		icon = ger_mefo_bills
+
+		available = {
+			NOT = { has_government = democratic }
+		}
+
+		#cost = GER_mefo_bill_counter?10
+
+		selectable_mission = yes
+		days_mission_timeout = 180
+		is_good = no
+		fire_only_once = yes
+
+		cancel_trigger = {
+			hidden_trigger = {
+				OR = {
+					NOT = { GER_has_mefo_bills = yes }
+					has_idea = GER_mefo_bills_ended
+				}
+			}
+		}
+
+		days_remove = GER_extend_mefo_bills_days?0
+		remove_effect = {
+			GER_mefo_bills_level_up = yes
+			if = {
+				limit = {
+					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = GER_mefo_bill_counter value = 10 }
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = GER_mefo_bills_mission
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			effect_tooltip = {
+				GER_mefo_bills_level_up = yes
+			}
+			hidden_effect = {
+				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+			}
+		}
+
+		timeout_effect = {
+			custom_effect_tooltip = GER_mefo_bills_mission_tt
+			custom_effect_tooltip = GER_mefo_bills_effect_in_days
+			hidden_effect = {
+				set_variable = { GER_extend_mefo_bills_days = days_mission_timeout@GER_mefo_bills_mission }
+			}
+			GER_mefo_bills_level_up = yes
+			if = {
+				limit = {
+					check_variable = { var = GER_mefo_bill_counter value = 15 compare = less_than }
+				}
+				set_variable = { var = GER_mefo_bill_counter value = 10 }
+			}
+			add_to_variable = { var = GER_mefo_bill_counter value = 10 }
+
+			hidden_effect = {
+				activate_mission = GER_mefo_bills_mission
+			}
+		}
+		
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}
+
+GER_case_anton_category = {
+
+	GER_case_anton = {
+	
+		icon = generic_operation
+
+
+		available = {
+			original_tag = ITA
+			has_government = fascism
+			any_country = {
+				original_tag = EFR
+				NOT = { has_country_flag = case_anton }
+			}
+			OR = { 
+				EFR = { has_war = yes } 
+				date > 1943.1.1
+				AND = {
+					date > 1941.6.1
+					ITA = { surrender_progress > 0.01 }				
+				}
+				AND = {
+					date > 1941.1.1
+					ITA = { surrender_progress > 0.25 }				
+				}				
+				OR = { 
+					any_enemy_country = {
+						controls_state = 19
+					}
+					any_enemy_country = {
+						controls_state = 23  
+					}
+					any_enemy_country = { 
+						controls_state = 30
+					}
+					any_enemy_country = {
+						controls_state = 14 
+					}
+					any_enemy_country = { 
+						controls_state = 15 
+					}
+					any_enemy_country = {
+						controls_state = 29
+					}					
+				} 
+			}
+		}
+
+		cost = 0
+		
+		days_remove = 7
+		
+		fire_only_once = yes
+
+		visible = {
+			original_tag = ITA
+			has_government = fascism
+			date > 1941.1.1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+				
+		}
+		
+		remove_effect = {
+			GER = {
+				annex_country = { target = EFR transfer_troops = no }
+			}			
+		}
+	}
+	
+}
+
+
+operations = {
+
+	GER_barbarossa_mission = {
+
+		icon = generic_operation
+
+		allowed = {
+			always = no
+			#added through on_action
+		}
+
+		available = {
+			219 = { is_controlled_by_ROOT_or_ally = yes }
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+			202 = { is_controlled_by_ROOT_or_ally = yes }
+			217 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+
+		days_mission_timeout = 150
+		fire_only_once = yes
+
+		activation = {
+
+		}
+
+		is_good = no
+
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+
+		timeout_effect = {
+
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+
+political_actions = {
+
+	annex_bulgaria = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = GER
+			BUL = { is_ai = yes }
+			country_exists = BUL
+			date > 1939.1.1
+			GER = { has_war = yes }		
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
+				annex_country = { target = BUL transfer_troops = yes }
+				add_state_core = 77
+				add_state_core = 211
+				add_state_core = 212
+				add_state_core = 48
+				add_state_core = 184
+				add_state_core = 731
+				add_state_core = 106					
+			}
+		}
+	}
+
+	Operation_Panzerfaust = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		visible = {
+			tag = GER
+			HUN = { is_ai = yes }
+			country_exists = HUN
+			date > 1939.1.1
+			GER = { has_war = yes }		
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
+				annex_country = { target = HUN transfer_troops = yes }
+				add_state_core = 155
+				add_state_core = 154
+				add_state_core = 43			
+			}
+		}
+	}
+
+	Puppet_ROM = {
+		ai_will_do = { factor = 0 }
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			tag = GER
+			ROM = { is_ai = yes }
+			country_exists = ROM
+			date > 1939.1.1
+			GER = { has_war = yes }		
+		}
+
+		complete_effect = {
+			ROM = {
+				give_resource_rights = { receiver = GER state = 46 }
+			}
+			GER = {
+				annex_country = { target = ROM transfer_troops = yes }
+				add_state_core = 78
+				add_state_core = 766
+				add_state_core = 79
+				add_state_core = 80
+				add_state_core = 46
+				add_state_core = 77
+				add_state_core = 76
+				add_state_core = 84
+				add_state_core = 81
+				add_state_core = 82
+				add_state_core = 83
+			}		
+		}
+	}
+
+
+	# Reinstate Wilhelm IV into the line of succession
+	reinstate_wilhelm_iv_succession_rights = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+
+		}
+
+		cost = 100
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_country_flag = backed_down_netherlands_kaiser
+		}
+
+		complete_effect = {
+			add_stability = -0.10
+			add_popularity = { ideology = neutrality popularity = -0.05 }
+			custom_effect_tooltip = reinstate_wilhelm_iv_succession_rights_tt
+			hidden_effect = {
+				set_country_flag = reinstated_wilhelm_iv_succession_rights
+			}
+		}
+	}
+
+	# Agnatic-Cognatic Primogeniture
+	modernize_the_succession_laws = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_country_flag = reinstated_wilhelm_iv_succession_rights
+		}
+
+		complete_effect = {
+			add_stability = 0.05
+			custom_effect_tooltip = modernize_the_succession_laws_tt
+			hidden_effect = {
+				set_country_flag = modernized_succession_laws
+			}
+		}
+	}
+
+	recall_von_lettow_vorbeck = {
+
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			has_civil_war = no
+		}
+		visible = {
+			OR = {
+				has_country_leader = { ruling_only = yes name = "Wilhelm II" }
+				has_country_leader = { ruling_only = yes name = "Wilhelm III" }
+				has_country_leader = { ruling_only = yes name = "Victoria" }
+			}
+		}
+		cost = 25
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			create_corps_commander = {
+				name = "Paul von Lettow-Vorbeck"
+				gfx = GFX_portrait_ger_von_lettow_vorbeck
+				traits = { trickster war_hero media_personality jungle_rat}
+				skill = 4
+				id = 4
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 5
+			}
+		}
+	}
+}
+
+foreign_politics = {
+
+	GER_fall_gelb = { 
+	
+		icon = generic_operation
+		fire_only_once = yes
+		
+		allowed = { 
+			tag = GER 
+		}
+	
+		available = { 
+			has_completed_focus = GER_around_maginot 
+		}	
+	
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		visible = { 
+			has_war = yes
+		}
+		
+		complete_effect = {
+			declare_war_on = {
+				target = HOL
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = BEL
+				type = annex_everything
+			}	
+		}
+	
+	}
+	
+	GER_weserbung_operation = { 
+	
+		icon = generic_operation
+		fire_only_once = yes
+		
+		allowed = { 
+			tag = GER 
+		}
+	
+		available = { 
+			has_completed_focus = GER_weserubung  
+		}	
+	
+		cost = 0
+		ai_will_do = {
+			factor = 10
+			
+		}
+		
+		visible = { 
+			has_war = yes
+		}
+		
+		complete_effect = {
+			declare_war_on = {
+				target = DEN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = NOR 
+				type = annex_everything
+			}
+			hidden_effect = {
+				NOR = { add_war_support = -0.25 }
+			}
+		
+		}
+	
+	}
+	
+	GER_case_barbarossa = { 
+	
+		icon = generic_operation
+		fire_only_once = yes
+		
+		allowed = { 
+			tag = GER 
+		}
+	
+		available = { 
+			has_completed_focus = GER_ussr_war_goal
+			date > 1941.6.1
+			NOT = { has_war_with = SOV } 
+		}	
+	
+		cost = 0
+		days_remove = 14
+		ai_will_do = {
+			factor = 0
+			
+		}
+		
+		visible = { 
+			has_war = yes
+			NOT = { has_war_with = SOV } 
+		}
+		
+		complete_effect = {
+			
+			hidden_effect = { 
+				SOV = { country_event = { id = gduevents.4 days = 1 } }  
+			}
+			every_country = {
+				limit = { 
+					is_in_faction_with = GER 
+					NOT = { tag = GER } 
+				} 
+				country_event = { id = gduevents.3 }
+			}
+
+				
+					
+		}
+		
+		remove_effect = {
+			custom_effect_tooltip = GER_barbarossa_tooltip
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+			every_country = { 
+				limit = {
+					is_in_faction_with = GER 
+					NOT = { tag = FIN } 
+				}
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+			}
+		}
+	
+	}
+
+	# Titles Deprivation Act 1917
+	request_restoration_of_british_titles = {
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			ENG = { has_opinion = { target = GER value > 99 } }
+			custom_trigger_tooltip = {
+				tooltip = hindenburg_destroyed_tt
+				NOT = { has_global_flag = hindenburg_destroyed }
+			}
+		}
+
+		cost = 150
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		visible = {
+			has_war = no
+			has_government = neutrality
+			has_completed_focus = GER_ally_the_shade
+			has_country_flag = modernized_succession_laws
+		}
+
+		complete_effect = {
+			ENG = { country_event = { id = wtt_germany.999 days = 1 } }
+			custom_effect_tooltip = request_restoration_of_british_titles_tt
+			hidden_effect = { set_global_flag = hindenburg_event_in_progress }
+		}
+	}
+
+	GER_request_polish_war_participation = {
+
+		icon = generic_prepare_civil_war
+
+		allowed = {
+			original_tag = GER
+		}
+
+		available = {
+			has_war_with = SOV
+			NOT = { is_in_faction_with = POL }
+		}
+
+		cost = 50
+
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 200
+		}
+
+		visible = {
+			has_country_flag = poland_traded_danzig
+			has_completed_focus = GER_tackle_the_communist_threat
+		}
+
+		complete_effect = {
+			POL = { country_event = { id = wtt_germany.65 hours = 6 } }
+		}
+
+	}
+}
+
+#Category only allowed for GER
+GER_military_buildup = {
+
+	GER_plan_z = {
+
+		icon = generic_naval
+
+		available = {
+			has_navy_size = {
+				unit = battleship
+				size > 9
+			}
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 2
+			}
+			has_navy_size = {
+				unit = carrier
+				size > 3
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 99
+			}
+		}
+
+		fire_only_once = yes
+		days_mission_timeout = 1800
+
+		activation = {
+			has_completed_focus = GER_plan_z
+		}
+
+
+		visible = {
+			has_completed_focus = GER_plan_z
+		}
+
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+		}
+
+
+	}
+
+
+}
+
+special_projects = {
+
+		GER_dismantle_czechoslovakian_forts = {
+
+		icon = generic_construction
+
+		available = {
+			#has_war = yes
+			controls_state = 69 # Sudetenland
+			controls_state = 74 # Eastern Sudetenland
+			controls_state = 9 # Bohemia
+			controls_state = 75 # Moravia
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			controls_state = 69 # Sudetenland
+			controls_state = 74 # Eastern Sudetenland
+			controls_state = 9 # Bohemia
+			controls_state = 75 # Moravia
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			69 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			74 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			9 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			75 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					72 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					71 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				72 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+				71 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					70 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				70 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					73 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					664 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				73 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+				664 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 1
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+		}
+	}
+	
+	GER_dismantle_maginot = {
+
+		icon = generic_construction
+
+		available = {
+			#has_war = yes
+			controls_state = 28
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				controls_state = 18
+				controls_state = 29
+			}
+		}
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#has_war = yes
+			NOT = { tag = FRA }
+			controls_state = 28
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+			if = {
+				limit = {
+					FRA = { has_completed_focus = FRA_extend_the_maginot_line }
+				}
+				18 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+				29 = {
+					set_building_level = {
+						type = bunker
+						level = 2
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 2
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = { FRA = { has_completed_focus = FRA_extend_the_maginot_line } }
+				add_timed_idea = { idea = GER_dismantle_maginot days = 270 }
+				else = {
+					add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+				}
+			}
+		}
+	}
+}

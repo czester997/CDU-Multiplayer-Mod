@@ -1,0 +1,47 @@
+
+state={
+	id=336
+	name="STATE_336"
+	manpower = 2893200
+	
+	state_category = large_town
+	
+	resources={
+		rubber=800
+		steel=32
+		tungsten=308
+		aluminium = 25
+	}
+
+	history={
+		owner = ENG
+		victory_points = {
+			12299 25
+		}
+		victory_points = {
+			7329 3 
+		}
+		victory_points = {
+			10297 3 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			air_base = 8
+			12299 = {
+				naval_base = 10
+				coastal_bunker = 7
+			}
+			7329 = {
+				naval_base = 3
+			}
+			10297 = {
+				naval_base = 5
+			}
+		}
+	}
+
+	provinces={
+		1291 1348 1364 1376 1392 4310 4355 4367 4384 4412 4424 7329 7342 7399 7427 10227 10297 10313 12113 12144 12199 12215 12255 12271 12299 
+	}
+}

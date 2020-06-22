@@ -1,0 +1,39 @@
+equipments = {
+
+	dogs_equipment = {
+		is_archetype = yes
+		is_buildable = no
+		type = {
+			infantry
+		}
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		reliability = 0.7
+		lend_lease_cost = 3
+		soft_attack = 1
+		breakthrough = 1
+		hard_attack = 30
+
+		build_cost_ic = 1
+
+		resources = {
+			chromium = 2
+		}
+	}
+
+	# Dogs
+	dogs_equipment_1 = {
+		archetype = dogs_equipment
+		priority = 20
+        
+        soft_attack = 1
+		breakthrough = 1
+		hard_attack = 30
+		defense = -15
+
+		build_cost_ic = 1
+	}
+
+}

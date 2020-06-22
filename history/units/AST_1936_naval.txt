@@ -1,0 +1,141 @@
+﻿units = {
+
+	##### Naval OOB #####
+	fleet = {
+		name = "Royal Australian Navy"			
+		naval_base = 12406 # Sydney
+		task_force = {
+			name = "Australian Squadron"
+			location = 12406 # Sydney
+			ship = { name = "HMAS Canberra" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CA1" } }	}
+			ship = { name = "HMAS Australia" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CA1" } } }
+			ship = { name = "HMAS Sydney" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = AST version_name = "CL2" } } }
+			ship = { name = "HMAS Adelaide" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CL1" } } }
+			# Scrap Iron Flotilla
+			ship = { name = "HMAS Vampire" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }
+			ship = { name = "HMAS Vendetta" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }
+			ship = { name = "HMAS Voyager" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }
+			ship = { name = "HMAS Waterhen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }
+			ship = { name = "HMAS Stuart" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }
+		}
+	}
+	
+	##### NAVAL UNITS #####
+	###### Kraljevska Jugoslovenska Ratna Mornarica (KJRM) ######
+	fleet = {
+		name = "Kraljevska Mornarica"			
+		naval_base = 12406 # Split
+		task_force = {				
+			name = "Kraljevska Mornarica"			
+			location = 12406 # Split
+			ship = { name = "KB Dalmacija" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CL1" } } }
+			ship = { name = "KB Dubrovnik" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = AST version_name = "DD2" } } }
+			# Podmornica Divizija
+			ship = { name = "KB Hrabri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }				
+			ship = { name = "KB Nebojsa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }				
+			ship = { name = "KB Smeli" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }				
+			ship = { name = "KB Osvetnik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }				
+		}				
+	}
+
+
+	##### NAVAL UNITS #####
+	### ROYAL NAVY ###
+	fleet = {
+		name = "Koninklijke Marine"			
+		naval_base = 12406  # Amsterdam
+		task_force = {				
+			name = "Koninklijke Vloot"			
+			location = 12406  # Amsterdam
+			ship = { name = "HrMs Hertog Hendrik" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CA1" } } }		
+			ship = { name = "HrMs Jacob van Heemskerck" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CA1" } } }		
+			ship = { name = "HrMs Van Galen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }		
+		}
+		task_force = {				
+			name = "Koninklijke Onderzeeboot Smaldeel"			
+			location = 12406  # Amsterdam
+			ship = { name = "HrMs O-8" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 11 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 12 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 13 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 14 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+		}
+	}
+
+	### EAST INDIES SQUADRON ###
+	fleet = {
+		name = "Nederlands-Indië Marine"			
+		naval_base = 12406  # Batavia	
+		task_force = {				
+			name = "Nederlands-Indië Eskader"			
+			location = 12406  # Batavia	
+			ship = { name = "HrMs Soerabaja" definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CA1" } }	}		
+			ship = { name = "HrMs Java" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CL1" } } }
+			ship = { name = "HrMs Sumatra" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CL1" } } }
+			ship = { name = "HrMs De Ruyter" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name = "CL1" } } }
+			# Torpedobootjager Divisie
+			ship = { name = "HrMs Van Ghent" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }		
+			ship = { name = "HrMs Evertsen" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }		
+			ship = { name = "HrMs Kortenaer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }		
+			ship = { name = "HrMs Piet Hein" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }		
+			ship = { name = "HrMs Witte de With" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }	
+			ship = { name = "HrMs Banckert" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }	
+			ship = { name = "HrMs Van Nes" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name = "ASW DD1" } } }	
+		}				
+		task_force = {				
+			name = "Nederlands-Indië Onderzeeboot Smaldeel"			
+			location = 12406  # Soerbaja
+			ship = { ordered_name = 7 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 8 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			# I Onderzeeboot Divisie
+			ship = { ordered_name = 17 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }
+			ship = { ordered_name = 18 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }
+			# II Onderzeeboot Divisie
+			ship = { ordered_name = 9 definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { name = "HrMs K-XI" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { name = "HrMs K-XII" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			ship = { name = "HrMs K-XIII" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name = "SS1" } } }
+			# III Onderzeeboot Divisie
+			ship = { ordered_name = 14 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }
+			ship = { ordered_name = 15 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }
+			ship = { ordered_name = 16 definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name = "SS2" } } }
+		}				
+	}
+
+	##### NAVAL UNITS #####
+	fleet = {
+		name = "Vasilikó Polemikó Naftikó"			
+		naval_base = 12406 # Athens
+		task_force = {				
+			name = "Vasilikós Stólos"				
+			location = 12406 # Athens
+			ship = { name = "RHS Georgios Averof" pride_of_the_fleet = yes definition = heavy_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name =  "CA1" } } }				
+			ship = { name = "RHS Elli" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = AST version_name =  "CL1" } } }				
+			# Destroyer Flotilla
+			ship = { name = "RHS Aetos" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }		
+			ship = { name = "RHS Ierax" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }		
+			ship = { name = "RHS Leon" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }		
+			ship = { name = "RHS Panthir" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }		
+			ship = { name = "RHS Kountouriotis" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }
+			ship = { name = "RHS Hydra" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }
+			ship = { name = "RHS Psara" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }
+			ship = { name = "RHS Spetsai" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = AST version_name =  "Torp DD1" } } }
+		}					
+		task_force = {					
+			name = "Stolískou Ypovrychíon"				
+			location = 12406 # Athens
+			ship = { name = "RHS Katsonis" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name =  "SS1" } } }		
+			ship = { name = "RHS Papanikolis" definition = submarine equipment = { ship_hull_cruiser_submarine = { amount = 1 owner = AST version_name =  "SS1" } } }		
+			ship = { name = "RHS Protefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name =  "SS2" } } }		
+			ship = { name = "RHS Nirefs" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name =  "SS2" } } }		 
+			ship = { name = "RHS Triton" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name =  "SS2" } } }		
+			ship = { name = "RHS Glafkos" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = AST version_name =  "SS2" } } }		
+		}					
+	}	
+}
+
+

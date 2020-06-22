@@ -1,0 +1,342 @@
+﻿capital = 439
+
+oob = "RAJ_1936"
+set_stability = 0.71
+set_war_support = 0.1
+set_research_slots = 4
+add_timed_idea = { idea = airandnavy_idea days = 1162 }
+# Starting tech
+set_technology = {
+	interwar_antiair = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	transport = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	gw_artillery = 1
+	CAS1 = 1
+	early_fighter = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	synth_oil_experiments = 1	
+		basic_ship_hull_submarine = 1
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		basic_torpedo = 1
+		sonar = 1
+		smoke_generator = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_cruiser_armor_scheme = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+		improved_secondary_battery = 1
+		basic_fire_control_system = 1
+		cruiser_submarines = 1	
+}
+add_opinion_modifier = { target = SPR modifier = embargo }
+add_opinion_modifier = { target = SPR modifier = sanctions_relations }
+add_opinion_modifier = { target = SPR modifier = large_decrease }
+add_opinion_modifier = { target = SPR modifier = hostile_status }
+
+if = {
+	limit = { has_dlc = "Together for Victory" }
+
+	add_ideas = {
+		RAJ_princely_states
+		RAJ_marginalized_muslim_community
+		RAJ_agrarian_society
+		GDU_refinery_prebuild_disincentive		
+	}
+
+	add_to_tech_sharing_group = commonwealth_research
+}
+
+set_convoys = 50
+
+set_cosmetic_tag = RAJ_UK # British Raj
+
+1939.1.1 = {
+
+	if = {
+		limit = {
+			has_dlc = "Together for Victory"
+		}
+		complete_national_focus = RAJ_lessons_of_the_great_war
+		complete_national_focus = RAJ_vickers_berthier_gun
+		complete_national_focus = RAJ_army_motorization
+		complete_national_focus = RAJ_british_pilot_training
+		complete_national_focus = RAJ_great_indian_peninsula_railway
+		complete_national_focus = RAJ_east_india_railways
+		complete_national_focus = RAJ_found_scindia_shipyard
+		complete_national_focus = RAJ_industrial_expansion
+		complete_national_focus = RAJ_ishapore_arsenal
+	}
+
+	add_political_power = 1198
+	oob = "RAJ_1939"
+
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+
+	add_ideas = {
+		#laws
+		disarmed_nation
+		low_economic_mobilisation
+	}
+
+
+	set_technology = {
+
+		early_fighter = 1
+		fighter1 = 1
+		#doctrines
+
+		grand_battle_plan = 1
+
+		trench_warfare = 1
+		prepared_defense = 1
+		battlefleet_concentration = 1
+		subsidiary_carrier_role = 1
+		convoy_sailing = 1
+		convoy_escorts = 1
+		submarine_operations = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		decimetric_radar = 1
+		mechanical_computing = 1
+		computing_machine = 1
+		#basic_encryption = 1
+		#basic_decryption = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		synth_oil_experiments = 1
+		oil_processing = 1
+		rubber_processing = 1
+		construction1 = 1
+		construction2 = 1
+		construction3 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+		dispersed_industry3 = 1
+	}
+}
+add_equipment_to_stockpile = {
+         type = artillery_equipment_1
+         amount = 264
+         producer = RAJ
+}  
+add_equipment_to_stockpile = {
+         type = support_equipment
+         amount = 330
+         producer = RAJ
+} 
+
+add_equipment_to_stockpile = {
+         type = infantry_equipment_1
+         amount = 12000
+         producer = RAJ
+} 
+add_equipment_to_stockpile = {
+         type = anti_air_equipment_1
+         amount = 222
+         producer = RAJ
+} 
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+    democratic = 17
+    fascism = 2
+    communism = 1
+    neutrality = 80
+}
+
+create_country_leader = {
+	name = "Lord Linlithgow"
+	desc = "POLITICS_LORD_LINLITHGOW_DESC"
+	picture = "gfx/leaders/RAJ/Portrait_British_Raj_Lord_Linlithgow.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+
+	}
+}
+
+# REVISIT Unclear if appropriate for this ideology
+create_country_leader = {
+	name = "V. D. Savarkar"
+	desc = "POLITICS_VD_SAVARKAR_DESC"
+	picture = "GFX_RAJ_veer_savarkar"
+	expire = "1965.1.1"
+	ideology = falangism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "P. Krishna Pillai"
+	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
+	picture = "GFX_RAJ_krishna_pillai"
+	expire = "1965.1.1"
+	ideology = marxism
+	traits = {
+
+	}
+}
+
+create_country_leader = {
+	name = "B. P. Sitaramayya"
+	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
+	picture = "GFX_RAJ_pattabhi_sitaramayya"
+	expire = "1965.1.1"
+	ideology = socialism
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "Noel Beresford-Peirse"
+	gfx = "GFX_RAJ_noel_beresford_peirse"
+	traits = { career_officer trickster old_guard inflexible_strategist infantry_officer desert_fox}
+	skill = 5
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 5
+}
+
+create_corps_commander = {
+	name = "Frank Messervy"
+	gfx = "GFX_RAJ_frank_messervy"
+	traits = {   panzer_leader desert_fox hill_fighter skilled_staffer cavalry_officer media_personality }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 4
+}
+
+create_corps_commander = {
+	name = "David Tennant Cowan"
+	picture = "Portrait_DEH_David_Tennant_Cowan.dds"
+	traits = {  infantry_leader infantry_officer trait_cautious organizer trait_engineer jungle_rat}
+	skill = 4
+	attack_skill = 3
+	defense_skill = 4
+	planning_skill = 1
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Maharaja Rajendrasinhji Jadeja"
+	picture = "Portrait_DEH_Maharaja_Rajendrasinhji_Jadeja.dds"
+	traits = { desert_fox  career_officer harsh_leader cavalry_leader cavalry_officer}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Thomas Wynford Rees"
+	picture = "Portrait_DEH_Thomas_Wynford_Rees.dds"
+	traits = {   hill_fighter trait_mountaineer jungle_rat career_officer infantry_officer organizer}
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 4
+}
+create_field_marshal = {
+	name = "Madras Thimayya"
+	picture = "Portrait_Madras_Thimayya.dds"
+	traits = {  infantry_leader infantry_officer media_personality war_hero brilliant_strategist organizer inflexible_strategist harsh_leader armor_officer }
+	skill = 5
+	attack_skill = 2
+	defense_skill = 6
+	planning_skill = 2
+	logistics_skill = 7
+}
+
+create_corps_commander = {
+	name = "Syed Ahmed El Edroos"
+	picture = "Portrait_PRF_El_Edroos.dds"
+	traits = {  infantry_officer  trait_cautious harsh_leader brilliant_strategist skilled_staffer inflexible_strategist}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 5
+	planning_skill = 4
+	logistics_skill = 0
+}
+create_field_marshal = {
+	name = "Douglas Gracey"
+	gfx = "GFX_RAJ_douglas_gracey"
+	traits = { brilliant_strategist war_hero  trait_cautious media_personality infantry_officer skilled_staffer}
+	skill = 5
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+
+
+create_navy_leader = {
+	name = "Herbert Fitzherbert"
+	gfx = "GFX_RAJ_herbert_fitzherbert"
+	traits = { old_guard_navy }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	maneuvering_skill = 1
+	coordination_skill = 2
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	create_operative_leader = {
+		name = "Noor Inayat Khan"
+		GFX = GFX_portrait_noor_inayat_khan
+		traits = {  }
+		bypass_recruitment = no
+		available_to_spy_master = no
+		female = yes
+		nationalities = { RAJ }
+	}
+}

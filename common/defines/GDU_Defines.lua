@@ -511,7 +511,7 @@ NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 90						-- Number of days needed to u
 NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 0.5						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 150					-- Number of political power used to become Spy Master
 NDefines.NOperatives.BECOME_SPYMASTER_MIN_UPGRADES = 0			-- Number of agency upgrades you need before becoming Spy Master						-- Number of days needed to upgrade an intelligence agency
-NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 5
+NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 4
 NDefines.NOperatives.BUILD_INTEL_NETWORK_DAILY_XP_GAIN = 3
 NDefines.NOperatives.QUIET_INTEL_NETWORK_DAILY_XP_GAIN = 1
 NDefines.NOperatives.COUNTER_INTELLIGENCE_DAILY_XP_GAIN = 1.5
@@ -528,7 +528,7 @@ NDefines.NOperatives.CRYPTO_CRYPTO_LEVEL_PER_CRYPTO_UPGRADE = 1500			-- crypto s
 NDefines.NOperatives.CRYPTO_CRYPTO_ACTIVE_BONUS_DURATION = 15
 NDefines.NOperatives.AGENCY_DEFENSE_EFFECT_ON_HOSTILE_ACTION_COST = 0.1
 NDefines.NOperatives.OPERATIVE_MAX_DAYS_TO_AUTO_RESUME_MISSION = 121
-NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 3
+NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 5
 
 
 NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.075 			-- max combat bonus that will apply when intel is high enough
@@ -552,5 +552,7 @@ NDefines.NIntel.NAVY_SHIP_COUNT_INTEL_MIN = 0
 NDefines.NIntel.NAVY_DEPLOYED_MANPOWER_COUNT_RANGE_INTEL_MIN = 0
 NDefines.NIntel.CIVILIAN_CONVOYS_RANGE_INTEL_MIN = 0
 NDefines.NIntel.ARMY_STOCKPILE_COUNT_INTEL_MIN = 0.2
-CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.1
+NDefines.NIntel.CIVILIAN_INTEL_NEEDED_TO_SHOW_CURRENT_FOCUS = 0.1
 NDefines.NIntel.NAVY_TASKFORCE_COUNT_INTEL_MIN = 0
+NDefines.NIntel.CIVILIAN_MIN_INTEL_TO_SHOW_INDUSTRY_GRAPH = 0
+NDefines.NIntel.NAVAL_SUPREMACY_INTEL_LOW = 0

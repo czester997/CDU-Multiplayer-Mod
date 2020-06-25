@@ -181,7 +181,7 @@ lacking_consumer_goods = {
 }
 
 gain_focus = {
-	political_power_cost = 1.1
+	political_power_cost = 1
 } 
 
 #license production

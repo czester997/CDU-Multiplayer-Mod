@@ -541,6 +541,10 @@ NDefines.NIntel.ARMY_INTEL_COMBAT_BONUS_MAX_BONUS = 0.075 			-- max combat bonus
 
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 40
 NDefines.NIntel.DYNAMIC_INTEL_SOURCE_EVENT_ABSOLUTE_MAXIMUMS = { 200, 200, 200, 200 } --Intel from events was 50
+
+
+---min intel (???)
+
 NDefines.NIntel.CIVILIAN_PRODUCTION_RANGE_INTEL_MIN = 0
 NDefines.NIntel.CIVILIAN_FUEL_RANGE_INTEL_MIN = 0
 NDefines.NIntel.CIVILIAN_MANPOWER_RANGE_INTEL_MIN = 0

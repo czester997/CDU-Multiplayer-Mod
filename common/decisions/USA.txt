@@ -1,4 +1,4 @@
-GDU_torch = {
+foreign_politics = {
 
 	GDU_usa_torch_decision2 = {
 		

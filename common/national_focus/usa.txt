@@ -1973,7 +1973,7 @@ focus = {
 		#	factor = 1
 		#}
 		completion_reward = {
-			unlock_decision_tooltip = GDU_usa_torch_decision
+			unlock_decision_tooltip = GDU_usa_torch_decision2
 
 		}
 	}

@@ -192,7 +192,6 @@ country_event = {
 				country_event = { days = 1 id = soviet.6 }
 				country_event = { days = 1 id = soviet.8 }
 				country_event = { days = 1 id = soviet.10 }
-				#country_event = { days = 5 id = soviet.31 }
 			}
 
 			POL = {

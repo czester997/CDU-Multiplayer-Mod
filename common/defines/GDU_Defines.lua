@@ -500,11 +500,11 @@ NDefines.NResistance.GARRISON_EQUIPMENT_LOST_BY_ATTACK = 0.02 	-- Ratio of equip
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 1
 
 NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
-NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda ef`
+NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0
+NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0
+NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0
 NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 0.6
 NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
-NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
-NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
 NDefines.NOperatives.AGENCY_CREATION_DAYS = 30						-- Number of days needed to create an intelligence agency
 NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 1
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 90						-- Number of days needed to upgrade an intelligence agency

@@ -1,3 +1,45 @@
+GDU_torch = {
+
+	GDU_usa_torch_decision2 = {
+		
+		icon = generic_operation
+
+		allowed = {
+			original_tag = USA
+			NOT = { 
+				459 = { is_fully_controlled_by = FRF } 
+			}
+		}
+		
+		available = {
+			original_tag = USA
+			NOT = { 
+				459 = { is_fully_controlled_by = FRF } 
+			}
+		}
+		
+		cost = 50
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = GDU_USA_torch
+		}
+		
+		complete_effect = {
+			GER = {
+				annex_country = { target = EFR transfer_troops = no }
+			}
+			USA = {
+				transfer_state = 461
+				transfer_state = 462
+			}
+		}
+
+	}
+
+}
+
+
 war_measures = {
 
 

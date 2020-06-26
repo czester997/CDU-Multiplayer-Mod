@@ -830,6 +830,14 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { ENG GER YUG }
 	}
+	create_operative_leader = {
+		name = "Salvatore Riina"
+		GFX = GFX_portrait_alexander_rado
+		traits = { operative_natural_orator }
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { ENG ITA }
+	}
 }
 
 

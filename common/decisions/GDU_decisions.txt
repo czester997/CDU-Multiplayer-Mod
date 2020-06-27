@@ -2509,7 +2509,7 @@ foreign_politics = {
 	}	
 	
 	GDU_GER_seize_syria = { 
-		icon = generic_civil_support
+		icon = generic_operation
 		
 		available = {
 			original_tag = GER		

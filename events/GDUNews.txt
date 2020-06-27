@@ -323,6 +323,13 @@ news_event = {
 	
 	major = yes 
 	
+	immediate = {
+	set_global_flag = japan_war_music
+	hidden_effect = {
+		sound_effect = nanjing
+		}
+	}
+	
 	option = {
 		name = gdunews.6.usa 
 		trigger = { 

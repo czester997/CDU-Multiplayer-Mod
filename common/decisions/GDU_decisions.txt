@@ -2507,7 +2507,53 @@ foreign_politics = {
 		}
 	
 	}	
-	GDU_JAP_pearl_harbor = {
+	
+	GDU_GER_seize_syria = { 
+		icon = generic_civil_support
+		
+		available = {
+			original_tag = GER		
+			any_country = {
+				original_tag = EFR
+			}
+			ITA = { 
+				controls_state = 446
+				controls_state = 447
+				controls_state = 453
+				controls_state = 454 
+			}
+		}
+		
+		
+		fire_only_once = yes
+		
+		visible = {
+			original_tag = GER
+			any_country = {
+				original_tag = EFR
+			}
+			EFR = { 
+				controls_state = 553 
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			ITA = {
+				transfer_state = 553
+				transfer_state = 677
+				transfer_state = 680
+				transfer_state = 554
+			}
+		}
+	
+	}
+
+	GDU_JAP_pearl_harbor = { 
 	
 		icon = generic_operation
 		fire_only_once = yes
@@ -2575,10 +2621,10 @@ foreign_politics = {
 				target = INS 
 				type = annex_everything
 			}
-			#declare_war_on = {
-			#	target = PHI 
-			#	type = annex_everything
-			#}
+			declare_war_on = {
+				target = PHI 
+				type = annex_everything
+			}
 			declare_war_on = {
 				target = ENG 
 				type = annex_everything
@@ -2693,6 +2739,7 @@ foreign_politics = {
 				}
 			}		
 		}
+	
 	}
 
 

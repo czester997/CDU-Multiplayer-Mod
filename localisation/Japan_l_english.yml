@@ -276,7 +276,10 @@
  SOV_scorched_earth_leningrad:0 "Execute Scorched Earth in the approaches to Leningrad"
  armored_car_equipment:0 "Armored Car Equipment"
  GDU_usa_torch_decision2:0 "Operation: Torch"
- GDU_torch:0" Foreign Policy"
+ GDU_torch:0 "Foreign Policy"
+ JAP_pressure_france2:0 "Operation: Lang Son"
+ GDU_GER_seize_syria:0 "Operation: Fall of Syria"
+ EAI_config_STOCKPILE:0 "Config: STOCKPILE"
  ##events
  Tora.21.t:0 "Five Ministers Conference"
  Tora.21.d:0 "The Five Ministers Conference was a meeting between 5 important Japanese ministers, in which they laid out a plan for Japanese expansion. It was decided to expand southwards, into China and other parts of Asia. The Soviet Union was not ignored, however, and a part of this plan was also to build a large enough army to be able to defeat the Soviet Union. Foreign Minister Arita generally approved of the plan, but stressed the importance of maintaining the good will of the United Kingdom and the United States. Prime Minister Hirota agreed with the plan, and decided to let the army or navy draw up a detailed plan."

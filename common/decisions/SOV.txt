@@ -533,14 +533,15 @@ SOV_industry_relocation = {
 }
 
 #Category only allowed for SOV
-SOV_great_patriotic_war = {
+foreign_politics = {
 
 	SOV_Capital_Kuibyshev = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -567,10 +568,11 @@ SOV_great_patriotic_war = {
 	
 	SOV_Capital_Moscow = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -597,10 +599,11 @@ SOV_great_patriotic_war = {
 
 	SOV_Capital_Gorki = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -627,10 +630,11 @@ SOV_great_patriotic_war = {
 	
 	SOV_Capital_Kazan = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -657,10 +661,11 @@ SOV_great_patriotic_war = {
 
 	SOV_Capital_Kirov = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -687,10 +692,11 @@ SOV_great_patriotic_war = {
 
 	SOV_Capital_Stalingrad = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -717,10 +723,11 @@ SOV_great_patriotic_war = {
 
 	SOV_Capital_Baku = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -747,10 +754,11 @@ SOV_great_patriotic_war = {
 
 	SOV_Capital_Magnitogorsk = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -777,10 +785,11 @@ SOV_great_patriotic_war = {
 
 	SOV_Capital_Perm = {
 
-		icon = generic_political_actions
+		icon = generic_operation
 
 		visible = {
-			always = yes
+			original_tag = SOV
+			date > 1939.1.1
 		}
 
 		cost = 0
@@ -804,16 +813,6 @@ SOV_great_patriotic_war = {
 			factor = 0
 		}
 	}	
-
-
-
-
-
-
-
-
-
-	
 }
 
 SOV_great_patriotic_war = {

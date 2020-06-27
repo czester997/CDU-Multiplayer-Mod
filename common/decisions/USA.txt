@@ -3,39 +3,45 @@ foreign_politics = {
 	GDU_usa_torch_decision2 = {
 		
 		icon = generic_operation
+		
+		available = { 
+			EFR = { exists = yes } 
+			has_completed_focus = GDU_USA_torch 
+			tag = USA
 
-		allowed = {
-			original_tag = USA
-			NOT = { 
-				459 = { is_fully_controlled_by = FRF } 
-			}
-		}
+		} 
 		
-		available = {
-			original_tag = USA
-			NOT = { 
-				459 = { is_fully_controlled_by = FRF } 
-			}
-		}
+		cost = 25 
 		
-		cost = 50
 		fire_only_once = yes
 		
-		visible = {
-			has_completed_focus = GDU_USA_torch
+		ai_will_do = {
+			factor = 0
+			
+		}
+		
+		visible = { 
+			tag = USA  
+			#EFR = { exists = yes } 
 		}
 		
 		complete_effect = {
-			GER = {
-				annex_country = { target = EFR transfer_troops = no }
+			custom_effect_tooltip = GDU_usa_torch_war_tt 
+			country_event = vichy.1
+			EFR = { country_event = vichy.2 }
+			every_country = { 
+				limit = { 
+					NOT = { tag = USA } 
+					is_in_faction_with = USA 
+				}
+				country_event = { id = gduevents.15 } 
 			}
-			USA = {
-				transfer_state = 461
-				transfer_state = 462
-			}
+							
 		}
 
 	}
+			
+		
 
 }
 

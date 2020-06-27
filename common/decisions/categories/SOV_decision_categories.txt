@@ -31,3 +31,18 @@ GDU_automatic_unit_deployment22 = {
 		original_tag = SOV
 	}
 }
+	
+SOV_great_patriotic_war = {
+
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		original_tag = SOV
+	}
+
+	visible = {
+		original_tag = SOV
+	}
+}

@@ -337,14 +337,6 @@ country_event = {
 					transfer_state = 706							
 				}
 				
-				ENG = {
-					transfer_state = 718	
-					transfer_state = 538
-					transfer_state = 295
-					transfer_state = 768
-					transfer_state = 769
-				}
-			
 				#### switch France (FRA) to Free France (FRF) ####
 
 				FRF = {

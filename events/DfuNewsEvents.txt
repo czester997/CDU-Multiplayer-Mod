@@ -164,55 +164,6 @@ news_event = {
 		}
 	}
 }
-news_event = {
-	id = dfu_news.4
-	title = dfu_news.4.t
-	desc = dfu_news.4.desc
-	picture = GFX_news_event_japan
-	
-	major = yes	
-
-	trigger = {
-	JAP =  { has_war_with = USA }
-	NOT = { has_global_flag = japan_war_music }
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	immediate = {
-	set_global_flag = japan_war_music
-	hidden_effect = {
-		sound_effect = nanjing
-		}
-	}
-	
-	option = {
-		name = dfu_news.4.a
-		trigger = {
-			original_tag = JAP
-		}
-	}
-	option = {
-		name = dfu_news.4.b
-		trigger = { 
-			NOT = { original_tag = JAP }
-			has_government = fascism
-		}
-	}
-	option = {
-		name = dfu_news.4.c
-		trigger = { 
-			NOT = { original_tag = JAP }
-			Or = {
-				has_government = democratic
-				has_government = neutrality
-				has_government = communism
-			}
-		}
-	}
-}
 
 news_event = {
 	id = dfu_news.7

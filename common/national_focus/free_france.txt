@@ -30,6 +30,7 @@ focus_tree = {
 				date > 1942.1.1 
 			}
 		}
+
 		completion_reward = {	
 			add_political_power = 300
 			add_stability = 0.25
@@ -37,10 +38,7 @@ focus_tree = {
 				popularity = 0.15
 				ideology = democratic
 			}
-			custom_effect_tooltip = FRF_france_libre 
-			hidden_effect = {
-				remove_ideas = FRA_victors_of_wwi
-			}
+			custom_effect_tooltip = FRF_france_libre 				
 			if = { 
 				limit = {
 					has_global_flag = FRA_evacuated1 

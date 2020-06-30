@@ -2915,8 +2915,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_nkvd_divisions focus = SOV_military_reorganization }
 		available = {
 			OR = {
-				date > 1941.1.1
-				has_country_flag = SOV_war_since_purge
+				date > 1940.1.1
 			}
 		}
 		x = -1

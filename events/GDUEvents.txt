@@ -1072,35 +1072,3 @@ country_event = {
 	}
 	
 }
-
-country_event = {
-	id = gduevents.41
-	title = gduevents.41.t
-	desc = gduevents.41.d
-	picture = GFX_report_event_fall_blau
-	fire_only_once = no
-	
-	trigger = {
-		date > 1940.9.1
-		original_tag = USA
-		NOT = {
-			has_country_flag = partialmob2
-		}
-	}
-		
-	
-	mean_time_to_happen = {
-		days = 2
-	}
-	
-	immediate = { 
-		set_country_flag = partialmob2
-	}
-	
-	option = {
-		name = gduevents.41.b
-	
-	}
-	
-}		
-

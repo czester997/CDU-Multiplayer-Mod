@@ -281,6 +281,7 @@
  GDU_GER_seize_syria:0 "Operation: Fall of Syria"
  EAI_config_STOCKPILE:0 "Config: STOCKPILE"
  GDU_GER_invade_iran2:0 "Operation: Countenance"
+ puppet_france:0 "France Annexation"
  
  ##events
  Tora.21.t:0 "Five Ministers Conference"
